@@ -10,4 +10,7 @@ related data sets.
  
 * [Our World in Data Energy]( https://github.com/owid/energy-data)
 
+* New IEA report with links to a lot of data [Electricity 2025](https://www.iea.org/reports/electricity-2025)
+
+
 
