@@ -12,5 +12,7 @@ related data sets.
 
 * New IEA report with links to a lot of data [Electricity 2025](https://www.iea.org/reports/electricity-2025)
 
-
+# Added by Julian
+python version = 3.10.0
+required installs = req3.txt
 
