@@ -20,7 +20,9 @@ Run some some analysis and visualise
 Describe your baseline autoregressions models, i.e. input window size
 forecast window size etc.
 
-* [link_to_notebook_or_script](02_Autoregression_Models.ipynb)
+* [link_to_notebook_or_script](02a_ARIMA_Models.ipynb)
+* [link_to_notebook_or_script](02b_VAR_Models.ipynb)
+* [link_to_notebook_or_script](02c_LSTM_Models.ipynb)
 
 
 ## Step 3: Multivariate Models with Exogenous Fetaures
