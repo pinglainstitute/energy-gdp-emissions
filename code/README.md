@@ -20,6 +20,7 @@ forecast window size etc.
 
 * [link_to_notebook_or_script](02_Autoregression_Models.ipynb)
 
+See the [table comparing results her](../results/Stage_1.md)
 
 ## Step 3: Multivariate Models with Exogenous Fetaures
  
