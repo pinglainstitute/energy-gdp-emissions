@@ -8,7 +8,7 @@ file that contains [tables comparing results](../results/Summary.md)
 
 Make some notes about anything specific
 
-* [link_to_notebook_or_script](00_Prepare_data.ipynb)
+* [link_to_code](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/00_Prepare_data.ipynb)
 
 Run some some analysis and visualise
 
