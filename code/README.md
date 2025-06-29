@@ -12,7 +12,7 @@ Make some notes about anything specific
 
 Run some some analysis and visualise
 
-* [link_to_summary_notebook](01_summarise.ipynb)
+* [link_to_analysis](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/feature_g20_analysis.md)
 
 
 ## Step 2: Initial Autoregression Models
