@@ -4,7 +4,7 @@ Our experiments are conducted over multiple stages, you can go
 through each of the notebooks. Or go straight to the markdown
 file that contains [tables comparing results](../results/Summary.md)
 
-## Step 1: Prepare the data.
+## Step 0: Prepare the data.
 
 Make some notes about anything specific
 
@@ -15,7 +15,7 @@ Run some some analysis and visualise
 * [link_to_analysis](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/feature_g20_analysis.md)
 
 
-## Step 2: Initial Autoregression Models
+## Step 1: Initial Autoregression Models
 
 Describe your baseline autoregressions models, i.e. input window size
 forecast window size etc.
