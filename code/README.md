@@ -8,12 +8,13 @@ file that contains [tables comparing results](../results/Summary.md)
 
 Make some notes about anything specific
 
-* [link_to_code](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/00_Prepare_data.ipynb)
+* [Code_of_preparing data](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/00_Prepare_data.ipynb)
 
 Run some some analysis and visualise
 
-* [link_to_analysis](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/feature_g20_analysis.md)
+* [Analysis of all features](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/feature_g20_analysis.md)
 
+* [Analysis of all features from year 1960](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/feature_g20_start_year_analysis.md)
 
 ## Step 1: Initial Autoregression Models
 
