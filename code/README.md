@@ -14,7 +14,7 @@ Run some some analysis and visualise
 
 * [Analysis of all features](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/feature_g20_analysis.md)
 
-* [Analysis of all features from year 1960](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/feature_g20_start_year_analysis.md)
+* [Analysis of all features from year 1965](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/feature_g20_start_year_analysis.md)
 
 ## Step 1: Initial Autoregression Models
 
