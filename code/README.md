@@ -23,9 +23,7 @@ forecast window size etc.
 
 * [Code_of_Autoregressive_model](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/01_Autoregressive.ipynb)
 
-* [link_to_notebook_or_script](02a_ARIMA_Models.ipynb)
-* [link_to_notebook_or_script](02b_VAR_Models.ipynb)
-* [link_to_notebook_or_script](02c_LSTM_Models.ipynb)
+* [Analysis_of_Autoregressive_models_on_target_variables](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/ar_summay.csv)
 
 
 ## Step 3: Multivariate Models with Exogenous Fetaures
