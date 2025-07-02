@@ -25,7 +25,7 @@ forecast window size etc.
 
 * [Analysis_of_Autoregressive_models_on_target_variables](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/ar_summay.csv)
 
-### Example plots of Autoregressive models
+### Example plots of Autoregressive model results
 
 * [United_States_on_co2](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/United%20States_co2_comparison.png)
 * [China_on_co2](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/China_co2_comparison.png)
