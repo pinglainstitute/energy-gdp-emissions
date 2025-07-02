@@ -27,9 +27,17 @@ forecast window size etc.
 
 ### Example plots of Autoregressive model results
 
-* [United_States_on_co2](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/United%20States_co2_comparison.png)
-* [China_on_co2](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/China_co2_comparison.png)
-* [Germany_on_co2](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/Germany_co2_comparison.png)
+* [United_States_on_co2](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/United%20States_co2_comparison.png)
+* [China_on_co2](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/China_co2_comparison.png)
+* [Germany_on_co2](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/Germany_co2_comparison.png)
+
+* [United_States_on_gdp](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/United%20States_gdp_comparison.png)
+* [China_on_gdp](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/China_gdp_comparison.png)
+* [Australia_on_gdp](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/Australia_gdp_comparison.png)
+
+* [United_States_on_energy](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/United%20States_primary_energy_consumption_comparison.png)
+* [China_on_energy](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/China_primary_energy_consumption_comparison.png)
+* [South_Korea_on_energy](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/South%20Korea_primary_energy_consumption_comparison.png)
 
 ## Step 3: Multivariate Models with Exogenous Fetaures
  
