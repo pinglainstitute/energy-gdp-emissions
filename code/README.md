@@ -21,6 +21,8 @@ Run some some analysis and visualise
 Describe your baseline autoregressions models, i.e. input window size
 forecast window size etc.
 
+* [Code_of_Autoregressive_model](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/01_Autoregressive.ipynb)
+
 * [link_to_notebook_or_script](02a_ARIMA_Models.ipynb)
 * [link_to_notebook_or_script](02b_VAR_Models.ipynb)
 * [link_to_notebook_or_script](02c_LSTM_Models.ipynb)
