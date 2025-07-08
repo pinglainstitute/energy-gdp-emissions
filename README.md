@@ -26,7 +26,7 @@ file that contains [tables comparing results](../results/Summary.md)
 Make some notes about anything specific
 * [Preparing data](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/00_Prepare_data.ipynb)
 
-Run some some analysis and visualise
+### Results
 * [Analysis of all features](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/feature_g20_analysis.md)
 * [Analysis of all features from year 1965](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/feature_g20_start_year_analysis.md)
 
