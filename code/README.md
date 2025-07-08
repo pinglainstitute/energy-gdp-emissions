@@ -40,7 +40,7 @@ forecast window size etc.
 * [South Korea on energy](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/South%20Korea_primary_energy_consumption_comparison.png)
 
 ## Step 2: Multivariate Models
-### Step 1: Statistical Analysis
+### Step 2-1: Statistical Analysis
 
 * [Statistical Analysis](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_01_Stats_Analysis.ipynb)
 ### Results
