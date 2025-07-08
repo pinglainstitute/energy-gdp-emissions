@@ -8,7 +8,7 @@ file that contains [tables comparing results](../results/Summary.md)
 
 Make some notes about anything specific
 
-* [Code_of_preparing data](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/00_Prepare_data.ipynb)
+* [Preparing data](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/00_Prepare_data.ipynb)
 
 Run some some analysis and visualise
 
@@ -21,23 +21,33 @@ Run some some analysis and visualise
 Describe your baseline autoregressions models, i.e. input window size
 forecast window size etc.
 
-* [Code_of_Autoregressive_model](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/01_Autoregressive.ipynb)
+* [Autoregressive model](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/01_Autoregressive.ipynb)
 
-* [Analysis_of_Autoregressive_models_on_target_variables](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/ar_summay.csv)
+* [Analysis of Autoregressive models on targets](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/ar_summay.csv)
 
 ### Example plots of Autoregressive model results
 
-* [United_States_on_co2](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/United%20States_co2_comparison.png)
-* [China_on_co2](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/China_co2_comparison.png)
-* [Germany_on_co2](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/Germany_co2_comparison.png)
+* [United States on co2](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/United%20States_co2_comparison.png)
+* [China on co2](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/China_co2_comparison.png)
+* [Germany on co2](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/Germany_co2_comparison.png)
 
-* [United_States_on_gdp](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/United%20States_gdp_comparison.png)
-* [China_on_gdp](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/China_gdp_comparison.png)
-* [Australia_on_gdp](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/Australia_gdp_comparison.png)
+* [United States on gdp](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/United%20States_gdp_comparison.png)
+* [China on gdp](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/China_gdp_comparison.png)
+* [Australia on gdp](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/Australia_gdp_comparison.png)
 
-* [United_States_on_energy](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/United%20States_primary_energy_consumption_comparison.png)
-* [China_on_energy](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/China_primary_energy_consumption_comparison.png)
-* [South_Korea_on_energy](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/South%20Korea_primary_energy_consumption_comparison.png)
+* [United States on energy](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/United%20States_primary_energy_consumption_comparison.png)
+* [China on energy](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/China_primary_energy_consumption_comparison.png)
+* [South Korea on energy](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/South%20Korea_primary_energy_consumption_comparison.png)
+
+## Step 2: Multivariate Models
+### Step 1: Statistical Analysis
+
+* [Statistical Analysis](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_01_Stats_Analysis.ipynb)
+### Results
+* [Plot for correlations](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/02_plots/01_stats_analysis/comparison_avg_abs_correlation.png)
+* [Plot for granger causality](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/02_plots/01_stats_analysis/comparison_granger_significance_rate.png)
+* [Plot for mutual information](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/02_plots/01_stats_analysis/comparison_avg_mutual_info.png)
+
 
 ## Step 3: Multivariate Models with Exogenous Fetaures
  
