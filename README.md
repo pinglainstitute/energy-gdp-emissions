@@ -35,7 +35,7 @@ Describe your baseline autoregressions models, i.e. input window size
 forecast window size etc.
 * [Autoregressive model](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/01_Autoregressive.ipynb)
 ### Results
-* [Analysis of Autoregressive models on targets](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/ar_summay.csv)
+* [Analysis of Autoregressive models on targets](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_results/ar_summay.csv)
 
 ### Example plots of Autoregressive model results
 * [United States on co2](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/United%20States_co2_comparison.png)
