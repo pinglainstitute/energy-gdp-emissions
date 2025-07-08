@@ -18,34 +18,26 @@ python version = 3.10.0
 required installs = req3.txt
 
 # Experiments
-
 Our experiments are conducted over multiple stages, you can go
 through each of the notebooks. Or go straight to the markdown
 file that contains [tables comparing results](../results/Summary.md)
 
 ## Step 0: Prepare the data.
-
 Make some notes about anything specific
-
 * [Preparing data](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/00_Prepare_data.ipynb)
 
 Run some some analysis and visualise
-
 * [Analysis of all features](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/feature_g20_analysis.md)
-
 * [Analysis of all features from year 1965](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/feature_g20_start_year_analysis.md)
 
 ## Step 1: Initial Autoregression Models
-
 Describe your baseline autoregressions models, i.e. input window size
 forecast window size etc.
-
 * [Autoregressive model](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/01_Autoregressive.ipynb)
-
+### Results
 * [Analysis of Autoregressive models on targets](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/ar_summay.csv)
 
 ### Example plots of Autoregressive model results
-
 * [United States on co2](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/United%20States_co2_comparison.png)
 * [China on co2](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/China_co2_comparison.png)
 * [Germany on co2](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/Germany_co2_comparison.png)
@@ -60,7 +52,6 @@ forecast window size etc.
 
 ## Step 2: Multivariate Models
 ### Step 2-1: Statistical Analysis
-
 * [Statistical Analysis](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_01_Stats_Analysis.ipynb)
 ### Results
 * [Plot for correlations](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/02_plots/01_stats_analysis/comparison_avg_abs_correlation.png)
