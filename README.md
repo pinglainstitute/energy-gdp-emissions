@@ -22,7 +22,7 @@ Our experiments are conducted over multiple stages, you can go
 through each of the notebooks. Or go straight to the markdown
 file that contains [tables comparing results](../results/Summary.md)
 
-## Step 0: Prepare the data.
+## Step 0: Data Preparation
 Make some notes about anything specific
 * [Preparing data](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/00_Prepare_data.ipynb)
 
