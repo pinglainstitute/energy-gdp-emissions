@@ -1,0 +1,24 @@
+feature,appears_in_targets,targets,avg_correlation,avg_granger_sig,avg_mi,regression_sig
+fossil_fuel_consumption,3,"['co2', 'gdp', 'primary_energy_consumption']",0.9207567512181396,0.47368421052631576,1.8180210679174025,3
+population,3,"['co2', 'gdp', 'primary_energy_consumption']",0.8774148451699557,0.6140350877192983,1.7022232881405166,3
+electricity_generation,3,"['co2', 'gdp', 'primary_energy_consumption']",0.8740560661173702,0.42105263157894735,1.3550246803344745,3
+gas_consumption,3,"['co2', 'gdp', 'primary_energy_consumption']",0.8472144174023356,0.4561403508771929,1.47557136202641,3
+energy_per_capita,3,"['co2', 'gdp', 'primary_energy_consumption']",0.8461106638408437,0.24561403508771928,1.5556213937596695,3
+coal_consumption,3,"['co2', 'gdp', 'primary_energy_consumption']",0.8326393096864996,0.3684210526315789,1.3703100298002038,3
+oil_consumption,3,"['co2', 'gdp', 'primary_energy_consumption']",0.8249968676518188,0.3508771929824561,1.4105469205033685,3
+low_carbon_consumption,3,"['co2', 'gdp', 'primary_energy_consumption']",0.8181555886692785,0.5087719298245613,1.2498054249943387,3
+renewables_consumption,3,"['co2', 'gdp', 'primary_energy_consumption']",0.7324837842010549,0.49122807017543857,1.0616574195605792,3
+co2_per_unit_energy,3,"['co2', 'gdp', 'primary_energy_consumption']",0.6618840898164485,0.2631578947368421,0.854494797548619,3
+nuclear_consumption,3,"['co2', 'gdp', 'primary_energy_consumption']",0.6064161656331383,0.2807017543859649,1.0126498517571052,3
+energy_per_gdp,3,"['co2', 'gdp', 'primary_energy_consumption']",0.6032244291838523,0.17543859649122806,1.0820251026468746,3
+solar_share_energy,3,"['co2', 'gdp', 'primary_energy_consumption']",0.5546612501254358,0.6140350877192983,0.3943909724108181,3
+wind_cons_change_twh,3,"['co2', 'gdp', 'primary_energy_consumption']",0.541044851667407,0.6666666666666666,0.3678516290878435,3
+hydro_consumption,3,"['co2', 'gdp', 'primary_energy_consumption']",0.5232551211285692,0.31578947368421045,0.7585005728091647,3
+oil_cons_change_pct,3,"['co2', 'gdp', 'primary_energy_consumption']",0.3576127007896863,0.15789473684210525,0.22757340523713268,3
+other_renewables_cons_change_twh,3,"['co2', 'gdp', 'primary_energy_consumption']",0.33060292339157676,0.3508771929824561,0.35204847323230254,3
+fossil_cons_change_pct,3,"['co2', 'gdp', 'primary_energy_consumption']",0.32055535116763884,0.14035087719298245,0.18048320012795513,3
+co2_growth_prct,3,"['co2', 'gdp', 'primary_energy_consumption']",0.3202339284892609,0.15789473684210525,0.1694713287269091,3
+renewables_cons_change_twh,3,"['co2', 'gdp', 'primary_energy_consumption']",0.29005110107181986,0.3333333333333333,0.2916766405365817,3
+gas_cons_change_pct,3,"['co2', 'gdp', 'primary_energy_consumption']",0.2801957346048143,0.10526315789473684,0.17733711714853326,3
+gas_prod_change_twh,3,"['co2', 'gdp', 'primary_energy_consumption']",0.26275225984378686,0.2807017543859649,0.2921479200798597,3
+fossil_cons_change_twh,3,"['co2', 'gdp', 'primary_energy_consumption']",0.2542645841340773,0.3333333333333333,0.24072012242829896,3
