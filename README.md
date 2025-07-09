@@ -66,6 +66,8 @@ forecast window size etc.
 * [Summary plot](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/02_plots/02_feature_screen/screening_summary.png)
 * [Feature heatmap](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/02_plots/02_feature_screen/screen_correlation_matrix.png)
 
+### Step 2-3: Univariate Model-Based Selection
+
 ## Step 3: Multivariate Models with Exogenous Fetaures
  
 Describe
