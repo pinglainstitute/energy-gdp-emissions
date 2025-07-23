@@ -50,7 +50,7 @@ forecast window size etc.
 * [China on energy](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/China_primary_energy_consumption_comparison.png)
 * [South Korea on energy](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_plots/South%20Korea_primary_energy_consumption_comparison.png)
 
-## Step 2: Multivariate Models
+## Step 2: Feature Engineering
 ### Step 2-1: Statistical Analysis
 * [Statistical Analysis](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_01_Stats_Analysis.ipynb)
 ### Results
