@@ -68,10 +68,13 @@ forecast window size etc.
 
 ### Step 2-3: Univariate Model-Based Selection
 * [Univariate Model-based comparison](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_03_Uni_Model_Selection.ipynb)
-   
+### Results
 * [Result Summary](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/02_results/uni_model_summary.csv)
-
 * [Filtered Overall Ranking for Features](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/02_results/overall_feature_ranking.csv)
+### Plots
+* [Australia Fossil Fuel Consumption - CO2](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/02_plots/03_univariate_models/uni_Australia_fossil_fuel_consumption_to_co2.png)
+* [China Electricity Generation - GDP](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/02_plots/03_univariate_models/uni_China_electricity_generation_to_gdp.png)
+* [United States Population - Energy](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/02_plots/03_univariate_models/uni_United%20States_population_to_primary_energy_consumption.png)
 
 ## Step 3: Multivariate Models with Exogenous Fetaures
  
