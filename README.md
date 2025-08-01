@@ -79,8 +79,14 @@ forecast window size etc.
  
 Describe
 
-* [link_to_notebook_or_script](03_Multivariate_Models.ipynb)
+* [Multivariate Models](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_Multi_Model.ipynb)
 
+### Results
+* [Analysis of 4 DeepLearning models for three targets](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/03_results/multivariate_summary.csv)
+### Plots
+* [US_co2](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/03_plots/multivariate_models/multi_United%20States_co2_all_models.png)
+* [China_gdp](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/03_plots/multivariate_models/multi_China_gdp_all_models.png)
+* [Australia_energy](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/03_plots/multivariate_models/multi_Australia_primary_energy_consumption_all_models.png)
 
 ## Step 4: Recursive Framework for Longer Predictions
 
