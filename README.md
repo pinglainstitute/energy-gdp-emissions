@@ -82,7 +82,7 @@ Describe
 * [Multivariate Models](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_Multi_Model.ipynb)
 
 ### Results
-* [Analysis of 4 DeepLearning models for three targets](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/03_results/multivariate_summary.csv)
+* [Analysis of four different DeepLearning models for three targets](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/03_results/multivariate_summary.csv)
 ### Plots
 * [US_co2](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/03_plots/multivariate_models/multi_United%20States_co2_all_models.png)
 * [China_gdp](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/03_plots/multivariate_models/multi_China_gdp_all_models.png)
