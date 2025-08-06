@@ -90,10 +90,17 @@ Describe
 
 ## Step 4: Recursive Framework for Longer Predictions
 
+* [Recursive Deep Learning Framework](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/04_Recursive.ipynb)
 
-* [link_to_notebook_or_script](04_Recursive.ipynb)
+### Plots
+* [United States-co2 comparion](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/04_plots/United%20States_co2_preds_actual.png)
+* [China - gdp comparison](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/04_plots/China_gdp_preds_actual.png)
+* [Australia - energy comparison](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/04_plots/Australia_primary_energy_consumption_preds_actual.png)
 
-
+### Plots for the limitation (error propagation)
+* [United States-co2](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/04_plots/United%20States_co2_expriments.png)
+* [China-gdp](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/04_plots/China_gdp_expriments.png)
+* [Australia-energy](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/04_plots/Australia_primary_energy_consumption_expriments.png)
 
 ## Step 5: Evaluation of Recursive Predictions
 
