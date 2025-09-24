@@ -1,0 +1,41 @@
+country,model_type,strategy,data_type,rmse,mase,n_predictions
+China,loco,non_recursive,actual,1496.2230976547492,4.157872560227036,9
+China,loco,recursive,actual,878.1973849149127,2.6316267067424475,9
+China,single,non_recursive,actual,1250.894117459658,3.789935978910362,9
+China,single,recursive,actual,3497.7800460705403,9.917159143658507,9
+Brazil,loco,non_recursive,actual,56.37118684486256,2.408495459910587,9
+Brazil,loco,recursive,actual,124.02496154243376,5.631221672848129,9
+Brazil,single,non_recursive,actual,94.06272615429059,3.8632862415011355,9
+Brazil,single,recursive,actual,279.8309445268604,12.206989987196023,9
+Russia,loco,non_recursive,actual,82.69199840273488,1.4401692265475174,9
+Russia,loco,recursive,actual,128.585607710904,2.305206264972079,9
+Russia,single,non_recursive,actual,132.2521118425808,2.269512137184377,9
+Russia,single,recursive,actual,144.33796672909918,2.525953995340748,9
+India,loco,non_recursive,actual,178.08504515743826,0.7977155272869438,9
+India,loco,recursive,actual,292.0531009205589,1.493116375556897,9
+India,single,non_recursive,actual,213.6866896876554,0.8737452367593126,9
+India,single,recursive,actual,620.1756273923078,3.3306536679975056,9
+Mexico,loco,non_recursive,actual,46.51191584326231,2.394817343217036,9
+Mexico,loco,recursive,actual,138.1555649984219,8.420316347331527,9
+Mexico,single,non_recursive,actual,28.9429876982866,1.5304951208360893,9
+Mexico,single,recursive,actual,29.116708198866355,1.6377297471654517,9
+Indonesia,loco,non_recursive,actual,48.16894505273671,1.1259740234381765,9
+Indonesia,loco,recursive,actual,53.53545521892831,1.236254350684589,9
+Indonesia,single,non_recursive,actual,80.57896862983677,1.8803181027529816,9
+Indonesia,single,recursive,actual,88.40554925515396,1.9437958109392934,9
+Turkey,loco,non_recursive,actual,33.617661734356865,1.5263169770051714,9
+Turkey,loco,recursive,actual,34.69948506785558,1.4692873566256128,9
+Turkey,single,non_recursive,actual,29.327375867961308,1.2943302248718047,9
+Turkey,single,recursive,actual,18.432666402422512,0.8191245201796608,9
+Saudi Arabia,loco,non_recursive,actual,166.624543170718,4.544792705510166,9
+Saudi Arabia,loco,recursive,actual,257.8592551385369,7.442002908883361,9
+Saudi Arabia,single,non_recursive,actual,48.85530493075774,1.2243976771499945,9
+Saudi Arabia,single,recursive,actual,146.03329234283765,4.05962425331443,9
+South Africa,loco,non_recursive,actual,32.347041689012435,1.7150559180325167,9
+South Africa,loco,recursive,actual,81.21203276023789,4.7133191215902235,9
+South Africa,single,non_recursive,actual,23.887645163942658,1.3476557210518945,9
+South Africa,single,recursive,actual,61.6321485500105,3.503577848314317,9
+Argentina,loco,non_recursive,actual,21.676414649017612,1.8772295163833101,9
+Argentina,loco,recursive,actual,11.941355465103634,1.0530367499298368,9
+Argentina,single,non_recursive,actual,18.95129545427279,1.8241940834301873,9
+Argentina,single,recursive,actual,29.295660111726175,2.797949138282216,9

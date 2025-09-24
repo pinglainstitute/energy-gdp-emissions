@@ -1,0 +1,37 @@
+country,model_type,strategy,data_type,rmse,mase,n_predictions
+United States,loco,non_recursive,actual,2106.3883063532603,9.964893649423818,9
+United States,loco,recursive,actual,5258.624858365961,25.434917258555068,9
+United States,single,non_recursive,actual,223.44396398787384,0.9789937107613392,9
+United States,single,recursive,actual,192.4474642693229,0.7913107353825315,9
+Japan,loco,non_recursive,actual,85.25214696258297,2.3041402546128658,9
+Japan,loco,recursive,actual,78.63816940913642,1.9364089053234566,9
+Japan,single,non_recursive,actual,89.23873044785124,2.1423555901851254,9
+Japan,single,recursive,actual,104.20752795383424,2.492155164934647,9
+Germany,loco,non_recursive,actual,49.73123434904476,1.2482469057286274,9
+Germany,loco,recursive,actual,54.32036042088503,1.3772243821183268,9
+Germany,single,non_recursive,actual,50.51063443403876,1.241947580647883,9
+Germany,single,recursive,actual,72.73136959720874,1.7624524086688342,9
+United Kingdom,loco,non_recursive,actual,21.812513700386308,0.8751048099290619,9
+United Kingdom,loco,recursive,actual,36.13916326680704,1.7661615192035887,9
+United Kingdom,single,non_recursive,actual,21.729091313017147,0.9000536006735171,9
+United Kingdom,single,recursive,actual,44.48598033436406,1.9745893325227513,9
+France,loco,non_recursive,actual,26.137727341129946,1.5787374259086426,9
+France,loco,recursive,actual,18.613406686812677,1.0743209552372728,9
+France,single,non_recursive,actual,21.74896843698447,1.136817485984964,9
+France,single,recursive,actual,15.845378992165289,0.8876344886679916,9
+Italy,loco,non_recursive,actual,31.63475062634993,1.6430672556333223,9
+Italy,loco,recursive,actual,33.426079292916455,1.7597720454204917,9
+Italy,single,non_recursive,actual,23.741035547399,1.2711675374600537,9
+Italy,single,recursive,actual,23.899263628981995,1.3935322156569951,9
+Canada,loco,non_recursive,actual,42.73196768654091,1.6585539339420283,9
+Canada,loco,recursive,actual,82.00085763786915,4.409123464378478,9
+Canada,single,non_recursive,actual,19.02539637698454,0.9374841303299296,9
+Canada,single,recursive,actual,30.617130890333712,1.772792711454806,9
+Australia,loco,non_recursive,actual,29.47830409591283,4.0703039141405375,9
+Australia,loco,recursive,actual,73.30397136407565,10.166200492638016,9
+Australia,single,non_recursive,actual,11.56943569647789,1.7668480303367375,9
+Australia,single,recursive,actual,14.363735587999964,2.264720429408646,9
+South Korea,loco,non_recursive,actual,18.95823836218197,0.7875388862409466,9
+South Korea,loco,recursive,actual,18.982448266431,0.7774229359676376,9
+South Korea,single,non_recursive,actual,47.27634888475949,1.9278908522244274,9
+South Korea,single,recursive,actual,119.35948557121252,4.825801775460509,9
