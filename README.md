@@ -59,7 +59,7 @@ Since the data contains 198 features, feature selection is needed
 
 Average Absolute Correlation with the features and their lags, Granger Causality, and Mutual Information for each target were tested.
 
-* [Statistical Analysis](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_01_Stats_Analysis.ipynb)
+* [02_01_Statistical Analysis](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_01_Stats_Analysis.ipynb)
   
 ### Results
 
@@ -71,21 +71,44 @@ These plots are the top 20 rankings on the scores for each statistical analysis.
 
 ### Step 2-2: Feature Screen
 
+Domain features were selected due to its theoretical importance.
 
+Feature-Feature correlation was applied to remove highly correlated features.
 
-* [Feature Screen](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_02_Feature_Screening.ipynb)
+OLS Regression was used to identify each feature's significance for each target and to remove less important features (threshold at 0.5).
+
+VIF was used to check any multicollinearity.
+
+* [02_02_Feature Screen](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_02_Feature_Screening.ipynb)
+  
 ### Results
+
+After filtering out the less important or highly correlated featrues, the summary and the diagonal heatmap shows the correlations of the features survived.
+
 * [Results after screen](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/02_results/screen_summary.csv)
+
 ### Plots
+
 * [Summary plot](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/02_plots/02_feature_screen/screening_summary.png)
 * [Feature heatmap](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/02_plots/02_feature_screen/screen_correlation_matrix.png)
 
 ### Step 2-3: Univariate Model-Based Selection
-* [Univariate Model-based comparison](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_03_Uni_Model_Selection.ipynb)
+
+Those survived features from the Step 2-2 were tested with univariate models (ARIMA and ML models described earlier).
+
+* [02_03_Univariate Model-based comparison](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_03_Uni_Model_Selection.ipynb)
+
 ### Results
+
+Combined the rankings of the performance of those models and the ranking of the average results were shown to identify the overall ranking of features.
+
 * [Result Summary](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/02_results/uni_model_summary.csv)
 * [Filtered Overall Ranking for Features](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/02_results/overall_feature_ranking.csv)
+  
 ### Plots
+
+These are the plots of predictions of models for the example countries.
+
 * [Australia Fossil Fuel Consumption - CO2](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/02_plots/03_univariate_models/uni_Australia_fossil_fuel_consumption_to_co2.png)
 * [China Electricity Generation - GDP](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/02_plots/03_univariate_models/uni_China_electricity_generation_to_gdp.png)
 * [United States Population - Energy](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/02_plots/03_univariate_models/uni_United%20States_population_to_primary_energy_consumption.png)
