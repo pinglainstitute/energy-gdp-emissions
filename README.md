@@ -102,6 +102,8 @@ Those survived features from the Step 2-2 were tested with univariate models (AR
 
 Combined the rankings of the performance of those models and the ranking of the average results were shown to identify the overall ranking of features.
 
+6 features were selected since the data for each country contain 39 samples. (The data has values for each year and the starting year was trimmed to 1965).
+
 * [Result Summary](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/02_results/uni_model_summary.csv)
 * [Filtered Overall Ranking for Features](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/02_results/overall_feature_ranking.csv)
   
@@ -115,20 +117,65 @@ These are the plots of predictions of models for the example countries.
 
 ## Step 3: Multivariate Models with Exogenous Fetaures
  
-Describe
+With the selected 6 features from the Step 2, simple multivariate models (LSTM, Bidirectional LSTM, Encoder-Decoder LSTM, CNN) were tested.
 
-* [Multivariate Models](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_Multi_Model.ipynb)
+These multivariate models feed in 5 window size (its time lag) and predict 1.
+
+* [03_Multivariate Models](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_Multi_Model.ipynb)
 
 ### Results
+
+The performance was tested with RMSE and MASE.
+
+Best performing model for CO2 was CNN, for GDP was Encoder-Decoder LSTM, and for Energy was Encoder-Decoder LSTM.
+
 * [Analysis of four different DeepLearning models for three targets](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/03_results/multivariate_summary.csv)
+  
 ### Plots
+
+These are the plots of example countries.
+
 * [US_co2](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/03_plots/multivariate_models/multi_United%20States_co2_all_models.png)
 * [China_gdp](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/03_plots/multivariate_models/multi_China_gdp_all_models.png)
 * [Australia_energy](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/03_plots/multivariate_models/multi_Australia_primary_energy_consumption_all_models.png)
 
-## Step 4: Recursive Framework for Longer Predictions
+## Step 4: Leaving-One-Country-Out model and Recursive Strategy
 
-* [Recursive Deep Learning Framework](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/04_Recursive.ipynb)
+Due to the lack of data on each country, some strategies were tested.
+
+- LOCO Model
+
+This LOCO model is training the ML model with either developed or developing countries from G20 (Except EU) but kept out one country's data and make predictions for the excluded country's target.
+
+This LOCO model was compared with the last 9 years of the Simple ML model which was trained with its own single country.
+
+All the models feed in 5 window size (its time lags) and predict 3 stpes each iteration.
+
+- The Recursive Strategy
+
+With this strategy, the model feeds in 5 window size for each iteration but the feed-in values are changed in order to satisfy the recursive strategy.
+
+Iter 0: It takes last 5 train values (train[:5]) -> predict 3 windows (predict[:3])
+
+Iter 1: It takes last 2 train values + predicted 3 values (train[:2] + predict[:3]) -> predict 3 windows (predict[3:6])
+
+Iter 2: It takes last 5 predict values (predict[1:6]) -> predict 3 windows (predict[6:9])
+
+* [04_01_LOCO_vs_Single](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/04_01_Loco_Single_dev.ipynb)
+
+### Results
+
+The non-recursive LOCO model on developed countries was performing better on more than a half of those countries.
+
+* [full_comparison_result](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/04_results/final/final_summary_table.csv)
+
+
+
+----------------------
+
+## Legacy experiment
+
+* [04_01_Recursive Deep Learning Framework](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/04_Recursive.ipynb)
 
 ### Plots
 * [United States-co2 comparion](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/04_plots/United%20States_co2_preds_actual.png)
