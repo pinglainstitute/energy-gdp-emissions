@@ -181,7 +181,7 @@ Due to its possibility of better performance than the simple model trained with 
 
 The LOCO model was trained with its own target values and their lags (for 18 countries, 1 country is to leave out)
 
-* [04_02_LOCO_vs_Single_one_target]()
+* [04_02_LOCO_vs_Single_one_target](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/04_02_Loco_Single_1tar_norm%20copy.ipynb)
 
 ### Results
 
