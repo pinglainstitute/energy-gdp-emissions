@@ -1,4 +1,4 @@
-# Note: This repo contains the legacy files for the CO2 Project. These experiments will not be used for the publications.
+# Note: This repo contains the legacy files for the CO2 Project. These experiments will not be used for the publication.
 
 # Energy, GDP and Carbon Emissions
 
