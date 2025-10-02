@@ -3,7 +3,6 @@
 Project looking at forecasting models incorporating multiple 
 related data sets.
 
-
 ### Resources
 
 * [Overleaf Paper Draft](https://www.overleaf.com/project/67a5fa2578743cc4a6c2bd95)
@@ -22,7 +21,9 @@ through each of the notebooks. Or go straight to the markdown
 file that contains [tables comparing results](../results/Summary.md)
 
 ## Step 0: Data Preparation
-Make some notes about anything specific
+Since CO2 and Energy data came from different raw data, they got merged and created time lagged (t-4) dataframe.
+Tailored year 1965 based on the reasonable data coverage for all features.
+
 * [Preparing data](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/00_Prepare_data.ipynb)
 
 ### Results
