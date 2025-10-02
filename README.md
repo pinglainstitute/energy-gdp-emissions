@@ -185,22 +185,78 @@ The LOCO model was trained with its own target values and their lags (for 18 cou
 
 ### Results
 
-
+* [One_target_results](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/04_results/1target/1target_summary_table.csv)
 
 ### Step 4-3: LOCO vs Single all target lags
 
 The LOCO model was trained with all three target values and their lags (for 18 countries, 1 country is to leave out)
 
-* [04_03_LOCO_vs_Single_all_target]()
+* [04_03_LOCO_vs_Single_all_target](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/04_03_Loco_Single_alltar_norm%20copy.ipynb)
 
 ### Results
 
-
+* [All_target_results](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/04_results/alltarget/final_summary_table.csv)
 
 ### Insight
 
 Generally, the performance on LOCO models for developed countries with all target lags performed better than Single Country Model but their variances were bigger. This was not applicable for Energy dataset.
 
+### Step 4-4: LOCO vs Single Breakdown
+
+When it comes to the performance of models predicting 3 windows, calculating the average rmse and mase of 3 predictions were used on previous steps.
+
+This step is to breakdown these calculations of average and identify the time series trend on which occasion performs well or poorly.
+
+This was tested only under a few conditions: developed countries, lstm and bilstm, and co2.
+
+* [04_04_LOCO_vs_Single_Breakdown](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/04_04_Loco_Single_breakdown%20copy.ipynb)
+
+### Results
+
+Since there were some countries (e.g. United States) have values oscillate, categorising the countries into two groups would not be the best option for the model to forecast.
+
+* [Breakdown_results](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/04_results/breakdown/developed/model_performance_summary.csv)
+
+### Step 5: Similarity and Clustering
+
+Correlation coefficients on target-to-target and Hierarchical clutsering were used to identify better groups to explain to the model.
+
+* [05_01_Similarity](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/05_01_Country_Correlation.ipynb)
+* [05_02_Clutering](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/05_02_Country_Clustering_LOCO.ipynb)
+
+### Results
+
+The similarity on target-to-target is shown with the heatmap.
+
+With the Elbow curve method, the best clustering number was 4.
+
+Hierarchical Clustering was shown with dendrogram and heatmap for each target.
+
+* [CO2_Similarity_result](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_01_country_correlation/co2_correlations.csv)
+* [GDP_Similarity_result](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_01_country_correlation/gdp_correlations.csv)
+* [Energy_Similarity_result](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_01_country_correlation/primary_energy_consumption_correlations.csv)
+
+### Plots
+
+*[CO2_heatmap](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_01_country_correlation/co2_correlation_heatmap.png)
+*[GDP_heatmap](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_01_country_correlation/gdp_correlation_heatmap.png)
+*[Energy_heatmap](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_01_country_correlation/primary_energy_consumption_correlation_heatmap.png)
+
+*[CO2_Elbow](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_02_clustering/co2_elbow_analysis.png)
+*[GDP_Elbow](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_02_clustering/gdp_elbow_analysis.png)
+*[Energy_Elbow](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_02_clustering/primary_energy_consumption_elbow_analysis.png)
+
+*[CO2_Dendrogram](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_02_clustering/co2_dendrogram.png)
+*[GDP_Dendrogram](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_02_clustering/gdp_dendrogram.png)
+*[Energy_Dendrogram](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_02_clustering/primary_energy_consumption_dendrogram.png)
+
+*[CO2_Heatmap](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_02_clustering/co2_clustered_heatmap.png)
+*[GDP_Heatmap](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_02_clustering/gdp_clustered_heatmap.png)
+*[Energy_Heatmap](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_02_clustering/primary_energy_consumption_clustered_heatmap.png)
+
+Since Russia contains the values from the Soviet Union, Russia was the only group has only its own country.
+
+Since some of the current developed countries such as South Korea were not developed countries in the earlier years, they were clutsered with other developed countries.
 
 ----------------------
 
@@ -209,11 +265,13 @@ Generally, the performance on LOCO models for developed countries with all targe
 * [04_01_Recursive Deep Learning Framework](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/04_Recursive.ipynb)
 
 ### Plots
+
 * [United States-co2 comparion](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/04_plots/United%20States_co2_preds_actual.png)
 * [China - gdp comparison](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/04_plots/China_gdp_preds_actual.png)
 * [Australia - energy comparison](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/04_plots/Australia_primary_energy_consumption_preds_actual.png)
 
 ### Plots for the limitation (error propagation)
+
 * [United States-co2](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/04_plots/United%20States_co2_expriments.png)
 * [China-gdp](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/04_plots/China_gdp_expriments.png)
 * [Australia-energy](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/04_plots/Australia_primary_energy_consumption_expriments.png)
