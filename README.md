@@ -238,21 +238,21 @@ Hierarchical Clustering was shown with dendrogram and heatmap for each target.
 
 ### Plots
 
-*[CO2_heatmap](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_01_country_correlation/co2_correlation_heatmap.png)
-*[GDP_heatmap](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_01_country_correlation/gdp_correlation_heatmap.png)
-*[Energy_heatmap](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_01_country_correlation/primary_energy_consumption_correlation_heatmap.png)
+* [CO2_heatmap](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_01_country_correlation/co2_correlation_heatmap.png)
+* [GDP_heatmap](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_01_country_correlation/gdp_correlation_heatmap.png)
+* [Energy_heatmap](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_01_country_correlation/primary_energy_consumption_correlation_heatmap.png)
 
-*[CO2_Elbow](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_02_clustering/co2_elbow_analysis.png)
-*[GDP_Elbow](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_02_clustering/gdp_elbow_analysis.png)
-*[Energy_Elbow](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_02_clustering/primary_energy_consumption_elbow_analysis.png)
+* [CO2_Elbow](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_02_clustering/co2_elbow_analysis.png)
+* [GDP_Elbow](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_02_clustering/gdp_elbow_analysis.png)
+* [Energy_Elbow](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_02_clustering/primary_energy_consumption_elbow_analysis.png)
 
-*[CO2_Dendrogram](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_02_clustering/co2_dendrogram.png)
-*[GDP_Dendrogram](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_02_clustering/gdp_dendrogram.png)
-*[Energy_Dendrogram](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_02_clustering/primary_energy_consumption_dendrogram.png)
+* [CO2_Dendrogram](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_02_clustering/co2_dendrogram.png)
+* [GDP_Dendrogram](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_02_clustering/gdp_dendrogram.png)
+* [Energy_Dendrogram](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_02_clustering/primary_energy_consumption_dendrogram.png)
 
-*[CO2_Heatmap](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_02_clustering/co2_clustered_heatmap.png)
-*[GDP_Heatmap](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_02_clustering/gdp_clustered_heatmap.png)
-*[Energy_Heatmap](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_02_clustering/primary_energy_consumption_clustered_heatmap.png)
+* [CO2_Heatmap](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_02_clustering/co2_clustered_heatmap.png)
+* [GDP_Heatmap](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_02_clustering/gdp_clustered_heatmap.png)
+* [Energy_Heatmap](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/05_results/05_02_clustering/primary_energy_consumption_clustered_heatmap.png)
 
 Since Russia contains the values from the Soviet Union, Russia was the only group has only its own country.
 
