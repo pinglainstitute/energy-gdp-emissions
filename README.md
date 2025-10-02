@@ -141,11 +141,17 @@ These are the plots of example countries.
 
 ## Step 4: Leaving-One-Country-Out model and Recursive Strategy
 
+### Step 4-1: LOCO vs Single
+
 Due to the lack of data on each country, some strategies were tested.
+
+Percentage change normalisation was applied for all model testing.
 
 - LOCO Model
 
 This LOCO model is training the ML model with either developed or developing countries from G20 (Except EU) but kept out one country's data and make predictions for the excluded country's target.
+
+These LOCO model was trained with its target value (for 18 countries, except 1 country to leave out).
 
 This LOCO model was compared with the last 9 years of the Simple ML model which was trained with its own single country.
 
@@ -169,6 +175,31 @@ The non-recursive LOCO model on developed countries was performing better on mor
 
 * [full_comparison_result](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/04_results/final/final_summary_table.csv)
 
+Due to its possibility of better performance than the simple model trained with its own country's data, there were some experiments proceeded.
+
+### Step 4-2: LOCO vs Single one target lags
+
+The LOCO model was trained with its own target values and their lags (for 18 countries, 1 country is to leave out)
+
+* [04_02_LOCO_vs_Single_one_target]()
+
+### Results
+
+
+
+### Step 4-3: LOCO vs Single all target lags
+
+The LOCO model was trained with all three target values and their lags (for 18 countries, 1 country is to leave out)
+
+* [04_03_LOCO_vs_Single_all_target]()
+
+### Results
+
+
+
+### Insight
+
+Generally, the performance on LOCO models for developed countries with all target lags performed better than Single Country Model but their variances were bigger. This was not applicable for Energy dataset.
 
 
 ----------------------
