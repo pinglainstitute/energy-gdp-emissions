@@ -22,18 +22,20 @@ file that contains [tables comparing results](../results/Summary.md)
 
 ## Step 0: Data Preparation
 Since CO2 and Energy data came from different raw data, they got merged and created time lagged (t-4) dataframe.
-Tailored year 1965 based on the reasonable data coverage for all features.
 
-* [Preparing data](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/00_Prepare_data.ipynb)
+Tailored data with the year 1965 based on the reasonable data coverage for all features.
+
+* [00_Preparing data](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/00_Prepare_data.ipynb)
 
 ### Results
 * [Analysis of all features](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/00_results/feature_g20_analysis.md)
 * [Analysis of all features from year 1965](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/00_results/feature_g20_start_year_analysis.md)
 
 ## Step 1: Initial Autoregression Models
-Describe your baseline autoregressions models, i.e. input window size
-forecast window size etc.
-* [Autoregressive model](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/01_Autoregressive.ipynb)
+Baseline autoregressive models (ARIMA, VAR(with its lags), LSTM, Bidirectional LSTM, Encoder-Decoder LSTM, CNN) were used to compare the performance on the data from year 1965.
+
+* [01_Autoregressive model](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/01_Autoregressive.ipynb)
+
 ### Results
 * [Analysis of Autoregressive models on targets](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/01_results/ar_summay.csv)
 
@@ -52,13 +54,25 @@ forecast window size etc.
 
 ## Step 2: Feature Engineering
 ### Step 2-1: Statistical Analysis
+
+Since the data contains 198 features, feature selection is needed
+
+Average Absolute Correlation with the features and their lags, Granger Causality, and Mutual Information for each target were tested.
+
 * [Statistical Analysis](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_01_Stats_Analysis.ipynb)
+  
 ### Results
+
+These plots are the top 20 rankings on the scores for each statistical analysis.
+
 * [Plot for correlations](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/02_plots/01_stats_analysis/comparison_avg_abs_correlation.png)
 * [Plot for granger causality](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/02_plots/01_stats_analysis/comparison_granger_significance_rate.png)
 * [Plot for mutual information](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/02_plots/01_stats_analysis/comparison_avg_mutual_info.png)
 
 ### Step 2-2: Feature Screen
+
+
+
 * [Feature Screen](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_02_Feature_Screening.ipynb)
 ### Results
 * [Results after screen](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/02_results/screen_summary.csv)
