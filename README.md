@@ -1,5 +1,7 @@
 # Energy, GDP and Carbon Emissions
 
+# Note: This repo contains the legacy files for the CO2 Project. These experiments will not be used for the publications.
+
 Project looking at forecasting models incorporating multiple 
 related data sets.
 
