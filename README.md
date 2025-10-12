@@ -59,3 +59,11 @@ The high correlation coefficient and low variability shows the reliability of th
 ### Plots
 
 * [Heatmap for lag correlation on CO2 for 3 countries](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_01_results/corr_co2_vs_lagged_features_combined.png)
+
+## Step 1-2: Feature Selection
+
+### Code
+
+### Results
+
+### Plots
