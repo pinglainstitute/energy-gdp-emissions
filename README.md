@@ -44,7 +44,12 @@ Last 9 years of data was split for test and analysed for the target variable (CO
 
 With lag correlation for target on GDP and Energy,
 
-the minimum correlation coefficient is 0.89 for all the features for all three countries.
+### Code
+* [Step 1-1 Data Analysis](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/01_01_Data_Analysis.ipynb)
+
+### Results
+
+the minimum correlation coefficient is ~ 0.846 for all the features for all three countries.
 
 the maximum std for energy - co2 for the US is 0.43.
 
@@ -52,9 +57,6 @@ The high correlation coefficient and low variability shows the reliability of th
 
 * + R2 and Granger causality were tested but should be considered to be added in the paper
 
-### Code
-* []()
-
-### Results
-
 ### Plots
+
+* [Heatmap for lag correlation on CO2 for 3 countries](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_01_results/corr_co2_vs_lagged_features_combined.png)
