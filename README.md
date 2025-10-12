@@ -40,7 +40,7 @@ There are multiple DataFrames created to serve any possible experiment purposes 
 * lag_df.csv could not be uploaded due to the size limit of github. However, this can be created by running the code.
 
 ## Step 1-1: Data Analysis
-Last 9 years of data was split for test and analysed for the target variable (CO2).
+Last 9 years of data was split for test and only the train data was analysed for the target variable (CO2).
 
 ### Code
 * [Step 1-1 Data Analysis](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/01_01_Data_Analysis.ipynb)
