@@ -79,3 +79,7 @@ When HHI value gets lower, this implies that the share amount of resources are m
 ### Results
 
 ### Plots
+
+* [Energy mix trends (%)]()
+
+* 
