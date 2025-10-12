@@ -47,6 +47,8 @@ Last 9 years of data was split for test and only the train data was analysed for
 
 ### Results
 
+* [Corr Coef table for CO2 vs GDP and Energy](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_01_results/lag_corr_table_co2_vs_features.md)
+
 With lag correlation for target on GDP and Energy,
 
 the minimum correlation coefficient is ~ 0.846 for all the features for all three countries.
@@ -80,6 +82,6 @@ When HHI value gets lower, this implies that the share amount of resources are m
 
 ### Plots
 
-* [Energy mix trends (%)]()
+* [Energy mix trends (%)](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_02_results/energy_mix_trends.png)
 
 * 
