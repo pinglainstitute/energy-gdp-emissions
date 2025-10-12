@@ -37,7 +37,7 @@ Applying time lags for Auto-Regressive models train
 ### Results
 There are multiple DataFrames created to serve any possible experiment purposes [data folder](https://github.com/pinglainstitute/energy-gdp-emissions/tree/main/data)
 
-* lag_df.csv could not be uploaded due to the size limit of github. However, this can be created by running the code.
+* `lag_df.csv` could not be uploaded due to the size limit of github. However, this can be created by running the code.
 
 ## Step 1-1: Data Analysis
 Last 9 years of data was split for test and only the train data was analysed for the target variable (CO2).
@@ -56,7 +56,7 @@ the minimum correlation coefficient is ~ 0.846 for all the features for all thre
 the maximum std for energy - co2 for the US is 0.43.
 
 The high correlation coefficient and low variability shows the reliability of the features and their consistency.
-* ! R2 and Granger causality were tested but should be considered to be added in the paper
+* ! `R2` and `Granger causality` were tested but should be considered to be added in the paper
 
 ### Plots
 
