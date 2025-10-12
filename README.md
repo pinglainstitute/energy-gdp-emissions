@@ -54,8 +54,7 @@ the minimum correlation coefficient is ~ 0.846 for all the features for all thre
 the maximum std for energy - co2 for the US is 0.43.
 
 The high correlation coefficient and low variability shows the reliability of the features and their consistency.
-
-* + R2 and Granger causality were tested but should be considered to be added in the paper
+* ! R2 and Granger causality were tested but should be considered to be added in the paper
 
 ### Plots
 
