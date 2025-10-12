@@ -33,10 +33,12 @@ Preprocessing techniques:
 
 * Applying time lags for Auto-Regressive models train
 
+* [Step 0 Data Preparation](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/00_Data_Preparation.ipynb)
+
 ### Results
-There are multiple DataFrames created to serve any possible experiment purposes [data folder]()
+There are multiple DataFrames created to serve any possible experiment purposes [data folder](https://github.com/pinglainstitute/energy-gdp-emissions/tree/main/data)
 
 * lag_df.csv could not be uploaded due to the size limit of github. However, this can be created by running the code.
 
-### Plots
+
 
