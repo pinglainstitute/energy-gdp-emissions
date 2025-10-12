@@ -25,14 +25,13 @@ file that contains [tables comparing results](../results/Summary.md)
 ## Step 0: Data Preparation
 Since there are resources from two different repo and files, data were pre-processed to be used for our experiments.
 
-The available energy data was from the year 1965, also with time lag = 4, the start year for the data was changed to 1969.
+The available energy data was from the year 1965, also with time lag = 4, the start year for the data was changed to 1969. There were two preprocessing techniques:
 
-Preprocessing techniques:
+Merging and excluding duplicates
 
-* Merging and excluding duplicates
+Applying time lags for Auto-Regressive models train
 
-* Applying time lags for Auto-Regressive models train
-
+### Code
 * [Step 0 Data Preparation](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/00_Data_Preparation.ipynb)
 
 ### Results
