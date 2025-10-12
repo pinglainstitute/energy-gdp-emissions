@@ -82,7 +82,7 @@ When HHI value gets lower, this implies that the share amount of resources are m
 
 ### Results
 
-New dataframe created [train_3_hhi_detail_fossil.csv](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/train_3_hhi_detail_fossil.csv)
+New dataframe [train_3_hhi_detail_fossil.csv](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/train_3_hhi_detail_fossil.csv) was created to add HHI values and their lags
 
 Correlation results
 
