@@ -19,8 +19,7 @@ required installs = req3.txt
 
 # Experiments
 Our experiments are conducted over multiple stages, you can go
-through each of the notebooks. Or go straight to the markdown
-file that contains [tables comparing results](../results/Summary.md)
+through each of the notebooks below.
 
 ## Step 0: Data Preparation
 Since CO2 and Energy data came from different raw data, they got merged and created time lagged (t-4) dataframe.
