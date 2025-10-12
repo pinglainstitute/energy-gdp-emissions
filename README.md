@@ -78,20 +78,27 @@ When HHI value gets lower, this implies that the share amount of resources are m
 
 ### Code
 
-* [Step 1-2 Feature Selection]()
+* [Step 1-2 Feature Selection](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/01_02_Feature_Selection.ipynb)
 
 ### Results
 
-New dataframe created [train_3_hhi_detail_fossil.csv]()
+New dataframe created [train_3_hhi_detail_fossil.csv](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/train_3_hhi_detail_fossil.csv)
 
 Correlation results
 
-* In total []()
+* [Corr coef CO2 vs features in total](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_02_results/hhi_correlation_total.md)
 
-* For each country []()
+* [Corr coef Co2 vs features for each country](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_02_results/hhi_correlation_by_country.md)
 
 ### Plots
 
 * [Energy mix trends (%)](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_02_results/energy_mix_trends.png)
 
-* 
+* [Heatmap of CO2 vs Energy mix % in total](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_02_results/hhi_correlation_energy_prop_total.png)
+
+* [Heatmap of CO2 vs Energy mix % by country](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_02_results/hhi_correlation_energy_prop_by_country.png)
+
+* [Heatmaps of CO2 vs HHI Energy in total](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_02_results/hhi_heatmaps_total.png)
+
+* [Heatmaps of CO2 vs HHI Energy by country](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_02_results/hhi_heatmaps_by_country.png)
+
