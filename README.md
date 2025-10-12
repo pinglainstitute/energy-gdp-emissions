@@ -69,9 +69,9 @@ Since the proportions are in percent values, when the value is close to 10,000, 
 
 When HHI value gets lower, this implies that the share amount of resources are more diversified.
 
-* "hhi_detailed": HHI of total energy for all energy resources. Decrease in the value indicates that the country's attempts to diversify the energy resources.
+* ==hhi_detailed==: HHI of total energy for all energy resources. Decrease in the value indicates that the country's attempts to diversify the energy resources.
 
-* "hhi_fossil": HHI of total fossil-resource energy. Since there are different intensities on different resources and it helps to distinguish different-resource-heavy nations.
+* ==hhi_fossil==: HHI of total fossil-resource energy. Since there are different intensities on different resources and it helps to distinguish different-resource-heavy nations.
 
 
 ### Code
