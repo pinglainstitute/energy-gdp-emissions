@@ -78,7 +78,17 @@ When HHI value gets lower, this implies that the share amount of resources are m
 
 ### Code
 
+* [Step 1-2 Feature Selection]()
+
 ### Results
+
+New dataframe created [train_3_hhi_detail_fossil.csv]()
+
+Correlation results
+
+* In total []()
+
+* For each country []()
 
 ### Plots
 
