@@ -15,7 +15,7 @@ related data sets.
 
 python version = 3.10.0
 
-required installs = requirements.txt
+required libraries to install = [requirements.txt](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/requirements.txt)
 
 # Experiments
 Our experiments are conducted over multiple stages, you can go
