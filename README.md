@@ -42,12 +42,12 @@ There are multiple DataFrames created to serve any possible experiment purposes 
 ## Step 1-1: Data Analysis
 Last 9 years of data was split for test and analysed for the target variable (CO2).
 
-With lag correlation for target on GDP and Energy,
-
 ### Code
 * [Step 1-1 Data Analysis](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/01_01_Data_Analysis.ipynb)
 
 ### Results
+
+With lag correlation for target on GDP and Energy,
 
 the minimum correlation coefficient is ~ 0.846 for all the features for all three countries.
 
