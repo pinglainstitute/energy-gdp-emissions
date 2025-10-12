@@ -108,7 +108,7 @@ The negative correlation coefficients imply though there was a decrease in HHI (
 
 * [Heatmaps of CO2 vs HHI Energy by country](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_02_results/hhi_heatmaps_by_country.png)
 
-HHI indicates relative composition. .... lets check CO2 per capita
+The negative corr coef along with the increase in CO2 emission imply that population needs to be considered since the increase in HHI would have a possibility of decrease in CO2 per capita.
 
 ## Step 2
 
