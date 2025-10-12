@@ -1,5 +1,3 @@
-# Note: This repo contains the legacy files for the CO2 Project. These experiments will not be used for the publication.
-
 # Energy, GDP and Carbon Emissions
 
 Project looking at forecasting models incorporating multiple 
@@ -37,6 +35,8 @@ Preprocessing techniques:
 
 ### Results
 There are multiple DataFrames created to serve any possible experiment purposes [data folder]()
+
+* lag_df.csv could not be uploaded due to the size limit of github. However, this can be created by running the code.
 
 ### Plots
 
