@@ -27,11 +27,11 @@ Since CO2 and Energy data came from different raw data, they got merged and crea
 
 Tailored data with the year 1965 based on the reasonable data coverage for all features.
 
-* [00_Preparing data](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/00_Prepare_data.ipynb)
+* [00_Preparing data](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/legacy/code/00_Prepare_data.ipynb)
 
 ### Results
-* [Analysis of all features](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/00_results/feature_g20_analysis.md)
-* [Analysis of all features from year 1965](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/results/00_results/feature_g20_start_year_analysis.md)
+* [Analysis of all features](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/legacy/results/00_results/feature_g20_analysis.md)
+* [Analysis of all features from year 1965](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/legacy/results/00_results/feature_g20_start_year_analysis.md)
 
 ## Step 1: Initial Autoregression Models
 Baseline autoregressive models (ARIMA, VAR(with its lags), LSTM, Bidirectional LSTM, Encoder-Decoder LSTM, CNN) were used to compare the performance on the data from year 1965.
