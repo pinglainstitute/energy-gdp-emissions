@@ -110,5 +110,7 @@ The negative correlation coefficients imply though there was a decrease in HHI (
 
 The negative corr coef along with the increase in CO2 emission imply that population needs to be considered since the increase in HHI would have a possibility of decrease in CO2 per capita.
 
+! After experimenting co2_per_capita and co2_intensity as a target in the notebook, HHI has meaningful correlations for each country but HHI for India has a strongly negative corr coeff. (probably due to the economic development)
+
 ## Step 2
 
