@@ -61,6 +61,16 @@ The high correlation coefficient and low variability shows the reliability of th
 * [Heatmap for lag correlation on CO2 for 3 countries](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_01_results/corr_co2_vs_lagged_features_combined.png)
 
 ## Step 1-2: Feature Selection
+Proportions of resources are included, Herfindahl-Hirschmann Index and its lags are added to the features.
+
+Herfindahl-Hirschmann Index
+
+Since the proportions are in percent values, when the value is close to 10,000, this indicates that the countries are highly dependent on one energy type.
+
+When HHI value gets lower, this implies that the share amount of resources are more diversified.
+
+* 'hhi_total'
+
 
 ### Code
 
