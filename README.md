@@ -1,4 +1,4 @@
-# Energy, GDP and Carbon Emissions for US, Chiina, India
+# Energy, GDP and Carbon Emissions for US, China, India
 
 Project looking at forecasting models incorporating multiple 
 related data sets.
