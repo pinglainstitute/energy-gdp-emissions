@@ -1,0 +1,49 @@
+Data_Type,Method,Strategy,Model,Target,Country_Group,Avg_RMSE,Median_RMSE,Max_RMSE,Min_RMSE,Max_RMSE_Country,Min_RMSE_Country,Avg_MASE,N_Countries
+All Country (LOCO),Autoregressive - 4 lags,Non-Recursive,Bi-LSTM,Co2,Developed,87.6678,38.7477,318.6221,18.2959,United States,France,2.3890,9
+Single Country,Autoregressive - 4 lags,Non-Recursive,Bi-LSTM,Co2,Developed,97.0214,66.8123,268.4606,21.7989,Japan,Italy,2.6376,9
+All Country (LOCO),Autoregressive - 4 lags,Non-Recursive,CNN,Co2,Developed,86.6680,48.4373,284.8415,23.1004,United States,Canada,2.3754,9
+Single Country,Autoregressive - 4 lags,Non-Recursive,CNN,Co2,Developed,78.5796,38.7060,324.5745,20.0382,United States,France,1.8494,9
+All Country (LOCO),Autoregressive - 4 lags,Non-Recursive,ED-LSTM,Co2,Developed,70.6753,39.0572,227.3119,16.8482,United States,Australia,1.8455,9
+Single Country,Autoregressive - 4 lags,Non-Recursive,ED-LSTM,Co2,Developed,84.5938,40.3409,324.1987,21.8176,United States,Italy,2.2059,9
+All Country (LOCO),Autoregressive - 4 lags,Non-Recursive,LSTM,Co2,Developed,72.1432,42.5165,312.9802,16.0987,United States,Australia,1.7384,9
+Single Country,Autoregressive - 4 lags,Non-Recursive,LSTM,Co2,Developed,86.9244,37.6264,278.1737,25.0694,United States,France,2.0097,9
+All Country (LOCO),Autoregressive - 4 lags,Non-Recursive,Bi-LSTM,Co2,Developing,253.5418,102.9929,939.8145,18.8744,China,Argentina,4.3391,10
+Single Country,Autoregressive - 4 lags,Non-Recursive,Bi-LSTM,Co2,Developing,219.4070,109.4179,1199.3113,23.3822,China,South Africa,2.8617,10
+All Country (LOCO),Autoregressive - 4 lags,Non-Recursive,CNN,Co2,Developing,384.6000,70.2668,2001.6357,22.0774,Saudi Arabia,Argentina,6.0575,10
+Single Country,Autoregressive - 4 lags,Non-Recursive,CNN,Co2,Developing,142.0570,84.6566,605.2141,19.5052,China,Argentina,2.2188,10
+All Country (LOCO),Autoregressive - 4 lags,Non-Recursive,ED-LSTM,Co2,Developing,238.3485,74.4331,1448.6100,23.6083,China,Argentina,3.0187,10
+Single Country,Autoregressive - 4 lags,Non-Recursive,ED-LSTM,Co2,Developing,136.1791,67.6745,497.1533,16.4581,China,South Africa,2.2940,10
+All Country (LOCO),Autoregressive - 4 lags,Non-Recursive,LSTM,Co2,Developing,236.4546,81.9644,1352.2698,21.3113,China,Argentina,3.1379,10
+Single Country,Autoregressive - 4 lags,Non-Recursive,LSTM,Co2,Developing,162.4738,96.9446,473.6933,22.3407,China,South Africa,2.7575,10
+All Country (LOCO),Autoregressive - 4 lags,Non-Recursive,Bi-LSTM,Gdp,Developed,297170194803.1837,148430663214.3520,960322756309.6439,77777125041.3040,United States,Canada,2.3825,9
+Single Country,Autoregressive - 4 lags,Non-Recursive,Bi-LSTM,Gdp,Developed,293750886355.7975,201897536529.5560,1089761252223.6268,65665239046.4810,United States,Australia,2.5142,9
+All Country (LOCO),Autoregressive - 4 lags,Non-Recursive,CNN,Gdp,Developed,199147378029.3712,125707831213.7007,469092492111.6915,64262625746.5987,United States,Canada,1.8367,9
+Single Country,Autoregressive - 4 lags,Non-Recursive,CNN,Gdp,Developed,215378757726.6673,153798893990.9051,769874779027.6267,58296291300.0689,United States,Australia,1.8467,9
+All Country (LOCO),Autoregressive - 4 lags,Non-Recursive,ED-LSTM,Gdp,Developed,166087917689.7992,126788740100.9266,444067250969.3824,74796897861.4260,United States,Australia,1.4878,9
+Single Country,Autoregressive - 4 lags,Non-Recursive,ED-LSTM,Gdp,Developed,231293168239.1852,168891651614.6657,618397348952.9727,53936380724.3111,United States,Australia,2.2120,9
+All Country (LOCO),Autoregressive - 4 lags,Non-Recursive,LSTM,Gdp,Developed,265932319570.1812,119410338462.7057,796921548356.8276,61890589333.3984,Japan,South Korea,1.9227,9
+Single Country,Autoregressive - 4 lags,Non-Recursive,LSTM,Gdp,Developed,211667253611.4115,150555083725.0369,740506498936.0735,57159951594.0018,United States,Australia,1.7441,9
+All Country (LOCO),Autoregressive - 4 lags,Non-Recursive,Bi-LSTM,Gdp,Developing,761748868310.4152,400153339602.5695,2629932398644.6641,86705545818.9912,China,Argentina,5.2160,10
+Single Country,Autoregressive - 4 lags,Non-Recursive,Bi-LSTM,Gdp,Developing,412466492067.9069,323706246314.5334,1081142151595.0870,48030770138.1489,China,Argentina,3.0568,10
+All Country (LOCO),Autoregressive - 4 lags,Non-Recursive,CNN,Gdp,Developing,1401545753183.0090,387513849789.9197,8944657417618.8887,94082024988.0319,Saudi Arabia,Argentina,10.5310,10
+Single Country,Autoregressive - 4 lags,Non-Recursive,CNN,Gdp,Developing,286359036776.7272,243256276369.3632,626898194757.1775,47366434207.9845,Russia,Argentina,2.2533,10
+All Country (LOCO),Autoregressive - 4 lags,Non-Recursive,ED-LSTM,Gdp,Developing,562519745710.6738,356301993648.1248,2009661682214.4348,78891478879.7524,China,South Africa,3.7791,10
+Single Country,Autoregressive - 4 lags,Non-Recursive,ED-LSTM,Gdp,Developing,301475765162.3174,227129322064.4227,797831907826.6964,50940868512.4946,Russia,Argentina,2.6358,10
+All Country (LOCO),Autoregressive - 4 lags,Non-Recursive,LSTM,Gdp,Developing,1731149012742.6982,411283067681.8657,12548864094179.5586,70694926822.1045,Saudi Arabia,Argentina,13.2946,10
+Single Country,Autoregressive - 4 lags,Non-Recursive,LSTM,Gdp,Developing,374807817948.5321,283189499753.9465,1228730779899.6736,63078626479.9632,China,Turkey,2.8385,10
+All Country (LOCO),Autoregressive - 4 lags,Non-Recursive,Bi-LSTM,Primary Energy Consumption,Developed,487.0660,134.2917,2032.8823,67.4780,United States,Australia,2.4784,9
+Single Country,Autoregressive - 4 lags,Non-Recursive,Bi-LSTM,Primary Energy Consumption,Developed,269.3355,181.2230,890.0330,39.0271,United States,Australia,1.4947,9
+All Country (LOCO),Autoregressive - 4 lags,Non-Recursive,CNN,Primary Energy Consumption,Developed,347.4765,126.3787,1386.3936,43.1806,United States,Australia,1.8071,9
+Single Country,Autoregressive - 4 lags,Non-Recursive,CNN,Primary Energy Consumption,Developed,234.3048,166.2108,863.9020,37.6974,United States,Australia,1.2505,9
+All Country (LOCO),Autoregressive - 4 lags,Non-Recursive,ED-LSTM,Primary Energy Consumption,Developed,343.2420,128.3569,1118.6771,47.3702,Japan,Australia,1.7789,9
+Single Country,Autoregressive - 4 lags,Non-Recursive,ED-LSTM,Primary Energy Consumption,Developed,239.1696,158.6023,979.2483,41.3279,United States,Australia,1.2995,9
+All Country (LOCO),Autoregressive - 4 lags,Non-Recursive,LSTM,Primary Energy Consumption,Developed,297.7189,156.1557,1190.0994,47.2708,United States,Australia,1.4660,9
+Single Country,Autoregressive - 4 lags,Non-Recursive,LSTM,Primary Energy Consumption,Developed,233.9823,161.4365,1009.0662,38.3113,United States,Australia,1.2402,9
+All Country (LOCO),Autoregressive - 4 lags,Non-Recursive,Bi-LSTM,Primary Energy Consumption,Developing,907.4236,318.9159,3801.5253,97.9748,China,Argentina,4.3384,10
+Single Country,Autoregressive - 4 lags,Non-Recursive,Bi-LSTM,Primary Energy Consumption,Developing,599.0482,270.6235,3023.1657,52.0189,China,South Africa,2.2685,10
+All Country (LOCO),Autoregressive - 4 lags,Non-Recursive,CNN,Primary Energy Consumption,Developing,1348.9855,405.1257,6971.5306,98.3744,China,Argentina,5.5257,10
+Single Country,Autoregressive - 4 lags,Non-Recursive,CNN,Primary Energy Consumption,Developing,398.9282,226.3664,1758.4122,62.2071,China,South Africa,1.6112,10
+All Country (LOCO),Autoregressive - 4 lags,Non-Recursive,ED-LSTM,Primary Energy Consumption,Developing,927.4464,438.6345,4360.0488,84.1600,China,Argentina,4.1833,10
+Single Country,Autoregressive - 4 lags,Non-Recursive,ED-LSTM,Primary Energy Consumption,Developing,511.4579,307.8978,1646.3974,64.1871,China,South Africa,2.2076,10
+All Country (LOCO),Autoregressive - 4 lags,Non-Recursive,LSTM,Primary Energy Consumption,Developing,892.3530,376.6131,5522.9133,89.7849,China,Argentina,3.0450,10
+Single Country,Autoregressive - 4 lags,Non-Recursive,LSTM,Primary Energy Consumption,Developing,445.6292,290.6616,1712.1947,57.3511,China,South Africa,1.7829,10

@@ -1,0 +1,49 @@
+Target,Model,Country_Group,Strategy,LOCO_Avg_RMSE,Single_Avg_RMSE,Better_Method,Improvement_Pct
+Co2,Bi-LSTM,Developed,Non-Recursive,158.9157,75.2877,Single Country,111.0781
+Co2,Bi-LSTM,Developed,Recursive,225.1034,118.4069,Single Country,90.1101
+Co2,Bi-LSTM,Developing,Non-Recursive,697.9248,207.0007,Single Country,237.1606
+Co2,Bi-LSTM,Developing,Recursive,1007.1874,288.9001,Single Country,248.6283
+Co2,CNN,Developed,Non-Recursive,268.0139,56.4760,Single Country,374.5629
+Co2,CNN,Developed,Recursive,628.2277,68.6619,Single Country,814.9579
+Co2,CNN,Developing,Non-Recursive,216.2318,192.1439,Single Country,12.5364
+Co2,CNN,Developing,Recursive,200.0264,491.5041,LOCO,59.3032
+Co2,ED-LSTM,Developed,Non-Recursive,76.0758,67.6317,Single Country,12.4854
+Co2,ED-LSTM,Developed,Recursive,105.7332,107.6101,LOCO,1.7441
+Co2,ED-LSTM,Developing,Non-Recursive,1086.2180,275.5552,Single Country,294.1926
+Co2,ED-LSTM,Developing,Recursive,1115.3865,460.4853,Single Country,142.2198
+Co2,LSTM,Developed,Non-Recursive,198.1621,75.0182,Single Country,164.1522
+Co2,LSTM,Developed,Recursive,470.6821,102.1767,Single Country,360.6550
+Co2,LSTM,Developing,Non-Recursive,440.7974,321.8587,Single Country,36.9537
+Co2,LSTM,Developing,Recursive,859.3689,410.6440,Single Country,109.2735
+Gdp,Bi-LSTM,Developed,Non-Recursive,456072249326.1144,317555366285.0385,Single Country,43.6198
+Gdp,Bi-LSTM,Developed,Recursive,1965248204082.9866,530221396686.1625,Single Country,270.6467
+Gdp,Bi-LSTM,Developing,Non-Recursive,995662557841.5424,495429878085.9465,Single Country,100.9694
+Gdp,Bi-LSTM,Developing,Recursive,1856373551027.6821,763336599841.6692,Single Country,143.1920
+Gdp,CNN,Developed,Non-Recursive,135481863109.2368,183572616422.3469,LOCO,26.1971
+Gdp,CNN,Developed,Recursive,306261761637.4584,299211852556.7201,Single Country,2.3562
+Gdp,CNN,Developing,Non-Recursive,660833578704.2253,362388337832.3008,Single Country,82.3551
+Gdp,CNN,Developing,Recursive,967923811541.5608,654150094940.7665,Single Country,47.9666
+Gdp,ED-LSTM,Developed,Non-Recursive,288051732154.8627,183965675017.3365,Single Country,56.5791
+Gdp,ED-LSTM,Developed,Recursive,1213082418491.8174,274784194417.3871,Single Country,341.4673
+Gdp,ED-LSTM,Developing,Non-Recursive,419648414678.9023,432950387637.5753,LOCO,3.0724
+Gdp,ED-LSTM,Developing,Recursive,890272235069.4963,732899270171.4698,Single Country,21.4727
+Gdp,LSTM,Developed,Non-Recursive,361307650004.8494,197855843175.8687,Single Country,82.6116
+Gdp,LSTM,Developed,Recursive,791745655606.0225,308022313772.0791,Single Country,157.0417
+Gdp,LSTM,Developing,Non-Recursive,570098697686.7512,346419965890.6243,Single Country,64.5687
+Gdp,LSTM,Developing,Recursive,1035634504152.8528,579014599571.2878,Single Country,78.8616
+Primary Energy Consumption,Bi-LSTM,Developed,Non-Recursive,597.6854,276.6053,Single Country,116.0788
+Primary Energy Consumption,Bi-LSTM,Developed,Recursive,772.9390,408.9280,Single Country,89.0159
+Primary Energy Consumption,Bi-LSTM,Developing,Non-Recursive,1577.7398,884.9200,Single Country,78.2918
+Primary Energy Consumption,Bi-LSTM,Developing,Recursive,2517.9368,2193.8265,Single Country,14.7737
+Primary Energy Consumption,CNN,Developed,Non-Recursive,329.1939,256.2566,Single Country,28.4626
+Primary Energy Consumption,CNN,Developed,Recursive,438.0886,312.5914,Single Country,40.1474
+Primary Energy Consumption,CNN,Developing,Non-Recursive,1995.4280,708.4098,Single Country,181.6770
+Primary Energy Consumption,CNN,Developing,Recursive,3060.6076,1612.2499,Single Country,89.8346
+Primary Energy Consumption,ED-LSTM,Developed,Non-Recursive,314.7176,440.8519,LOCO,28.6115
+Primary Energy Consumption,ED-LSTM,Developed,Recursive,523.5269,649.1899,LOCO,19.3569
+Primary Energy Consumption,ED-LSTM,Developing,Non-Recursive,2179.7042,798.0026,Single Country,173.1450
+Primary Energy Consumption,ED-LSTM,Developing,Recursive,2935.5422,1007.0624,Single Country,191.4956
+Primary Energy Consumption,LSTM,Developed,Non-Recursive,1813.0390,227.7169,Single Country,696.1811
+Primary Energy Consumption,LSTM,Developed,Recursive,2665.7325,278.2137,Single Country,858.1600
+Primary Energy Consumption,LSTM,Developing,Non-Recursive,914.2739,684.1772,Single Country,33.6311
+Primary Energy Consumption,LSTM,Developing,Recursive,1844.1039,1463.6700,Single Country,25.9918

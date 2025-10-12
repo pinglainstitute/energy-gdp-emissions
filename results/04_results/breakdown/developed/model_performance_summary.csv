@@ -1,7 +1,0 @@
-name,strategy,avg_rmse,min_rmse,max_rmse,min_rmse_country,max_rmse_country
-co2_build_lstm_developed,loco,80.43832792286236,17.872329451525577,266.7109458253433,Australia,United States
-co2_build_lstm_developed,single,102.49731780204856,12.767711051211355,367.4065486656958,Italy,United States
-co2_build_bilstm_developed,loco,86.94136817671139,20.52939713159113,358.42492950108345,Italy,United States
-co2_build_bilstm_developed,single,123.86007818182584,15.649317924912127,428.2760075851296,France,Japan
-co2_build_bilstm_developed,loco,98.45110459354747,21.42154396234172,343.29090910157873,France,United States
-co2_build_bilstm_developed,single,87.6917949327177,15.386324047329936,330.50006779033293,France,United States
