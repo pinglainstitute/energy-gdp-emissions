@@ -113,7 +113,7 @@ The negative corr coef along with the increase in CO2 emission imply that popula
 ! After experimenting co2_per_capita and co2_intensity as a target in the notebook, HHI has meaningful correlations for each country but HHI for India has a strongly negative corr coeff. (probably due to the economic development)
 
 ## Step 2
-Experiment run on ARIMA and ARIMAX models.
+Experiments run on ARIMA and ARIMAX models.
 
 ARIMA methods were tested with Auto ARIMA (testing on differencing order), Manual ARIMA, Baseline ARIMA (1, 1, 1).
 
