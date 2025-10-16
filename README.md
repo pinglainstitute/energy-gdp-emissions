@@ -20,7 +20,7 @@ required libraries to install = [requirements.txt](https://github.com/pinglainst
 # Experiments
 Our experiments are conducted over multiple stages, you can go
 through each of the notebooks. Or go straight to the markdown
-file that contains [tables comparing results](example)
+file that contains [result not added yet](example)
 
 ## Step 0: Data Preparation
 Since there are resources from two different repo and files, data were pre-processed to be used for our experiments.
