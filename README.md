@@ -67,14 +67,11 @@ Proportions of resources are included, Herfindahl-Hirschmann Index and its lags 
 
 Herfindahl-Hirschmann Index
 
-Since the proportions are in percent values, when the value is close to 10,000, this indicates that the countries are highly dependent on one energy type.
-
-When HHI value gets lower, this implies that the share amount of resources are more diversified.
+This has a range (0, 1). Value close to 1 indicates high level of concentration of one resource/category. Value close to 0 indicates that the resources are diversifed.
 
 * `hhi_detailed`: HHI of total energy for all energy resources. Decrease in the value indicates that the country's attempts to diversify the energy resources.
 
 * `hhi_fossil`: HHI of total fossil-resource energy. Since there are different intensities on different resources and it helps to distinguish different-resource-heavy nations.
-
 
 ### Code
 
@@ -90,7 +87,9 @@ Correlation results
 
 * [Corr coef Co2 vs features for each country](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_02_results/hhi_correlation_by_country.md)
 
-The negative correlation coefficients imply though there was a decrease in HHI (diverification in resources), CO2 emission increased. Which means the energy consumption kept increasing along with resource diversification
+The negative correlation coefficients imply though there was a decrease in HHI (diverification in resources), CO2 emission increased. Which means the energy consumption kept increasing along with resource diversification.
+
+In the notebook, additional experiments, targetting on CO2 per capita and Carbon intensity (based on kaya indentity) were tested. However, the results had bias. Also, even if the results were acceptable, since the main target should be CO2, an additional forecast would be required. This will lead to an error propagation
 
 ### Plots
 
