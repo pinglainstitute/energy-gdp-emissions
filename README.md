@@ -113,7 +113,7 @@ The negative corr coef along with the increase in CO2 emission imply that popula
 
 ## Step 1-3: Feature Normalisation and its Correlations
 
-Due to the merits on Stationarity and Normalisation on scale, the actual values (lags) of features were normalised into percent change from the previous year.
+Due to the benefits of stationarity and normalisation on scale for time series, the actual values (lags) of features were normalised into percent change from the previous year.
 
 The Correlations of the pct_change features (lags) with CO2 were calculated and represented as tables and heatmaps.
 
