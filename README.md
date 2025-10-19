@@ -111,16 +111,48 @@ The negative corr coef along with the increase in CO2 emission imply that popula
 
 ! After experimenting co2_per_capita and co2_intensity as a target in the notebook, HHI has meaningful correlations for each country but HHI for India has a strongly negative corr coeff. (probably due to the economic development)
 
+## Step 1-3: Feature Normalisation and its Correlations
+
+Due to the merits on Stationarity and Normalisation on scale, the actual values (lags) of features were normalised into percent change from the previous year.
+
+The Correlations of the pct_change features (lags) with CO2 were calculated and represented as tables and heatmaps.
+
+### Code
+
+* [Step 1-3 Correlations pct change](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/01_03_Feature_pct_change.ipynb)
+
+### Results
+
+* [Correlations of pct change in production features](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_03_results/production_correlation.md)
+
+* [Correlations of pct change in consumption features](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_03_results/consumption_correlation.md)
+
+* [Correlations of pct change in share features](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_03_results/share_correlation.md)
+
+### Plots
+
+* [Heatmaps of pct change in production features](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_03_results/production_heatmap.png)
+
+* [Heatmaps of pct change in consumption features](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_03_results/consumption_heatmap.png)
+
+* [Heatmaps of pct change in share features](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_03_results/share_heatmap.png)
+
 ## Step 2
 Experiments run on ARIMA and ARIMAX models.
 
-ARIMA methods were tested with Auto ARIMA (testing on differencing order), Manual ARIMA, Baseline ARIMA (1, 1, 1).
+ARIMA methods were tested with Auto ARIMA (tested on fixing or freeing differencing order), Manual ARIMA, Baseline ARIMA (1, 1, 1).
 
 ### Code
 * [Step 2-1 Autoregressive](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_01_AutoRegressive.ipynb)
 
 ### Results
 * [ARIMA summary result](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_01_results/arima_method_summary.md)
+
+The Best order for the US was (0, 1, 0) Auto ARIMA with fixing d order
+
+The Best order for China was (0, 2, 0) Auto ARIMA with fixing d order
+
+The Best order for India was (1, 1, 1) Baseline ARIMA
 
 ### Plots
 * [Forecast on test data](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_01_results/arima_optimal_forecasts.png)
