@@ -131,6 +131,9 @@ The first years of each feature's pct_change lag4 are set to 0 due to the lack o
 
 * [Correlations of pct change in share features](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_03_results/share_correlation.md)
 
+From the result of share features, nuclear energy share is the most consistent feature in CO2 reduction. US (-0.57, -0.6), China (-0.25, -0.28) except lag4, and India (-0.08, -0.18).
+
+
 ### Plots
 
 * [Heatmaps of pct change in production features](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_03_results/production_heatmap.png)
