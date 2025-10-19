@@ -117,6 +117,8 @@ Due to the merits on Stationarity and Normalisation on scale, the actual values 
 
 The Correlations of the pct_change features (lags) with CO2 were calculated and represented as tables and heatmaps.
 
+The first years of each feature's pct_change lag4 are set to 0 due to the lack of previous data.
+
 ### Code
 
 * [Step 1-3 Correlations pct change](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/01_03_Feature_pct_change.ipynb)
