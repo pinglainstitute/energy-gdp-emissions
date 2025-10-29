@@ -162,4 +162,27 @@ The Best order for India was (1, 1, 1) Baseline ARIMA
 ### Plots
 * [Forecast on test data](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_01_results/arima_optimal_forecasts.png)
 
+## Step 2-2
+Comparison between Best ARIMA results and Deep Learning methods.
+
+### Code
+* [Step 2-2](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_02_Univariate_DL_models.ipynb)
+
+### Results
+* [Baseline model comparison](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/baseline_model_comparison.md)
+
+The best model for each country is presented as a table in the result link.
+
+DL models are forecasting in the similar way as ARIMA model (predicting 1 output for each)
+
+Mild hyper-parameter tuning was conducted but the training but there is an issue.
+
+### Plots
+* [US plot](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/United_States_baseline_model_comparison.png)
+
+* [China plot](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/China_baseline_model_comparison.png)
+
+* [India plot](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/India_baseline_model_comparison.png)
+
+
 
