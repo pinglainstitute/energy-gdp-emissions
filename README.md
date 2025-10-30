@@ -184,7 +184,7 @@ Mild hyper-parameter tuning was conducted but the training but there is an issue
 
 * [India plot](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/India_baseline_model_comparison.png)
 
-## Step 2-2
+## Step 2-3
 Comparison of ARIMAX (ARIMA with exogenous variables)
 
 ### Code
