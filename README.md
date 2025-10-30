@@ -190,4 +190,27 @@ Comparison of ARIMAX (ARIMA with exogenous variables)
 ### Code
 * [Step 2-3 ARIMAX](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_03_ARIMAX.ipynb)
 
+## Step 3-1
+Comparison of correlation coefficients: percent change normalised features vs target for 3 countries, 3 countries + G7, G20
 
+### Code
+* [Step 3-1 Feature Selections](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_01_Feature_Selections.ipynb)
+
+### Results
+Best 7 features from the selected 3 countries:
+
+cumulative_luc_co2, cumulative_oil_co2, population, cumulative_co2, electricity_demand, share_of_temperature_change_from_ghg, share_global_cumulative_cement_co2
+
+Best 6 features from G7 + selected 3 countries:
+
+cumulative_oil_co2, cumulative_co2, cumulative_cement_co2, cumulative_co2_including_luc, cumulative_gas_co2, cumulative_luc_co2
+
+Best 5 features from G20 countries:
+
+cumulative_oil_co2, cumulative_oil_co2, cumulative_cement_co2, population, cumulative_gas_co2
+
+* [Overall Correlations for 3 Countries](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/overall_3_countries_ranking.md)
+
+* [Overall Correlations for 3 Countries + G7](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/overall_g7_countries_ranking.md)
+
+* [Overall Correlations for G20](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/overall_g20_countries_ranking.md)
