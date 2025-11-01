@@ -182,11 +182,11 @@ ARIMA uses original values of the data.
 The best model for each country is presented as a table in the result link.
 
 ### Plots
-* [US plot](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/United_States_baseline_model_comparison.png)
+* [Baseline model plots for the US](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/United_States_baseline_model_comparison.png)
 
-* [China plot](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/China_baseline_model_comparison.png)
+* [Baseline model plots for China](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/China_baseline_model_comparison.png)
 
-* [India plot](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/India_baseline_model_comparison.png)
+* [Baseline model plots for India](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/India_baseline_model_comparison.png)
 
 ## Step 2-3
 Comparison of ARIMAX (ARIMA with exogenous variables)
