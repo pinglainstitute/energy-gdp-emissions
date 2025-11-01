@@ -6,4 +6,7 @@ statsmodels
 scipy
 scikit-learn
 pmdarima
-tensorflow
+tensorflow-macos
+jupyter
+ipykernel
+tabulate
