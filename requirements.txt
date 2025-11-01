@@ -2,6 +2,7 @@ pandas
 numpy
 matplotlib
 seaborn
-statsmodel
+statsmodels
 scipy
-sklearn
+scikit-learn
+pmdarima
