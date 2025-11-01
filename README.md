@@ -163,7 +163,15 @@ The Best order for India was (1, 1, 1) Baseline ARIMA
 * [Forecast on test data](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_01_results/arima_optimal_forecasts.png)
 
 ## Step 2-2
-Comparison between Best ARIMA results and Deep Learning methods.
+Baseline models comparison.
+
+Model comparison among ARIMA with best order for each country and Univariate DL models.
+
+The baseline DL models are LSTM, Bidirectional LSTM, Encoder-Decoder LSTM, CNN.
+
+All DL models use percent change normalisation for the data and prediction. Denormlising the predictions and Calculating metrics to compare with ARIMA.
+
+ARIMA uses original values of the data.
 
 ### Code
 * [Step 2-2 Baseline Models](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_02_Univariate_DL_models.ipynb)
@@ -172,10 +180,6 @@ Comparison between Best ARIMA results and Deep Learning methods.
 * [Baseline model comparison](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/baseline_model_comparison.md)
 
 The best model for each country is presented as a table in the result link.
-
-DL models are forecasting in the similar way as ARIMA model (predicting 1 output for each)
-
-Mild hyper-parameter tuning was conducted but the training but there is an issue.
 
 ### Plots
 * [US plot](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/United_States_baseline_model_comparison.png)
@@ -191,6 +195,8 @@ Comparison of ARIMAX (ARIMA with exogenous variables)
 * [Step 2-3 ARIMAX](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_03_ARIMAX.ipynb)
 
 ## Step 3-1
+This feature selection step is to identify which features to choose for the multivariate DL models.
+
 Comparison of correlation coefficients: percent change normalised features vs target for 3 countries, 3 countries + G7, G20
 
 ### Code
