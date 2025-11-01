@@ -6,3 +6,4 @@ statsmodels
 scipy
 scikit-learn
 pmdarima
+tensorflow
