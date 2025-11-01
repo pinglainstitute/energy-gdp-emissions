@@ -6,21 +6,22 @@
 
 - **Input**: 5 year steps of CO2 data
 - **Output**: Forecast 1 year step
-- **Forecasting Strategy for DL models**: Recursive taken to compare with ARIMA
+- **Normalisation**: DL models using pct change from the previous year normalisation, ARIMA with original values
+- **Forecasting Strategy for DL models**: Single-step prediction for each time step
 - **Test Period**: 9 years
 
 ## RMSE Results by Model and Country
 
 | Model   |   China |   India |   United States |
 |:--------|--------:|--------:|----------------:|
-| ARIMA   |  429.38 |   99.1  |          356.26 |
-| LSTM    | 5430.47 | 1379.38 |          607.75 |
-| Bi-LSTM | 5556.95 | 1551.54 |          569.43 |
-| ED-LSTM | 6162.63 | 1629.54 |          243.62 |
-| CNN     | 2699.29 |  491.65 |          622.25 |
+| ARIMA   |  287.36 |  160.46 |          232.4  |
+| LSTM    |  526.39 |  133.89 |          234.61 |
+| Bi-LSTM |  541.55 |  132.13 |          244.77 |
+| ED-LSTM |  518.92 |  131.33 |          237.92 |
+| CNN     |  571.25 |  139.4  |          243.94 |
 
 ## Best Model Per Country (by RMSE)
 
-- **United States**: ED-LSTM (RMSE: 243.62, MASE: 0.9545)
-- **China**: ARIMA (RMSE: 429.38, MASE: 1.4815)
-- **India**: ARIMA (RMSE: 99.10, MASE: 0.5976)
+- **United States**: ARIMA (RMSE: 232.40, MASE: 0.9175)
+- **China**: ARIMA (RMSE: 287.36, MASE: 0.8804)
+- **India**: ED-LSTM (RMSE: 131.33, MASE: 0.6357)
