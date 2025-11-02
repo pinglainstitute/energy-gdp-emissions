@@ -142,13 +142,19 @@ From the result of share features, nuclear energy share is the most consistent f
 
 * [Heatmaps of pct change in share features](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_03_results/share_heatmap.png)
 
-## Step 2
-Experiments run on ARIMA and ARIMAX models.
+## Step 2-1
+Building baseline model with ARIMA
 
-ARIMA methods were tested with Auto ARIMA (tested on fixing or freeing differencing order), Manual ARIMA, Baseline ARIMA (1, 1, 1).
+**ARIMA workflow**:
+ADF test to check stationarity (p_value < 0.05) -> ACF, PACF testing to determine p, q -> Gridsearch to determine the optimal order (AIC)
+
+-> Auto ARIMA search -> model comparison (Baseline(1, 1, 1), Manual Grid Search, Auto ARIMA (fixed d), Auto ARIMA (free d))
+
+**Forecast workflow**:
+train data for each country -> train ARIMA once -> fit the model -> predict each test year individually
 
 ### Code
-* [Step 2-1 Autoregressive](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_01_AutoRegressive.ipynb)
+* [Step 2-1 Baseline ARIMA](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_01_Baseline_ARIMA.ipynb)
 
 ### Results
 * [ARIMA summary result](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_01_results/arima_method_summary.md)
@@ -163,18 +169,30 @@ The Best order for India was (1, 1, 1) Baseline ARIMA
 * [Forecast on test data](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_01_results/arima_optimal_forecasts.png)
 
 ## Step 2-2
-Baseline models comparison.
-
-Model comparison among ARIMA with best order for each country and Univariate DL models.
+Building baseline DL models and comparison with baseline ARIMA.
 
 The baseline DL models are LSTM, Bidirectional LSTM, Encoder-Decoder LSTM, CNN.
 
-All DL models use percent change normalisation for the data and prediction. Denormlising the predictions and Calculating metrics to compare with ARIMA.
+**The workflow**:
+
+raw data -> pct change normalisation -> combine all countries' pct_change data -> fit one StandardScaler
+
+-> make sequences(5 input windows, 1 output window) -> stack all sequences for each country -> train each model on this data
+
+**Evaluation workflow**:
+
+for each country, use train+test -> pct_change -> scaling with the same StandardScaler we used before -> create sequences
+
+-> extract sequences to predict test data -> inverse scaling -> denormalise -> calculate metrics
+
+**Errors for each single step** were calculated in the middle of the code
+
+The comparison with the baseline ARIMA (Best optimal order for each country) was presented at the end
 
 ARIMA uses original values of the data.
 
 ### Code
-* [Step 2-2 Baseline Models](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_02_Univariate_DL_models.ipynb)
+* [Step 2-2 Baseline DL Models](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_02_Baseline_DL_models.ipynb)
 
 ### Results
 * [Baseline model comparison](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/baseline_model_comparison.md)
