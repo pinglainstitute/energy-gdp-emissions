@@ -15,13 +15,13 @@
 | Model   |   China |   India |   United States |
 |:--------|--------:|--------:|----------------:|
 | ARIMA   |  287.36 |  160.46 |          232.4  |
-| LSTM    |  526.39 |  133.89 |          234.61 |
-| Bi-LSTM |  541.55 |  132.13 |          244.77 |
-| ED-LSTM |  518.92 |  131.33 |          237.92 |
-| CNN     |  571.25 |  139.4  |          243.94 |
+| LSTM    |  329.05 |  128.5  |          274.44 |
+| Bi-LSTM |  336.28 |  135.43 |          269.61 |
+| ED-LSTM |  390.44 |  123.15 |          368.84 |
+| CNN     |  338.61 |  145.98 |          277.43 |
 
 ## Best Model Per Country (by RMSE)
 
 - **United States**: ARIMA (RMSE: 232.40, MASE: 0.9175)
 - **China**: ARIMA (RMSE: 287.36, MASE: 0.8804)
-- **India**: ED-LSTM (RMSE: 131.33, MASE: 0.6357)
+- **India**: ED-LSTM (RMSE: 123.15, MASE: 0.6422)
