@@ -9,11 +9,11 @@
 | United States | Baseline (1,1,1)     | (1, 1, 1) |  368.395  |  298.165  | nan     |
 | United States | Auto ARIMA (fixed d) | (0, 1, 0) |  356.259  |  286.951  | 574.158 |
 | United States | Auto ARIMA (free d)  | (0, 1, 0) |  356.259  |  286.951  | 574.158 |
-| United States | Manual Grid Search   | (2, 4, 2) |  557.711  |  392.192  | nan     |
+| United States | Manual Grid Search   | (2, 4, 2) |  557.7    |  392.184  | nan     |
 | China         | Baseline (1,1,1)     | (1, 1, 1) |  497.839  |  426.659  | nan     |
 | China         | Auto ARIMA (fixed d) | (0, 2, 0) |  429.382  |  372.257  | 572.211 |
 | China         | Auto ARIMA (free d)  | (0, 2, 0) |  429.382  |  372.257  | 572.211 |
-| China         | Manual Grid Search   | (2, 4, 2) | 2066.09   | 1926.98   | nan     |
+| China         | Manual Grid Search   | (2, 4, 2) | 2066.1    | 1926.99   | nan     |
 | India         | Baseline (1,1,1)     | (1, 1, 1) |   99.1002 |   79.5966 | nan     |
 | India         | Auto ARIMA (fixed d) | (0, 2, 1) |  107.012  |   83.4386 | 398.843 |
 | India         | Auto ARIMA (free d)  | (0, 2, 1) |  107.012  |   83.4386 | 398.843 |
@@ -26,7 +26,7 @@
 | Auto ARIMA (fixed d) | 297.551 |  169.013 |
 | Auto ARIMA (free d)  | 297.551 |  169.013 |
 | Baseline (1,1,1)     | 321.778 |  203.416 |
-| Manual Grid Search   | 932.204 | 1000.66  |
+| Manual Grid Search   | 932.204 | 1000.67  |
 
 ## Best Performing Method Per Country
 
