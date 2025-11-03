@@ -15,7 +15,7 @@ related data sets.
 
 python version = 3.10.19
 
-required libraries to install = [requirements.txt](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/requirements.txt)
+required libraries to install: [requirements.txt](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/requirements.txt)
 
 The requirements.txt is based on arm64 macos, make sure to change the libraries depending on your environment.
 
