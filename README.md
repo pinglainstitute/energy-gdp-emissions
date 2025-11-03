@@ -225,6 +225,8 @@ Comparison of correlation coefficients: percent change normalised features vs ta
 ### Results
 Most of the best features for three different correlations include cumulative resource co2. However, cumulative co2 features should be excluded to use, due to the circular dependency with co2.
 
+Also any features related to temperature were excluded since the causality is in the other direction co2 -> temperature
+
 The exogenouse varialbes we could include:
 
 for example of 3 countries, 
