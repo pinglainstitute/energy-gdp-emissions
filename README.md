@@ -242,7 +242,7 @@ for example of 3 countries,
 ## Step 3-2
 Building ARIMAX to see the forecasts with other exogenous variables
 
-Initially, variables to use were ['gdp', 'primary_energy_consumption', 'population'] from the feature selection step.
+Initially, variables to use were `gdp`, `primary_energy_consumption`, `population` from the feature selection step.
 
 ### Code
 * [Step 3-2 ARIMAX](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_02_ARIMAX.ipynb)
