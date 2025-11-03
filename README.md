@@ -206,11 +206,11 @@ The best model for each country is presented as a table in the result link.
 
 * [Baseline model plots for India](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/India_baseline_model_comparison.png)
 
-## Step 2-3
-Comparison of ARIMAX (ARIMA with exogenous variables)
+`## Step 2-3`
+`Comparison of ARIMAX (ARIMA with exogenous variables)`
 
-### Code
-* [Step 2-3 ARIMAX](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_03_ARIMAX.ipynb)
+`### Code`
+`* [Step 2-3 ARIMAX](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_03_ARIMAX.ipynb)`
 
 ## Step 3-1
 This feature selection step is to identify which features to choose for the multivariate DL models.
@@ -238,3 +238,18 @@ cumulative_oil_co2, cumulative_oil_co2, cumulative_cement_co2, population, cumul
 * [Overall Correlations for 3 Countries + G7](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/overall_g7_countries_ranking.md)
 
 * [Overall Correlations for G20](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/overall_g20_countries_ranking.md)
+
+## Step 3-2
+Building ARIMAX to see the forecasts with other exogenous variables
+
+Initially, variables to use were ['gdp', 'primary_energy_consumption', 'population'] from the feature selection step.
+
+### Code
+* [Step 3-2 ARIMAX](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_02_ARIMAX.ipynb)
+
+### Result
+Before running ARIMAX, stationary test was conducted for each country.
+
+`population` was not stationary for all the countries, due to the monotonic increase in value.
+
+All the additiona variables for India were not stationary with the optimal ARIMA differencing order. It suggests to use ARIMA for India.
