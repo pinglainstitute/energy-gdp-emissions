@@ -7,6 +7,7 @@ scipy
 scikit-learn
 pmdarima
 tensorflow-macos
+tensorflow-metal
 jupyter
 ipykernel
 tabulate
