@@ -215,6 +215,8 @@ The best model for each country is presented as a table in the result link.
 ## Step 3-1
 This feature selection step is to identify which features to choose for the multivariate DL models.
 
+Data coverage threshold set to 80% to filter out any features do not meet the threshold.
+
 Comparison of correlation coefficients: percent change normalised features vs target for 3 countries, 3 countries + G7, G20
 
 ### Code
