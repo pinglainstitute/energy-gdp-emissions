@@ -221,9 +221,9 @@ Comparison of correlation coefficients: percent change normalised features vs ta
 * [Step 3-1 Feature Selections](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_01_Feature_Selections.ipynb)
 
 ### Results
-Best 7 features from the selected 3 countries:
+Best 6 features from the selected 3 countries:
 
-cumulative_luc_co2, cumulative_oil_co2, population, cumulative_co2, electricity_demand, share_of_temperature_change_from_ghg, share_global_cumulative_cement_co2
+cumulative_luc_co2, cumulative_oil_co2, population, cumulative_co2, share_of_temperature_change_from_ghg, share_global_cumulative_cement_co2
 
 Best 6 features from G7 + selected 3 countries:
 
