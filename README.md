@@ -244,7 +244,9 @@ for example of 3 countries,
 ## Step 3-2
 Building ARIMAX to see the forecasts with other exogenous variables
 
-Initially, variables to use were `gdp`, `primary_energy_consumption`, `population` from the feature selection step.
+Initially, variables to use were `primary_energy_consumption`, `gdp`, `population`, `electricity_demand`, `oil_production`,
+
+`nuclear_consumption`, `wind_consumption`, `biofuel_consumption`, `energy_per_gdp` from the feature selection step.
 
 ### Code
 * [Step 3-2 ARIMAX](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_02_ARIMAX.ipynb)
@@ -252,6 +254,8 @@ Initially, variables to use were `gdp`, `primary_energy_consumption`, `populatio
 ### Result
 Before running ARIMAX, stationary test was conducted for each country.
 
-`population` was not stationary with the optimal differencing order for all the countries, due to the monotonic increase in value.
+We can see only `gdp`, `primary_energy_consumption`, `nuclear_consumption` are stationary with d=1 for the US.
 
-All the additiona variables for India were not stationary with the optimal ARIMA differencing order. It suggests to use ARIMA for India.
+Those features in the US and, addtionally, `oil_production`, `energy_per_gdp`, `biofuel_consumption` are stationary with d=2 for China.
+
+None of the features were stationary with the optimal ARIMA differencing order for India. For India, only ARIMA is usable.
