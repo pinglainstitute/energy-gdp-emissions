@@ -223,17 +223,13 @@ Comparison of correlation coefficients: percent change normalised features vs ta
 * [Step 3-1 Feature Selections](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_01_Feature_Selections.ipynb)
 
 ### Results
-Best 6 features from the selected 3 countries:
+Most of the best features for three different correlations include cumulative resource co2. However, cumulative co2 features should be excluded to use, due to the circular dependency with co2.
 
-cumulative_luc_co2, cumulative_oil_co2, population, cumulative_co2, share_of_temperature_change_from_ghg, share_global_cumulative_cement_co2
+The exogenouse varialbes we could include:
 
-Best 6 features from G7 + selected 3 countries:
+for example of 3 countries, `oil_production` (mean of absolute corr: 0.29-0.36), `nuclear_consumption` (mean of absolute corr: 0.20-0.33),
 
-cumulative_oil_co2, cumulative_co2, cumulative_cement_co2, cumulative_co2_including_luc, cumulative_gas_co2, cumulative_luc_co2
-
-Best 5 features from G20 countries:
-
-cumulative_oil_co2, cumulative_oil_co2, cumulative_cement_co2, population, cumulative_gas_co2
+`wind_consumption` (mean of absolute corr: 0.27-0.32), `biofuel_consumption` (mean of absolute corr: 0.35-0.47), `energy_per_gdp` (mean of absolute corr: 0.27-0.29)
 
 * [Overall Correlations for 3 Countries](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/overall_3_countries_ranking.md)
 
@@ -252,6 +248,6 @@ Initially, variables to use were ['gdp', 'primary_energy_consumption', 'populati
 ### Result
 Before running ARIMAX, stationary test was conducted for each country.
 
-`population` was not stationary for all the countries, due to the monotonic increase in value.
+`population` was not stationary with the optimal differencing order for all the countries, due to the monotonic increase in value.
 
 All the additiona variables for India were not stationary with the optimal ARIMA differencing order. It suggests to use ARIMA for India.
