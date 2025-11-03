@@ -227,9 +227,11 @@ Most of the best features for three different correlations include cumulative re
 
 The exogenouse varialbes we could include:
 
-for example of 3 countries, `oil_production` (mean of absolute corr: 0.29-0.36), `nuclear_consumption` (mean of absolute corr: 0.20-0.33),
+for example of 3 countries, 
 
-`wind_consumption` (mean of absolute corr: 0.27-0.32), `biofuel_consumption` (mean of absolute corr: 0.35-0.47), `energy_per_gdp` (mean of absolute corr: 0.27-0.29)
+`oil_production` (*mean of absolute corr*: 0.29-0.36), `nuclear_consumption` (*mean of absolute corr*: 0.20-0.33),
+
+`wind_consumption` (*mean of absolute corr*: 0.27-0.32), `biofuel_consumption` (*mean of absolute corr*: 0.35-0.47), `energy_per_gdp` (*mean of absolute corr*: 0.27-0.29)
 
 * [Overall Correlations for 3 Countries](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/overall_3_countries_ranking.md)
 
