@@ -13,9 +13,11 @@ related data sets.
 
 * New IEA report with links to a lot of data [Electricity 2025](https://www.iea.org/reports/electricity-2025)
 
-python version = 3.10.0
+python version = 3.10.19
 
 required libraries to install = [requirements.txt](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/requirements.txt)
+
+The requirements.txt is based on arm64 macos, make sure to change the libraries depending on your environment.
 
 # Experiments
 Our experiments are conducted over multiple stages, you can go
