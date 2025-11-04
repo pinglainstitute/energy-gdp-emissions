@@ -286,7 +286,7 @@ The selected features from the previous feature selection step:
 * Selected features = `oil_production`, `nulcear_consumption`, `wind_consumption`, `biofuel_consumption`, `energy_per_gdp`
 
 ### Code
-
+* [Step 3-3 Multivariate DL models](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_03_Multivariate_DL_models.ipynb)
 
 ### Results
 
