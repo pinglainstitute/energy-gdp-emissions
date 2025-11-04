@@ -261,3 +261,34 @@ We can see only `gdp`, `primary_energy_consumption`, `nuclear_consumption` are s
 Those features in the US and, addtionally, `oil_production`, `energy_per_gdp`, `biofuel_consumption` are stationary with d=2 for China.
 
 None of the features were stationary with the optimal ARIMA differencing order for India. For India, only ARIMA is usable.
+
+## Step 3-3
+Building multivariate DL models.
+
+The models are multivariate versions from the baseline models: LSTM, Bi-directional LSTM, ED-LSTM, CNN
+
+**Data prep and train workflow**:
+
+raw data -> split train and test -> pct_change normalisation -> combine all countries' train data -> fit universal StandardScaler
+
+-> create sequences (5 input windows, 1 output window) -> train models with hyperparmeter tuning
+
+**Test and evaluation workflow**:
+
+for each country, combine train + test data (lags) -> calculate pct_change -> scale with the previous Scaler -> create sequences
+
+-> Extract the last 9 sequences -> Model prediction -> Inverse StandardScaler -> Denormalise -> calculate metrics
+
+The selected features from the previous feature selection step:
+
+* Key features = `gdp`, `primary_energy_consumption`, `population`
+
+* Selected features = `oil_production`, `nulcear_consumption`, `wind_consumption`, `biofuel_consumption`, `energy_per_gdp`
+
+### Code
+
+
+### Results
+
+
+### Plots
