@@ -289,6 +289,14 @@ The selected features from the previous feature selection step:
 * [Step 3-3 Multivariate DL models](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_03_Multivariate_DL_models.ipynb)
 
 ### Results
+The best DL model based on RMSE for:
 
+United States - Encoder-Decoder LSTM
+
+China - LSTM
+
+India - CNN
+
+* (RMSE and MASE tables)[https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_03_results/Multi_DL_summary.md]
 
 ### Plots
