@@ -291,11 +291,11 @@ The selected features from the previous feature selection step:
 ### Results
 The best DL model based on RMSE for:
 
-United States - Encoder-Decoder LSTM
+United States - Encoder-Decoder LSTM (rmse = 340.938, mase = 1.4963)
 
-China - LSTM
+China - LSTM (rmse = 582.553, mase = 1.9768)
 
-India - CNN
+India - CNN (rmse = 144.935, mase = 0.7981)
 
 * [RMSE and MASE tables](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_03_results/Multi_DL_summary.md)
 
