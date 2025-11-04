@@ -297,6 +297,6 @@ China - LSTM
 
 India - CNN
 
-* (RMSE and MASE tables)[https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_03_results/Multi_DL_summary.md]
+* [RMSE and MASE tables](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_03_results/Multi_DL_summary.md)
 
 ### Plots
