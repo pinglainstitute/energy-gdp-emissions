@@ -64,10 +64,11 @@ The high correlation coefficient and low variability shows the reliability of th
 
 * [Heatmap for lag correlation on CO2 for 3 countries](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_01_results/corr_co2_vs_lagged_features_combined.png)
 
-## Step 1-2: Feature Selection
-Proportions of resources are included, Herfindahl-Hirschmann Index and its lags are added to the features.
+## Step 1-2: Herfindhal-Hirschmann Index
 
-Herfindahl-Hirschmann Index
+When it comes to the energy mix, HHI was considered to train models with its explainability.
+
+Proportions of resources are included, Herfindahl-Hirschmann Index and its lags are added to the features.
 
 This has a range (0, 1). Value close to 1 indicates high level of concentration of one resource/category. Value close to 0 indicates that the resources are diversifed.
 
@@ -92,6 +93,8 @@ Correlation results
 The negative correlation coefficients imply though there was a decrease in HHI (diverification in resources), CO2 emission increased. Which means the energy consumption kept increasing along with resource diversification.
 
 In the notebook, additional experiments, targetting on CO2 per capita and Carbon intensity (based on kaya indentity) were tested. However, the results had bias. Also, even if the results were acceptable, since the main target should be CO2, an additional forecast would be required. This will lead to an error propagation
+
+After the results, the decision was made to exclude HHI.
 
 ### Plots
 
@@ -135,6 +138,13 @@ The first years of each feature's pct_change lag4 are set to 0 due to the lack o
 
 From the result of share features, nuclear energy share is the most consistent feature in CO2 reduction. US (-0.57, -0.6), China (-0.25, -0.28) except lag4, and India (-0.08, -0.18).
 
+There are two major tables generated: an overall correlation table of latest variable choices for 3 countries,
+
+an overall correlation table of variables (average over time lags) for 3 countries
+
+* []()
+
+* []()
 
 ### Plots
 
@@ -144,7 +154,7 @@ From the result of share features, nuclear energy share is the most consistent f
 
 * [Heatmaps of pct change in share features](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_03_results/share_heatmap.png)
 
-## Step 2-1
+## Step 2-1: ARIMA Model
 Building baseline model with ARIMA
 
 **ARIMA workflow**:
@@ -170,7 +180,19 @@ The Best order for India was (1, 1, 1) Baseline ARIMA
 ### Plots
 * [Forecast on test data](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_01_results/arima_optimal_forecasts.png)
 
-## Step 2-2
+## Step 2-2: ARIMAX Model
+
+
+### Code
+
+
+### Results
+
+
+### Plots
+
+
+## Step 2-3
 Building baseline DL models and comparison with baseline ARIMA.
 
 The baseline DL models are LSTM, Bidirectional LSTM, Encoder-Decoder LSTM, CNN.
@@ -194,7 +216,7 @@ The comparison with the baseline ARIMA (Best optimal order for each country) was
 ARIMA uses original values of the data.
 
 ### Code
-* [Step 2-2 Baseline DL Models](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_02_Baseline_DL_models.ipynb)
+* [Step 2-3 Baseline DL Models](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_02_Baseline_DL_models.ipynb)
 
 ### Results
 * [Baseline model comparison](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/baseline_model_comparison.md)
@@ -208,13 +230,7 @@ The best model for each country is presented as a table in the result link.
 
 * [Baseline model plots for India](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/India_baseline_model_comparison.png)
 
-`## Step 2-3`
-`Comparison of ARIMAX (ARIMA with exogenous variables)`
-
-`### Code`
-`* [Step 2-3 ARIMAX](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_03_ARIMAX.ipynb)`
-
-## Step 3-1
+## Step 3-1: !This should be sorted again
 This feature selection step is to identify which features to choose for the multivariate DL models.
 
 Data coverage threshold set to 80% to filter out any features do not meet the threshold.
@@ -243,7 +259,7 @@ for example of 3 countries,
 
 * [Overall Correlations for G20](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/overall_g20_countries_ranking.md)
 
-## Step 3-2
+## Step 3-2: ARIMAX Model
 Building ARIMAX to see the forecasts with other exogenous variables
 
 Initially, variables to use were `primary_energy_consumption`, `gdp`, `population`, `electricity_demand`, `oil_production`,
@@ -266,6 +282,10 @@ None of the features were stationary with the optimal ARIMA differencing order f
 Building multivariate DL models.
 
 The models are multivariate versions from the baseline models: LSTM, Bi-directional LSTM, ED-LSTM, CNN
+
+`! To add`: Due to its small number of dataset, tuning hyperparameters with validation = 0.1 and its loss of mse was conducted.
+
+And the validation set was included in the training dataset.
 
 **Data prep and train workflow**:
 
