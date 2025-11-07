@@ -233,9 +233,15 @@ The best model for each country is presented as a table in the result link.
 ## Step 3-1: !This should be sorted again
 This feature selection step is to identify which features to choose for the multivariate DL models.
 
-Data coverage threshold set to 80% to filter out any features do not meet the threshold.
+**Method**: 
 
-Comparison of correlation coefficients: percent change normalised features vs target for 3 countries, 3 countries + G7, G20
+1. `Data coverage`: set a threshold of 0.8 to filter the features and countries having enough data
+
+2. `Interpolation`: forward fill interpolation was conducted to deal with missing data
+
+Comparison of correlation coefficients: 
+
+percent change normalised features vs target for 3 countries, 3 countries + G7, G20, All countries
 
 ### Code
 * [Step 3-1 Feature Selections](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_01_Feature_Selections.ipynb)
