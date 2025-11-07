@@ -233,20 +233,29 @@ The best model for each country is presented as a table in the result link.
 ## Step 3-1: !This should be sorted again
 This feature selection step is to identify which features to choose for the multivariate DL models.
 
-**Method**: 
-
-1. `Data coverage`: set a threshold of 0.8 to filter the features and countries having enough data
-
-2. `Interpolation`: forward fill interpolation was conducted to deal with missing data
-
-Comparison of correlation coefficients: 
+Comparison of correlation coefficients
 
 percent change normalised features vs target for 3 countries, 3 countries + G7, G20, All countries
+
+Also the correlation comparison of percent change normalised features with its lags
+
+**Method**: 
+
+1. `Data coverage`: set a threshold of 0.8 to filter the features (For G20 and All countries, this method was used to filter the countries meet the threshold)
+
+2. `Interpolation`: forward fill interpolation was conducted to deal with missing data
 
 ### Code
 * [Step 3-1 Feature Selections](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_01_Feature_Selections.ipynb)
 
 ### Results
+* [Correlation table of pct change for three countries without lags](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/three_summary_no_lags.md)
+
+* [Correlation table of pct change for three countries with lags](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/three_summary_with_lags.md)
+
+* [**Correlation tables for other categories**](https://github.com/pinglainstitute/energy-gdp-emissions/tree/main/data/03_01_results)
+
+! should be updated
 Most of the best features for three different correlations include cumulative resource co2. However, cumulative co2 features should be excluded to use, due to the circular dependency with co2.
 
 Also any features related to temperature were excluded since the causality is in the other direction co2 -> temperature
@@ -258,12 +267,6 @@ for example of 3 countries,
 `oil_production` (*mean of absolute corr*: 0.29-0.36), `nuclear_consumption` (*mean of absolute corr*: 0.20-0.33),
 
 `wind_consumption` (*mean of absolute corr*: 0.27-0.32), `biofuel_consumption` (*mean of absolute corr*: 0.35-0.47), `energy_per_gdp` (*mean of absolute corr*: 0.27-0.29)
-
-* [Overall Correlations for 3 Countries](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/overall_3_countries_ranking.md)
-
-* [Overall Correlations for 3 Countries + G7](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/overall_g7_countries_ranking.md)
-
-* [Overall Correlations for G20](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/overall_g20_countries_ranking.md)
 
 ## Step 3-2: ARIMAX Model
 Building ARIMAX to see the forecasts with other exogenous variables
