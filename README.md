@@ -142,10 +142,6 @@ There are two major tables generated: an overall correlation table of latest var
 
 an overall correlation table of variables (average over time lags) for 3 countries
 
-* []()
-
-* []()
-
 ### Plots
 
 * [Heatmaps of pct change in production features](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_03_results/production_heatmap.png)
