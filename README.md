@@ -243,7 +243,7 @@ Also the correlation comparison of percent change normalised features with its l
 
 1. `Data coverage`: set a threshold of 0.8 to filter the features (For G20 and All countries, this method was used to filter the countries meet the threshold)
 
-2. `Interpolation`: forward fill interpolation was conducted to deal with missing data
+2. `Interpolation`: forward fill interpolation was conducted to deal with missing data which meet the data coverage threshold
 
 ### Code
 * [Step 3-1 Feature Selections](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_01_Feature_Selections.ipynb)
