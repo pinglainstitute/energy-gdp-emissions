@@ -226,24 +226,44 @@ The best model for each country is presented as a table in the result link.
 
 * [Baseline model plots for India](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/India_baseline_model_comparison.png)
 
-## Step 3-1: !This should be sorted again
-This feature selection step is to identify which features to choose for the multivariate DL models.
+## Step 3-1: Feature Selection
+This feature selection step is to identify optimal features for CO2 forecasting models through correlation analysis across different groups.
 
-Comparison of correlation coefficients
-
-percent change normalised features vs target for 3 countries, 3 countries + G7, G20, All countries
+percent change normalised features (its lags) vs target for Country Groups below
 
 The reason why all the featuers were normalised into pct_change is combining all country data due to the small sample size.
 
-Also the correlation comparison of percent change normalised features with its lags
-
 **Method**: 
 
-1. `Data coverage`: set a threshold of 0.8 to filter the features (For G20 and All countries, this method was used to filter the countries meet the threshold)
+1. Data Preparation
 
-2. `Interpolation`: forward fill interpolation was conducted to deal with missing data which meet the data coverage threshold
+* `Train-Test split`: split from last 9 years for testing
 
-Variables containing 'cumulative_', 'temperature_', '_including_luc' are excluded due to the dependency and causality issues.
+* `Data coverage`: set a threshold of >= 0.8 to filter features (For G20 and All countries, this method was used to filter the countries meet the threshold)
+
+* `Interpolation`: foward fill for missing data which meet the data coverage threshold
+
+* `Normalisation`: all features were normalised with percent change
+
+2. Country Groups
+
+* 3 countries (US, China, India)
+
+* G7 + 3 countries above (excluded EU)
+
+* G20 countries (excluded EU)
+
+* All countries (meet the data coverage threshold)
+
+3. Correlation types
+
+* No Lags: current feature values vs CO2
+
+* With Lags: Mean abolute correlation across features + 4 time lags (t -> t-4)
+
+4. Feature exclusion
+
+Variables containing 'cumulative_', 'temperature_', '_including_luc' are excluded due to the circular dependency and causality issues.
 
 ### Code
 * [Step 3-1 Feature Selections](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_01_Feature_Selections.ipynb)
