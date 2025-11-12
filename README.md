@@ -116,7 +116,7 @@ The negative corr coef along with the increase in CO2 emission imply that popula
 
 ! After experimenting co2_per_capita and co2_intensity as a target in the notebook, HHI has meaningful correlations for each country but HHI for India has a strongly negative corr coeff. (probably due to the economic development)
 
-## Step 1-3: Feature Normalisation and its Correlations
+## Step 1-3: Feature Normalisation and its Correlations ! this should be removed or combined with the feature selection later
 
 Due to the benefits of stationarity and normalisation on scale for time series, the actual values (lags) of features were normalised into percent change from the previous year.
 
@@ -280,7 +280,7 @@ From the correlation analysis, the variables we can consider are `gdp`, `primary
 ## Step 3-2: ARIMAX Model
 Building ARIMAX to see the forecasts with other exogenous variables
 
-Initially, variables to use were `primary_energy_consumption`, `gdp`, `population`, `electricity_demand`, `oil_production`,
+!should be editted: Initially, variables to use were `primary_energy_consumption`, `gdp`, `population`, `electricity_demand`, `oil_production`,
 
 `nuclear_consumption`, `wind_consumption`, `biofuel_consumption`, `energy_per_gdp` from the feature selection step.
 
