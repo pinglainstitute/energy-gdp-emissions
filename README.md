@@ -171,8 +171,8 @@ From the correlation analysis, the variables we can consider are `gdp`, `primary
 
 * [**Correlation tables for other categories**](https://github.com/pinglainstitute/energy-gdp-emissions/tree/main/data/03_01_results)
 
-## Step 2-1: ARIMA Model
-Building baseline model with ARIMA
+## Step 2-1: Baseline ARIMA Model
+For the baseline ARIMA model, instead of pct change normalisation, raw data were used due to the violation of normality.
 
 **ARIMA workflow**:
 ADF test to check stationarity (p_value < 0.05) -> ACF, PACF testing to determine p, q -> Gridsearch to determine the optimal order (AIC)
@@ -197,7 +197,7 @@ The Best order for India was (1, 1, 1) Baseline ARIMA
 ### Plots
 * [Forecast on test data](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_01_results/arima_optimal_forecasts.png)
 
-## Step 2-2: ARIMAX Model
+## Step 2-2: Baseline ARIMAX Model
 
 
 ### Code
