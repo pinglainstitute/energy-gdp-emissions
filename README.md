@@ -249,9 +249,9 @@ The reason why all the featuers were normalised into pct_change is combining all
 
 * 3 countries (US, China, India)
 
-* G7 + 3 countries above (excluded EU)
+* G7 + 3 countries above (EU excluded)
 
-* G20 countries (excluded EU)
+* G20 countries (EU excluded)
 
 * All countries (meet the data coverage threshold)
 
