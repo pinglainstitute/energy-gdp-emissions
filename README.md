@@ -114,7 +114,9 @@ After the results, the decision was made to exclude HHI.
 
 The negative corr coef along with the increase in CO2 emission imply that population needs to be considered since the increase in HHI would have a possibility of decrease in CO2 per capita.
 
-After experimenting co2_per_capita and co2_intensity as a target in the notebook, HHI has meaningful correlations for each country but HHI for India has a strongly negative corr coeff. (probably due to the economic development) -> Decision is to drop Herfindahl-Hirschmann Index
+After experimenting co2_per_capita and co2_intensity as a target in the notebook, HHI has meaningful correlations for each country but HHI for India has a strongly negative corr coeff. (probably due to the economic development) 
+
+**-> Decision is to drop Herfindahl-Hirschmann Index**
 
 ## Step 1-3: Feature Selection
 This feature selection step is to identify optimal features for CO2 forecasting models through correlation analysis across different groups.
