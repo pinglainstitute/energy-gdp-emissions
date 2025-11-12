@@ -165,17 +165,18 @@ Simple VIF test was conducted (threshold at 10) in order to deal with multicolli
 * [Step 1-3 Feature Selections](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_01_Feature_Selections.ipynb)
 
 ### Results
-From the correlation analysis, the variables we can consider are `gdp`, `primary_energy_consumption`, `population`, `coal_consumption`, `biofuel_share`, `low_carbon_share`, `energy_per_gdp`, `methane`, `nitrous_oxide`.
-
-After testing variance_inflation_factor, excluding `coal_consumption` and `energy_per_gdp` returns the overall VIF values became more acceptable.
-
-Hence, the finalised variables to consider are: `gdp`, `primary_energy_consumption`, `population`, `biofuel_share`, `low_carbon_share`, `methane`, `nitrous_oxide`
 
 * [Correlation table of pct change for three countries without lags](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/three_summary_no_lags.md)
 
 * [Correlation table of pct change for three countries with lags](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/three_summary_with_lags.md)
 
 * [**Correlation tables for other categories**](https://github.com/pinglainstitute/energy-gdp-emissions/tree/main/data/03_01_results)
+
+From the correlation analysis, the variables we can consider are `gdp`, `primary_energy_consumption`, `population`, `coal_consumption`, `biofuel_share`, `low_carbon_share`, `energy_per_gdp`, `methane`, `nitrous_oxide`.
+
+After testing variance_inflation_factor, excluding `coal_consumption` and `energy_per_gdp` returns the overall VIF values became more acceptable.
+
+Hence, the finalised variables to consider are: `gdp`, `primary_energy_consumption`, `population`, `biofuel_share`, `low_carbon_share`, `methane`, `nitrous_oxide`
 
 ## Step 2-1: Baseline ARIMA Model
 For the baseline ARIMA model, instead of pct change normalisation, raw data were used due to the violation of normality.
@@ -274,7 +275,7 @@ Those features in the US and, addtionally, `oil_production`, `energy_per_gdp`, `
 
 None of the features were stationary with the optimal ARIMA differencing order for India. For India, only ARIMA is usable.
 
-## Step 3-1: Multivariate DL models
+## Step 3-3: Multivariate DL models (Should be modified to 3-1)
 Building multivariate DL models.
 
 The models are multivariate versions from the baseline models: LSTM, Bi-directional LSTM, ED-LSTM, CNN
