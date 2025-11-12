@@ -269,7 +269,7 @@ Variables containing 'cumulative_', 'temperature_', '_including_luc', 'ghg', 'co
 * [Step 3-1 Feature Selections](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_01_Feature_Selections.ipynb)
 
 ### Results
-Selected Varaibles from the correlation analysis are `gdp`, `primary_energy_consumption`, `population`, `fossile_share`, `biofuel_share`, `low_carbon_share`, ``
+From the correlation analysis, the variables we can consider are `gdp`, `primary_energy_consumption`, `population`, `coal_consumption`, `biofuel_share`, `low_carbon_share`, `energy_per_gdp`, `methane`, `nitrous_oxide`
 
 * [Correlation table of pct change for three countries without lags](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/three_summary_no_lags.md)
 
