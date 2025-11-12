@@ -78,7 +78,7 @@ This has a range (0, 1). Value close to 1 indicates high level of concentration 
 
 ### Code
 
-* [Step 1-2 Feature Selection](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/01_02_Feature_Selection.ipynb)
+* [Step 1-2 Herfindahl Index](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/01_02_Herfindahl_index.ipynb)
 
 ### Results
 
