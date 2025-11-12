@@ -271,6 +271,8 @@ Variables containing 'cumulative_', 'temperature_', '_including_luc', 'ghg', 'co
 ### Results
 From the correlation analysis, the variables we can consider are `gdp`, `primary_energy_consumption`, `population`, `coal_consumption`, `biofuel_share`, `low_carbon_share`, `energy_per_gdp`, `methane`, `nitrous_oxide`
 
+! should be discussed at the meeting: After testing variance_inflation_factor, excluding `coal_consumption` and `energy_per_gdp` returns the overall VIF values became more acceptable.
+
 * [Correlation table of pct change for three countries without lags](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/three_summary_no_lags.md)
 
 * [Correlation table of pct change for three countries with lags](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/three_summary_with_lags.md)
