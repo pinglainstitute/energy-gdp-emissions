@@ -263,12 +263,14 @@ The reason why all the featuers were normalised into pct_change is combining all
 
 4. Feature exclusion
 
-Variables containing 'cumulative_', 'temperature_', '_including_luc', 'ghg', 'co2' are excluded due to the circular dependency, causality, and multicollinearity issues.
+Variables containing 'cumulative_', 'temperature_', '_including_luc', 'ghg', 'co2' are excluded due to the circular dependency and causality issues.
 
 ### Code
 * [Step 3-1 Feature Selections](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_01_Feature_Selections.ipynb)
 
 ### Results
+Selected Varaibles from the correlation analysis are `gdp`, `primary_energy_consumption`, `population`, `fossile_share`, `biofuel_share`, `low_carbon_share`, ``
+
 * [Correlation table of pct change for three countries without lags](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/three_summary_no_lags.md)
 
 * [Correlation table of pct change for three countries with lags](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/three_summary_with_lags.md)
