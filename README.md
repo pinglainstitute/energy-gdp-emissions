@@ -159,7 +159,7 @@ Variables containing 'cumulative_', 'temperature_', '_including_luc', 'ghg', 'co
 
 5. Variance Inflation Factor (<= 10)
 
-
+Simple VIF test was conducted (threshold at 10) in order to deal with multicollinearity among the independent variables.
 
 ### Code
 * [Step 1-3 Feature Selections](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_01_Feature_Selections.ipynb)
