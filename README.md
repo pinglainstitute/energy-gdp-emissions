@@ -114,41 +114,60 @@ After the results, the decision was made to exclude HHI.
 
 The negative corr coef along with the increase in CO2 emission imply that population needs to be considered since the increase in HHI would have a possibility of decrease in CO2 per capita.
 
-! After experimenting co2_per_capita and co2_intensity as a target in the notebook, HHI has meaningful correlations for each country but HHI for India has a strongly negative corr coeff. (probably due to the economic development)
+After experimenting co2_per_capita and co2_intensity as a target in the notebook, HHI has meaningful correlations for each country but HHI for India has a strongly negative corr coeff. (probably due to the economic development) -> Decision is to drop Herfindahl-Hirschmann Index
 
-## Step 1-3: Feature Normalisation and its Correlations ! this should be removed or combined with the feature selection later
+## Step 1-3: Feature Selection
+This feature selection step is to identify optimal features for CO2 forecasting models through correlation analysis across different groups.
 
-Due to the benefits of stationarity and normalisation on scale for time series, the actual values (lags) of features were normalised into percent change from the previous year.
+percent change normalised features (its lags) vs target for Country Groups below
 
-The Correlations of the pct_change features (lags) with CO2 were calculated and represented as tables and heatmaps.
+The reason why all the featuers were normalised into pct_change is combining all country data due to the small sample size.
 
-The first years of each feature's pct_change lag4 are set to 0 due to the lack of previous data.
+**Method**: 
+
+1. Data Preparation
+
+* `Train-test split`: split from last 9 years for testing
+
+* `Data coverage`: set a threshold of >= 0.8 to filter features (For G20 and All countries, this method was used to filter the countries meet the threshold)
+
+* `Interpolation`: foward fill for missing data which meet the data coverage threshold
+
+* `Normalisation`: all features and the target were normalised with percent change
+
+2. Country Groups
+
+* 3 countries (US, China, India)
+
+* G7 + 3 countries above (EU excluded)
+
+* G20 countries (EU excluded)
+
+* All countries (meet the data coverage threshold)
+
+3. Correlation types
+
+* No Lags: current feature values vs CO2
+
+* With Lags: Mean abolute correlation across features + 4 time lags (t -> t-4)
+
+4. Feature exclusion
+
+Variables containing 'cumulative_', 'temperature_', '_including_luc', 'ghg', 'co2' are excluded due to the circular dependency and causality issues.
 
 ### Code
-
-* [Step 1-3 Correlations pct change](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/01_03_Feature_pct_change.ipynb)
+* [Step 1-3 Feature Selections](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_01_Feature_Selections.ipynb)
 
 ### Results
+From the correlation analysis, the variables we can consider are `gdp`, `primary_energy_consumption`, `population`, `coal_consumption`, `biofuel_share`, `low_carbon_share`, `energy_per_gdp`, `methane`, `nitrous_oxide`
 
-* [Correlations of pct change in production features](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_03_results/production_correlation.md)
+! should be discussed at the meeting: After testing variance_inflation_factor, excluding `coal_consumption` and `energy_per_gdp` returns the overall VIF values became more acceptable.
 
-* [Correlations of pct change in consumption features](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_03_results/consumption_correlation.md)
+* [Correlation table of pct change for three countries without lags](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/three_summary_no_lags.md)
 
-* [Correlations of pct change in share features](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_03_results/share_correlation.md)
+* [Correlation table of pct change for three countries with lags](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/three_summary_with_lags.md)
 
-From the result of share features, nuclear energy share is the most consistent feature in CO2 reduction. US (-0.57, -0.6), China (-0.25, -0.28) except lag4, and India (-0.08, -0.18).
-
-There are two major tables generated: an overall correlation table of latest variable choices for 3 countries,
-
-an overall correlation table of variables (average over time lags) for 3 countries
-
-### Plots
-
-* [Heatmaps of pct change in production features](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_03_results/production_heatmap.png)
-
-* [Heatmaps of pct change in consumption features](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_03_results/consumption_heatmap.png)
-
-* [Heatmaps of pct change in share features](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_03_results/share_heatmap.png)
+* [**Correlation tables for other categories**](https://github.com/pinglainstitute/energy-gdp-emissions/tree/main/data/03_01_results)
 
 ## Step 2-1: ARIMA Model
 Building baseline model with ARIMA
@@ -226,58 +245,7 @@ The best model for each country is presented as a table in the result link.
 
 * [Baseline model plots for India](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/India_baseline_model_comparison.png)
 
-## Step 3-1: Feature Selection
-This feature selection step is to identify optimal features for CO2 forecasting models through correlation analysis across different groups.
 
-percent change normalised features (its lags) vs target for Country Groups below
-
-The reason why all the featuers were normalised into pct_change is combining all country data due to the small sample size.
-
-**Method**: 
-
-1. Data Preparation
-
-* `Train-test split`: split from last 9 years for testing
-
-* `Data coverage`: set a threshold of >= 0.8 to filter features (For G20 and All countries, this method was used to filter the countries meet the threshold)
-
-* `Interpolation`: foward fill for missing data which meet the data coverage threshold
-
-* `Normalisation`: all features and the target were normalised with percent change
-
-2. Country Groups
-
-* 3 countries (US, China, India)
-
-* G7 + 3 countries above (EU excluded)
-
-* G20 countries (EU excluded)
-
-* All countries (meet the data coverage threshold)
-
-3. Correlation types
-
-* No Lags: current feature values vs CO2
-
-* With Lags: Mean abolute correlation across features + 4 time lags (t -> t-4)
-
-4. Feature exclusion
-
-Variables containing 'cumulative_', 'temperature_', '_including_luc', 'ghg', 'co2' are excluded due to the circular dependency and causality issues.
-
-### Code
-* [Step 3-1 Feature Selections](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_01_Feature_Selections.ipynb)
-
-### Results
-From the correlation analysis, the variables we can consider are `gdp`, `primary_energy_consumption`, `population`, `coal_consumption`, `biofuel_share`, `low_carbon_share`, `energy_per_gdp`, `methane`, `nitrous_oxide`
-
-! should be discussed at the meeting: After testing variance_inflation_factor, excluding `coal_consumption` and `energy_per_gdp` returns the overall VIF values became more acceptable.
-
-* [Correlation table of pct change for three countries without lags](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/three_summary_no_lags.md)
-
-* [Correlation table of pct change for three countries with lags](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/three_summary_with_lags.md)
-
-* [**Correlation tables for other categories**](https://github.com/pinglainstitute/energy-gdp-emissions/tree/main/data/03_01_results)
 
 ## Step 3-2: ARIMAX Model
 Building ARIMAX to see the forecasts with other exogenous variables
@@ -298,7 +266,7 @@ Those features in the US and, addtionally, `oil_production`, `energy_per_gdp`, `
 
 None of the features were stationary with the optimal ARIMA differencing order for India. For India, only ARIMA is usable.
 
-## Step 3-3
+## Step 3-1: Multivariate DL models
 Building multivariate DL models.
 
 The models are multivariate versions from the baseline models: LSTM, Bi-directional LSTM, ED-LSTM, CNN
