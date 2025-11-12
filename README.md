@@ -237,13 +237,13 @@ The reason why all the featuers were normalised into pct_change is combining all
 
 1. Data Preparation
 
-* `Train-Test split`: split from last 9 years for testing
+* `Train-test split`: split from last 9 years for testing
 
 * `Data coverage`: set a threshold of >= 0.8 to filter features (For G20 and All countries, this method was used to filter the countries meet the threshold)
 
 * `Interpolation`: foward fill for missing data which meet the data coverage threshold
 
-* `Normalisation`: all features were normalised with percent change
+* `Normalisation`: all features and the target were normalised with percent change
 
 2. Country Groups
 
