@@ -233,6 +233,8 @@ Comparison of correlation coefficients
 
 percent change normalised features vs target for 3 countries, 3 countries + G7, G20, All countries
 
+The reason why all the featuers were normalised into pct_change is combining all country data due to the small sample size.
+
 Also the correlation comparison of percent change normalised features with its lags
 
 **Method**: 
@@ -240,6 +242,8 @@ Also the correlation comparison of percent change normalised features with its l
 1. `Data coverage`: set a threshold of 0.8 to filter the features (For G20 and All countries, this method was used to filter the countries meet the threshold)
 
 2. `Interpolation`: forward fill interpolation was conducted to deal with missing data which meet the data coverage threshold
+
+Variables containing 'cumulative_', 'temperature_', '_including_luc' are excluded due to the dependency and causality issues.
 
 ### Code
 * [Step 3-1 Feature Selections](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_01_Feature_Selections.ipynb)
