@@ -275,19 +275,6 @@ Variables containing 'cumulative_', 'temperature_', '_including_luc' are exclude
 
 * [**Correlation tables for other categories**](https://github.com/pinglainstitute/energy-gdp-emissions/tree/main/data/03_01_results)
 
-! should be updated
-Most of the best features for three different correlations include cumulative resource co2. However, cumulative co2 features should be excluded to use, due to the circular dependency with co2.
-
-Also any features related to temperature were excluded since the causality is in the other direction co2 -> temperature
-
-The exogenouse varialbes we could include:
-
-for example of 3 countries, 
-
-`oil_production` (*mean of absolute corr*: 0.29-0.36), `nuclear_consumption` (*mean of absolute corr*: 0.20-0.33),
-
-`wind_consumption` (*mean of absolute corr*: 0.27-0.32), `biofuel_consumption` (*mean of absolute corr*: 0.35-0.47), `energy_per_gdp` (*mean of absolute corr*: 0.27-0.29)
-
 ## Step 3-2: ARIMAX Model
 Building ARIMAX to see the forecasts with other exogenous variables
 
