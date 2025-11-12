@@ -1,48 +1,48 @@
 # 3 Countries Summary - pct change with lags
 
-Number of features: 740
+Number of features: 120
 
 ## Top 40 Features
 
-| Feature                                              |   Overall_Abs_Corr |   United States_Corr |   China_Corr |   India_Corr |
-|:-----------------------------------------------------|-------------------:|---------------------:|-------------:|-------------:|
-| cumulative_luc_co2_pct_change                        |           0.780654 |           -0.786938  |    -0.86641  |    -0.688616 |
-| cumulative_luc_co2_lag1_pct_change                   |           0.763779 |           -0.741438  |    -0.868791 |    -0.681108 |
-| cumulative_luc_co2_lag2_pct_change                   |           0.745644 |           -0.703326  |    -0.868895 |    -0.664712 |
-| cumulative_oil_co2_lag3_pct_change                   |           0.724537 |           -0.661291  |    -0.666847 |    -0.845474 |
-| cumulative_oil_co2_lag2_pct_change                   |           0.717563 |           -0.644813  |    -0.652289 |    -0.855587 |
-| cumulative_oil_co2_lag1_pct_change                   |           0.710328 |           -0.63218   |    -0.640786 |    -0.858017 |
-| cumulative_luc_co2_lag3_pct_change                   |           0.708239 |           -0.596091  |    -0.8723   |    -0.656327 |
-| cumulative_oil_co2_pct_change                        |           0.706955 |           -0.626816  |    -0.631062 |    -0.862986 |
-| population_lag3_pct_change                           |           0.694447 |           -0.295118  |    -0.814994 |    -0.973229 |
-| population_lag2_pct_change                           |           0.654926 |           -0.174106  |    -0.813517 |    -0.977155 |
-| cumulative_luc_co2_lag4_pct_change                   |           0.632272 |           -0.47833   |    -0.821773 |    -0.596712 |
-| population_lag1_pct_change                           |           0.627533 |           -0.0878846 |    -0.81428  |    -0.980435 |
-| share_global_cumulative_oil_co2_lag3_pct_change      |           0.627448 |            0.804562  |    -0.591334 |     0.486447 |
-| population_pct_change                                |           0.61246  |           -0.0347132 |    -0.819953 |    -0.982712 |
-| share_global_cumulative_oil_co2_lag2_pct_change      |           0.608296 |            0.804163  |    -0.571271 |     0.449454 |
-| cumulative_co2_lag3_pct_change                       |           0.583862 |           -0.545295  |    -0.469085 |     0.737206 |
-| share_global_cumulative_oil_co2_lag1_pct_change      |           0.582023 |            0.79961   |    -0.561204 |     0.385255 |
-| share_global_cumulative_oil_co2_lag4_pct_change      |           0.570693 |            0.656298  |    -0.54415  |     0.511632 |
-| share_of_temperature_change_from_ghg_lag3_pct_change |           0.565675 |            0.228537  |     0.64505  |     0.823437 |
-| share_global_cumulative_oil_co2_pct_change           |           0.564099 |            0.786874  |    -0.5536   |     0.351824 |
-| cumulative_co2_lag2_pct_change                       |           0.556597 |           -0.538411  |    -0.482149 |     0.649232 |
-| cumulative_oil_co2_lag4_pct_change                   |           0.551939 |           -0.489841  |    -0.607094 |    -0.558881 |
-| cumulative_co2_lag1_pct_change                       |           0.550014 |           -0.526344  |    -0.533897 |     0.589802 |
-| cumulative_co2_pct_change                            |           0.548011 |           -0.516656  |    -0.590088 |     0.53729  |
-| cumulative_gas_co2_pct_change                        |           0.546493 |           -0.691473  |    -0.213591 |    -0.734414 |
-| share_of_temperature_change_from_ghg_lag2_pct_change |           0.536333 |            0.13042   |     0.661116 |     0.817463 |
-| share_global_cumulative_cement_co2_lag3_pct_change   |           0.534593 |            0.593376  |    -0.459865 |     0.550537 |
-| share_global_cumulative_flaring_co2_pct_change       |           0.533855 |            0.646699  |    -0.397142 |    -0.557723 |
-| share_global_cumulative_flaring_co2_lag1_pct_change  |           0.532692 |            0.646354  |    -0.40181  |    -0.549913 |
-| share_global_cumulative_luc_co2_lag4_pct_change      |           0.532571 |           -0.383868  |    -0.829117 |    -0.384726 |
-| cumulative_co2_including_luc_lag2_pct_change         |           0.532193 |           -0.442887  |     0.190635 |     0.963058 |
-| cumulative_gas_co2_lag1_pct_change                   |           0.52529  |           -0.701676  |    -0.232564 |    -0.64163  |
-| cumulative_gas_co2_lag2_pct_change                   |           0.523441 |           -0.707806  |    -0.272353 |    -0.590166 |
-| share_global_cumulative_flaring_co2_lag3_pct_change  |           0.52279  |            0.688726  |    -0.407709 |    -0.471936 |
-| cumulative_gas_co2_lag3_pct_change                   |           0.522727 |           -0.704768  |    -0.31541  |    -0.548004 |
-| cumulative_co2_including_luc_lag3_pct_change         |           0.5214   |           -0.41656   |     0.182794 |     0.964847 |
-| share_of_temperature_change_from_ghg_lag1_pct_change |           0.520846 |            0.0848382 |     0.662318 |     0.815382 |
-| cumulative_co2_including_luc_lag1_pct_change         |           0.520218 |           -0.436253  |     0.158203 |     0.966198 |
-| share_global_cumulative_cement_co2_pct_change        |           0.518072 |            0.354295  |    -0.743545 |     0.456376 |
-| population_lag4_pct_change                           |           0.51774  |            0.0952819 |    -0.741228 |    -0.716711 |
+| Feature                                       |   United States_Corr |   China_Corr |   India_Corr |   Overall_Abs_Corr |
+|:----------------------------------------------|---------------------:|-------------:|-------------:|-------------------:|
+| population_pct_change                         |            0.137421  |     0.800794 |    0.926048  |           0.621421 |
+| biofuel_consumption_pct_change                |            0.448562  |     0.592232 |    0.244523  |           0.428439 |
+| biofuel_cons_per_capita_pct_change            |            0.442413  |     0.589652 |    0.247271  |           0.426446 |
+| biofuel_share_energy_pct_change               |            0.416505  |     0.533615 |    0.245955  |           0.398692 |
+| solar_share_energy_pct_change                 |            0.341653  |     0.471513 |    0.304852  |           0.372673 |
+| other_renewable_consumption_pct_change        |            0.264696  |     0.214069 |    0.492402  |           0.323722 |
+| oil_production_pct_change                     |            0.14479   |     0.479896 |    0.340515  |           0.321734 |
+| other_renewables_energy_per_capita_pct_change |            0.263885  |     0.212055 |    0.484636  |           0.320192 |
+| other_renewable_electricity_pct_change        |            0.239621  |     0.214073 |    0.495408  |           0.316367 |
+| other_renewables_elec_per_capita_pct_change   |            0.238606  |     0.211976 |    0.48032   |           0.310301 |
+| oil_prod_per_capita_pct_change                |            0.142803  |     0.445449 |    0.310964  |           0.299739 |
+| other_renewables_share_energy_pct_change      |            0.215404  |     0.201054 |    0.479228  |           0.298562 |
+| nuclear_consumption_pct_change                |            0.539366  |     0.209686 |    0.140986  |           0.296679 |
+| nuclear_electricity_pct_change                |            0.541032  |     0.209404 |    0.131582  |           0.294006 |
+| nuclear_share_energy_pct_change               |            0.536961  |     0.204792 |    0.135482  |           0.292411 |
+| nuclear_energy_per_capita_pct_change          |            0.540348  |     0.208581 |    0.124862  |           0.291264 |
+| low_carbon_elec_per_capita_pct_change         |            0.420683  |     0.317022 |    0.135251  |           0.290985 |
+| nuclear_elec_per_capita_pct_change            |            0.542027  |     0.208296 |    0.115322  |           0.288548 |
+| energy_per_gdp_pct_change                     |            0.174421  |     0.317907 |    0.336657  |           0.276328 |
+| wind_share_energy_pct_change                  |            0.303074  |     0.164599 |    0.345281  |           0.270984 |
+| low_carbon_energy_per_capita_pct_change       |            0.406243  |     0.291817 |    0.108791  |           0.26895  |
+| fossil_share_energy_pct_change                |            0.17527   |     0.543164 |    0.0877943 |           0.268743 |
+| co2_per_gdp_pct_change                        |            0.122767  |     0.333131 |    0.308397  |           0.254765 |
+| low_carbon_electricity_pct_change             |            0.421834  |     0.249615 |    0.0894426 |           0.25363  |
+| solar_elec_per_capita_pct_change              |            0.142174  |     0.487556 |    0.101796  |           0.243842 |
+| solar_electricity_pct_change                  |            0.142352  |     0.480129 |    0.10333   |           0.241937 |
+| solar_consumption_pct_change                  |            0.1382    |     0.485833 |    0.0981411 |           0.240725 |
+| solar_energy_per_capita_pct_change            |            0.136931  |     0.48501  |    0.0972633 |           0.239735 |
+| wind_electricity_pct_change                   |            0.11373   |     0.247939 |    0.347881  |           0.236517 |
+| share_global_gas_co2_pct_change               |            0.21879   |     0.140464 |    0.35025   |           0.236502 |
+| wind_consumption_pct_change                   |            0.113762  |     0.244509 |    0.349281  |           0.235851 |
+| wind_energy_per_capita_pct_change             |            0.11374   |     0.248608 |    0.342959  |           0.235102 |
+| wind_elec_per_capita_pct_change               |            0.113747  |     0.244232 |    0.342073  |           0.233351 |
+| nitrous_oxide_pct_change                      |            0.0687633 |     0.421932 |    0.202127  |           0.230941 |
+| low_carbon_consumption_pct_change             |            0.407143  |     0.222379 |    0.0627307 |           0.230751 |
+| low_carbon_share_energy_pct_change            |            0.297211  |     0.272052 |    0.100807  |           0.223357 |
+| gas_share_energy_pct_change                   |            0.0839729 |     0.207185 |    0.370776  |           0.220645 |
+| oil_co2_pct_change                            |            0.09486   |     0.321772 |    0.232628  |           0.21642  |
+| methane_per_capita_pct_change                 |            0.319404  |     0.192976 |    0.128737  |           0.213705 |
+| solar_cons_change_twh_pct_change              |            0.126361  |     0.405888 |    0.0815735 |           0.204607 |
