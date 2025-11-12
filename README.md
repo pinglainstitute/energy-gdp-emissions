@@ -263,7 +263,7 @@ The reason why all the featuers were normalised into pct_change is combining all
 
 4. Feature exclusion
 
-Variables containing 'cumulative_', 'temperature_', '_including_luc' are excluded due to the circular dependency and causality issues.
+Variables containing 'cumulative_', 'temperature_', '_including_luc', 'ghg', 'co2' are excluded due to the circular dependency, causality, and multicollinearity issues.
 
 ### Code
 * [Step 3-1 Feature Selections](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_01_Feature_Selections.ipynb)
