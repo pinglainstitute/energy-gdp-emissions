@@ -209,7 +209,7 @@ The Best order for India was (1, 1, 1) Baseline ARIMA
 ### Plots
 
 
-## Step 2-3
+## Step 2-3: Baseline DL Models
 Building baseline DL models and comparison with baseline ARIMA.
 
 The baseline DL models are LSTM, Bidirectional LSTM, Encoder-Decoder LSTM, CNN.
@@ -247,7 +247,7 @@ The best model for each country is presented as a table in the result link.
 
 * [Baseline model plots for India](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/India_baseline_model_comparison.png)
 
-
+**-> Drop Baseline simple DL models**
 
 ## Step 3-2: ARIMAX Model
 Building ARIMAX to see the forecasts with other exogenous variables
