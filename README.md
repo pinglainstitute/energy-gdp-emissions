@@ -157,13 +157,19 @@ The reason why all the featuers were normalised into pct_change is combining all
 
 Variables containing 'cumulative_', 'temperature_', '_including_luc', 'ghg', 'co2' are excluded due to the circular dependency and causality issues.
 
+5. Variance Inflation Factor (<= 10)
+
+
+
 ### Code
 * [Step 1-3 Feature Selections](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_01_Feature_Selections.ipynb)
 
 ### Results
-From the correlation analysis, the variables we can consider are `gdp`, `primary_energy_consumption`, `population`, `coal_consumption`, `biofuel_share`, `low_carbon_share`, `energy_per_gdp`, `methane`, `nitrous_oxide`
+From the correlation analysis, the variables we can consider are `gdp`, `primary_energy_consumption`, `population`, `coal_consumption`, `biofuel_share`, `low_carbon_share`, `energy_per_gdp`, `methane`, `nitrous_oxide`.
 
-! should be discussed at the meeting: After testing variance_inflation_factor, excluding `coal_consumption` and `energy_per_gdp` returns the overall VIF values became more acceptable.
+After testing variance_inflation_factor, excluding `coal_consumption` and `energy_per_gdp` returns the overall VIF values became more acceptable.
+
+Hence, the finalised variables to consider are: `gdp`, `primary_energy_consumption`, `population`, `biofuel_share`, `low_carbon_share`, `methane`, `nitrous_oxide`
 
 * [Correlation table of pct change for three countries without lags](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/three_summary_no_lags.md)
 
