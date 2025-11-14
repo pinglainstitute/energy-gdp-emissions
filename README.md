@@ -22,7 +22,9 @@ The requirements.txt is based on arm64 macos, make sure to change the libraries 
 # Experiments
 Our experiments are conducted over multiple stages, you can go
 through each of the notebooks. Or go straight to the markdown
-file that contains [result not added yet](example)
+file that contains [data and result repo](https://github.com/pinglainstitute/energy-gdp-emissions/tree/main/data)
+
+Experiments with the previous project aim are contained at [legacy repo](https://github.com/pinglainstitute/energy-gdp-emissions/tree/main/legacy) and excluded expriments due to any changes are contained at [temporary repo](https://github.com/pinglainstitute/energy-gdp-emissions/tree/main/code/temp)
 
 ## Step 0: Data Preparation
 Since there are resources from two different repo and files, data were pre-processed to be used for our experiments.
@@ -249,32 +251,6 @@ This is possibly due to the non-stationarity of some exogenous variables, howeve
 
 ### Plots
 * [Plot of auto ARIMAX result for three countries](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/auto_ARIMAX_three_forecast.png)
-
-**`!This step is moved to temp`**
-
-Step 2-3: Baseline DL Models
-
-Building baseline DL models and comparison with baseline ARIMA.
-
-The baseline DL models are LSTM, Bidirectional LSTM, Encoder-Decoder LSTM, CNN.
-
-**The workflow**:
-
-raw data -> pct change normalisation -> combine all countries' pct_change data -> fit one StandardScaler
-
--> make sequences(5 input windows, 1 output window) -> stack all sequences for each country -> train each model on this data
-
-**Evaluation workflow**:
-
-for each country, use train+test -> pct_change -> scaling with the same StandardScaler we used before -> create sequences
-
--> extract sequences to predict test data -> inverse scaling -> denormalise -> calculate metrics
-
-**Errors for each single step** were calculated in the middle of the code
-
-The comparison with the baseline ARIMA (Best optimal order for each country) was presented at the end
-
-ARIMA uses original values of the data.
 
 ## Step 3-3: Multivariate DL models (Should be modified to 3-1)
 Building multivariate DL models.
