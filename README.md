@@ -205,18 +205,22 @@ The Best order for India was (1, 1, 1) Baseline ARIMA
 * [Forecast on test data](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_01_results/arima_optimal_forecasts.png)
 
 ## Step 2-2: Baseline ARIMAX Model
+Before running ARIMAX, adfuller was tested to see if the selected exogenous variables for each country are stationrary after differencing.
 
+Since only `methane` and `nitrous_oxide` were stationary after differencing for all the countries, only auto ARIMAX was conducted for this step.
 
 ### Code
-
+* [Step 2-2 Baseline ARIMAX](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_02_Baseline_ARIMAX.ipynb)
 
 ### Results
 
 
 ### Plots
 
+**This step is moved to temp**
 
-## Step 2-3: Baseline DL Models
+Step 2-3: Baseline DL Models
+
 Building baseline DL models and comparison with baseline ARIMA.
 
 The baseline DL models are LSTM, Bidirectional LSTM, Encoder-Decoder LSTM, CNN.
@@ -239,22 +243,6 @@ The comparison with the baseline ARIMA (Best optimal order for each country) was
 
 ARIMA uses original values of the data.
 
-### Code
-* [Step 2-3 Baseline DL Models](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_02_Baseline_DL_models.ipynb)
-
-### Results
-* [Baseline model comparison](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/baseline_model_comparison.md)
-
-The best model for each country is presented as a table in the result link.
-
-### Plots
-* [Baseline model plots for the US](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/United_States_baseline_model_comparison.png)
-
-* [Baseline model plots for China](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/China_baseline_model_comparison.png)
-
-* [Baseline model plots for India](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/India_baseline_model_comparison.png)
-
-**-> Drop Baseline simple DL models**
 
 ## Step 3-2: ARIMAX Model
 Building ARIMAX to see the forecasts with other exogenous variables
