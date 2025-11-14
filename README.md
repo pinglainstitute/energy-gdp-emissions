@@ -24,7 +24,9 @@ Our experiments are conducted over multiple stages, you can go
 through each of the notebooks. Or go straight to the markdown
 file that contains [data and result repo](https://github.com/pinglainstitute/energy-gdp-emissions/tree/main/data)
 
-Experiments with the previous project aim are contained at [legacy repo](https://github.com/pinglainstitute/energy-gdp-emissions/tree/main/legacy) and excluded expriments due to any changes are contained at [temporary repo](https://github.com/pinglainstitute/energy-gdp-emissions/tree/main/code/temp)
+Experiments with the previous project aim are contained at [legacy repo](https://github.com/pinglainstitute/energy-gdp-emissions/tree/main/legacy)
+
+Excluded experiments due to any changes are contained at [temporary repo](https://github.com/pinglainstitute/energy-gdp-emissions/tree/main/code/temp)
 
 ## Step 0: Data Preparation
 Since there are resources from two different repo and files, data were pre-processed to be used for our experiments.
