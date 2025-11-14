@@ -209,13 +209,17 @@ Before running ARIMAX, adfuller was tested to see if the selected exogenous vari
 
 Since only `methane` and `nitrous_oxide` were stationary after differencing for all the countries, only auto ARIMAX was conducted for this step.
 
+**Workflow**
+Training ARIMAX on interpolated train data (original values, not pct_change normalised) -> optimal order was chosen based on AIC.
+
 ### Code
 * [Step 2-2 Baseline ARIMAX](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_02_Baseline_ARIMAX.ipynb)
 
 ### Results
-
+* [Auto ARIMAX summary result](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/Bseline_ARIMAX_result_three.md)
 
 ### Plots
+* [Plot of auto ARIMAX result for three countries](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/auto_ARIMAX_three_forecast.png)
 
 **This step is moved to temp**
 
