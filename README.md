@@ -186,7 +186,12 @@ For the baseline ARIMA model, raw CO2 emission data were used instead of percent
 **ARIMA workflow**:
 1. Used interpolated training DataFrame with test data from full DataFrame
 2. ADF test to check stationarity (p_value < 0.05)
-3. ACF, PACF testing to determine p, q -> Gridsearch to determine the optimal order (AIC)
+ - US: d = 1, China = 4, India = 2
+3. ACF, PACF testing to determine p, q
+ - PACF cutoff for all countries at lag 1: AR(1)
+ - ACF for all countries showed gradual decay. Showing AR pattern
+4. Gridsearch to determine the optimal order (AIC)
+ - Search ranges: p = \[0, 2], d = [0, 2], q = [0, 2]
 
 -> Auto ARIMA search -> model comparison (Baseline(1, 1, 1), Manual Grid Search, Auto ARIMA (fixed d), Auto ARIMA (free d))
 
