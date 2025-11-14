@@ -184,7 +184,7 @@ Hence, the finalised variables to consider are: `gdp`, `primary_energy_consumpti
 For the baseline ARIMA model, instead of pct change normalisation, raw data were used due to the violation of normality.
 
 **ARIMA workflow**:
-ADF test to check stationarity (p_value < 0.05) -> ACF, PACF testing to determine p, q -> Gridsearch to determine the optimal order (AIC)
+Used interpolated training DataFrame created in previous tep -> ADF test to check stationarity (p_value < 0.05) -> ACF, PACF testing to determine p, q -> Gridsearch to determine the optimal order (AIC)
 
 -> Auto ARIMA search -> model comparison (Baseline(1, 1, 1), Manual Grid Search, Auto ARIMA (fixed d), Auto ARIMA (free d))
 
@@ -197,7 +197,7 @@ train data for each country -> train ARIMA once -> fit the model -> predict each
 ### Results
 * [ARIMA summary result](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_01_results/arima_method_summary.md)
 
-The Best order for the US was (0, 1, 0) Auto ARIMA with fixing d order
+The Best order for the US was (2, 2, 0) Manual Grid Search
 
 The Best order for China was (0, 2, 0) Auto ARIMA with fixing d order
 
