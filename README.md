@@ -193,7 +193,7 @@ For the baseline ARIMA model, raw CO2 emission data were used instead of percent
 4. Gridsearch to determine the optimal order (AIC)
  - Search ranges: p = \[0, 2], d = \[0, 2], q = \[0, 2]
 5. Auto ARIMA
- - Fixed d: auto-selected d from ADF
+ - Fixed d: auto-selected d from ADF (For China, added d = 2 as well since 4 is too high)
  - Free d:fully automated selection with AIC
    
 **Model Comparison** 
