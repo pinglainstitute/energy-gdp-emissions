@@ -181,10 +181,12 @@ After testing variance_inflation_factor, excluding `coal_consumption` and `energ
 Hence, the finalised variables to consider are: `gdp`, `primary_energy_consumption`, `population`, `biofuel_share_energy`, `low_carbon_share_energy`, `methane`, `nitrous_oxide`
 
 ## Step 2-1: Baseline ARIMA Model
-For the baseline ARIMA model, instead of pct change normalisation, raw data were used due to the violation of normality.
+For the baseline ARIMA model, raw CO2 emission data were used instead of percent change normalisation due to the violation of normality.
 
 **ARIMA workflow**:
-Used interpolated training DataFrame created in previous tep -> ADF test to check stationarity (p_value < 0.05) -> ACF, PACF testing to determine p, q -> Gridsearch to determine the optimal order (AIC)
+1. Used interpolated training DataFrame with test data from full DataFrame
+2. ADF test to check stationarity (p_value < 0.05)
+3. ACF, PACF testing to determine p, q -> Gridsearch to determine the optimal order (AIC)
 
 -> Auto ARIMA search -> model comparison (Baseline(1, 1, 1), Manual Grid Search, Auto ARIMA (fixed d), Auto ARIMA (free d))
 
