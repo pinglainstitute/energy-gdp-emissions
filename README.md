@@ -221,7 +221,7 @@ Training ARIMAX on interpolated train data (original values, not pct_change norm
 ### Plots
 * [Plot of auto ARIMAX result for three countries](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/auto_ARIMAX_three_forecast.png)
 
-**This step is moved to temp**
+**`!This step is moved to temp`**
 
 Step 2-3: Baseline DL Models
 
@@ -246,26 +246,6 @@ for each country, use train+test -> pct_change -> scaling with the same Standard
 The comparison with the baseline ARIMA (Best optimal order for each country) was presented at the end
 
 ARIMA uses original values of the data.
-
-
-## Step 3-2: ARIMAX Model
-Building ARIMAX to see the forecasts with other exogenous variables
-
-!should be editted: Initially, variables to use were `primary_energy_consumption`, `gdp`, `population`, `electricity_demand`, `oil_production`,
-
-`nuclear_consumption`, `wind_consumption`, `biofuel_consumption`, `energy_per_gdp` from the feature selection step.
-
-### Code
-* [Step 3-2 ARIMAX](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_02_ARIMAX.ipynb)
-
-### Result
-Before running ARIMAX, stationary test was conducted for each country.
-
-We can see only `gdp`, `primary_energy_consumption`, `nuclear_consumption` are stationary with d=1 for the US.
-
-Those features in the US and, addtionally, `oil_production`, `energy_per_gdp`, `biofuel_consumption` are stationary with d=2 for China.
-
-None of the features were stationary with the optimal ARIMA differencing order for India. For India, only ARIMA is usable.
 
 ## Step 3-3: Multivariate DL models (Should be modified to 3-1)
 Building multivariate DL models.
