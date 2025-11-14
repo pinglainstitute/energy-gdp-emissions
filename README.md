@@ -191,12 +191,19 @@ For the baseline ARIMA model, raw CO2 emission data were used instead of percent
  - PACF cutoff for all countries at lag 1: AR(1)
  - ACF for all countries showed gradual decay. Showing AR pattern
 4. Gridsearch to determine the optimal order (AIC)
- - Search ranges: p = \[0, 2], d = [0, 2], q = [0, 2]
-
--> Auto ARIMA search -> model comparison (Baseline(1, 1, 1), Manual Grid Search, Auto ARIMA (fixed d), Auto ARIMA (free d))
+ - Search ranges: p = \[0, 2], d = \[0, 2], q = \[0, 2]
+5. Auto ARIMA
+ - Fixed d:
+ - Free d:
+   
+**Model Comparison** 
+1. (Baseline(1, 1, 1)
+2. Manual Grid Search
+3. Auto ARIMA (fixed d)
+4. Auto ARIMA (free d))
 
 **Forecast workflow**:
-train data for each country -> train ARIMA once -> fit the model -> predict each test year individually
+train ARIMA once on train data for each country -> fit the model -> predict each test year individually
 
 ### Code
 * [Step 2-1 Baseline ARIMA](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_01_Baseline_ARIMA.ipynb)
