@@ -221,18 +221,31 @@ The Best order for India was (1, 1, 1) Baseline ARIMA
 * [Forecast on test data](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_01_results/arima_optimal_forecasts.png)
 
 ## Step 2-2: Baseline ARIMAX Model
-Before running ARIMAX, adfuller was tested to see if the selected exogenous variables for each country are stationrary after differencing.
+For the Baseline ARIMAX, raw CO2 emission data with 7 exogenous varialbes from **Step1-3**
 
 Since only `methane` and `nitrous_oxide` were stationary after differencing for all the countries, only auto ARIMAX was conducted for this step.
 
-**Workflow**
-Training ARIMAX on interpolated train data (original values, not pct_change normalised) -> optimal order was chosen based on AIC.
+**Exogenous Variables**
+`gdp`, `primary_energy_consumption`, `population`, `biofuel_share_energy`, `low_carbon_share_energy`, `methane`, `nitrous_oxide`
+
+**ARIMAX Workflow**
+1. Used interpolated training DataFrame with test data from full DataFrame
+2. Stationary test (ADF): though all the variables remained stationary after differencing for the US, the variables China and India did not.
+3. Auto ARIMAX: manual ARIMAX was not feasible from the stationary test.
+ - information criterion: AIC
+
+**Forecast Workflow**
+Train auto ARIMAX once on training data with exogenous variables -> Fit the model -> forecast Multi-step ahead
 
 ### Code
 * [Step 2-2 Baseline ARIMAX](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/02_02_Baseline_ARIMAX.ipynb)
 
 ### Results
 * [Auto ARIMAX summary result](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/Bseline_ARIMAX_result_three.md)
+
+Baseline ARIMAX peformed worse than Baseline ARIMA for all three countries
+
+This is possibly due to the non-stationarity of some exogenous variables, however, the key variables such as `gdp` and `primary_energy_consumption` were not stationary after differerncing for India.
 
 ### Plots
 * [Plot of auto ARIMAX result for three countries](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/auto_ARIMAX_three_forecast.png)
