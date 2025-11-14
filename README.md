@@ -118,8 +118,8 @@ After experimenting co2_per_capita and co2_intensity as a target in the notebook
 
 **-> Decision is to drop Herfindahl-Hirschmann Index**
 
-## Step 1-3: Feature Selection
-This feature selection step is to identify optimal features for CO2 forecasting models through correlation analysis across different groups.
+## Step 1-3: Correlation Analysis
+This step is to identify optimal features for CO2 forecasting models through correlation analysis across different groups.
 
 percent change normalised features (its lags) vs target for Country Groups below
 
@@ -162,21 +162,23 @@ Variables containing 'cumulative_', 'temperature_', '_including_luc', 'ghg', 'co
 Simple VIF test was conducted (threshold at 10) in order to deal with multicollinearity among the independent variables.
 
 ### Code
-* [Step 1-3 Feature Selections](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_01_Feature_Selections.ipynb)
+* [Step 1-3 Correlation Analysis](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/01_03_Correlation_Analysis.ipynb)
 
 ### Results
 
-* [Correlation table of pct change for three countries without lags](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/three_summary_no_lags.md)
+* [Correlation table of pct change for three countries without lags](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_03_results/three_summary_no_lags.md)
 
-* [Correlation table of pct change for three countries with lags](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/three_summary_with_lags.md)
+* [Correlation table of pct change for three countries with lags](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_03_results/three_summary_with_lags.md)
 
-* [**Correlation tables for other categories**](https://github.com/pinglainstitute/energy-gdp-emissions/tree/main/data/03_01_results)
+* [**Correlation tables for other categories**](https://github.com/pinglainstitute/energy-gdp-emissions/tree/main/data/01_03_results)
 
-From the correlation analysis, the variables we can consider are `gdp`, `primary_energy_consumption`, `population`, `coal_consumption`, `biofuel_share`, `low_carbon_share`, `energy_per_gdp`, `methane`, `nitrous_oxide`.
+There are variables based on the same resource such as `biofuel_share_energy`, `biofuel_consumption`, `biofuel_cons_per_capita`. Only one of the variables with the highest mean absolute correlation coefficient was considered.
+
+From the result, the variables to consider are `gdp`, `primary_energy_consumption`, `population`, `coal_consumption`, `biofuel_share_energy`, `low_carbon_share_energy`, `energy_per_gdp`, `methane`, `nitrous_oxide`.
 
 After testing variance_inflation_factor, excluding `coal_consumption` and `energy_per_gdp` returns the overall VIF values became more acceptable.
 
-Hence, the finalised variables to consider are: `gdp`, `primary_energy_consumption`, `population`, `biofuel_share`, `low_carbon_share`, `methane`, `nitrous_oxide`
+Hence, the finalised variables to consider are: `gdp`, `primary_energy_consumption`, `population`, `biofuel_share_energy`, `low_carbon_share_energy`, `methane`, `nitrous_oxide`
 
 ## Step 2-1: Baseline ARIMA Model
 For the baseline ARIMA model, instead of pct change normalisation, raw data were used due to the violation of normality.
