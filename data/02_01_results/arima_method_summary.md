@@ -6,18 +6,18 @@
 
 | Country       | Method               | Order     |      RMSE |       MAE |     BIC |
 |:--------------|:---------------------|:----------|----------:|----------:|--------:|
-| United States | Baseline (1,1,1)     | (1, 1, 1) |  368.395  |  298.165  | nan     |
+| United States | Baseline (1,1,1)     | (1, 1, 1) |  368.395  |  298.165  | 577.213 |
 | United States | Auto ARIMA (fixed d) | (0, 1, 0) |  356.259  |  286.951  | 574.158 |
 | United States | Auto ARIMA (free d)  | (0, 1, 0) |  356.259  |  286.951  | 574.158 |
-| United States | Manual Grid Search   | (2, 2, 0) |  226.796  |  158.133  | nan     |
-| China         | Baseline (1,1,1)     | (1, 1, 1) |  497.839  |  426.659  | nan     |
+| United States | Manual Grid Search   | (2, 2, 0) |  226.796  |  158.133  | 569.289 |
+| China         | Baseline (1,1,1)     | (1, 1, 1) |  497.839  |  426.659  | 587.9   |
 | China         | Auto ARIMA (fixed d) | (0, 2, 0) |  429.382  |  372.257  | 572.211 |
 | China         | Auto ARIMA (free d)  | (0, 2, 0) |  429.382  |  372.257  | 572.211 |
-| China         | Manual Grid Search   | (2, 2, 0) | 1542.25   | 1474.88   | nan     |
-| India         | Baseline (1,1,1)     | (1, 1, 1) |   99.1002 |   79.5966 | nan     |
+| China         | Manual Grid Search   | (2, 2, 0) | 1542.25   | 1474.88   | 571.423 |
+| India         | Baseline (1,1,1)     | (1, 1, 1) |   99.1002 |   79.5966 | 414.079 |
 | India         | Auto ARIMA (fixed d) | (0, 2, 1) |  107.012  |   83.4386 | 398.843 |
 | India         | Auto ARIMA (free d)  | (0, 2, 1) |  107.012  |   83.4386 | 398.843 |
-| India         | Manual Grid Search   | (2, 2, 0) |  120.618  |   84.7623 | nan     |
+| India         | Manual Grid Search   | (2, 2, 0) |  120.618  |   84.7623 | 396.514 |
 
 ## RMSE by Method (Averaged Across Countries)
 
