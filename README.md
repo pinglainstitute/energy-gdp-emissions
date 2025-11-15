@@ -255,29 +255,37 @@ This is possibly due to the non-stationarity of some exogenous variables, howeve
 * [Plot of auto ARIMAX result for three countries](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/auto_ARIMAX_three_forecast.png)
 
 ## Step 3-1: Multivariate DL models for three countries
-Building multivariate DL models.
+This step implements and evaluates multivariate DL models for CO2 forecasting using 7 selected features from Step 1-3 for the United States, China, and India.
 
-The models are multivariate versions from the baseline models: LSTM, Bi-directional LSTM, ED-LSTM, CNN
-
-`! To add`: Due to its small number of dataset, tuning hyperparameters with validation = 0.1 and its loss of mse was conducted.
-
-And the validation set was included in the training dataset.
-
-**Data prep and train workflow**:
-
-raw data -> split train and test -> pct_change normalisation -> combine all countries' train data -> fit universal StandardScaler
-
--> create sequences (5 input windows, 1 output window) -> train models with hyperparmeter tuning
-
-**Test and evaluation workflow**:
-
-for each country, combine train + test data (lags) -> calculate pct_change -> scale with the previous Scaler -> create sequences
-
--> Extract the last 9 sequences -> Model prediction -> Inverse StandardScaler -> Denormalise -> calculate metrics
-
-The selected features from the previous feature selection step:
+* Models used: LSTM, Bi-directional LSTM, ED-LSTM, CNN
 
 * Selected features = `gdp`, `primary_energy_consumption`, `population`, `biofuel_share_energy`, `low_carbon_share_energy`,`methane`, `nitrous_oxide`
+
+**Method**
+
+1. Data preparation
+
+* Used interpolated training data and test data from full data
+
+* Normalisation: percent change normalisation implemented (Only the current feature pct change used)
+
+* Scaling: used universal StandardScaler fitted on combined training data for all three countries
+
+* Sequence: 5-step input window was created to predict 1 step-ahead
+
+2. Hyperparameter Tuning
+
+* Grid Search with 0.1 validation data split across hyperparameters
+
+3. Model Training
+
+* Final model was retrained on full training data after hyperparameter tuning (no validation data split)
+
+**Evaluation workflow**:
+
+for each country, combine train + test data (lags) -> calculate pct_change -> scale with the previous Scaler -> create sequences for entire data
+
+-> Extract the last 9 sequences -> Model prediction -> Inverse StandardScaler -> Denormalise -> calculate metrics
 
 ### Code
 * [Step 3-1 Three Multivariate DL models](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_01_Three_Multi_DLs.ipynb)
