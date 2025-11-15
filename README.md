@@ -254,7 +254,7 @@ This is possibly due to the non-stationarity of some exogenous variables, howeve
 ### Plots
 * [Plot of auto ARIMAX result for three countries](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/auto_ARIMAX_three_forecast.png)
 
-## Step 3-3: Multivariate DL models (Should be modified to 3-1)
+## Step 3-1: Multivariate DL models for three countries
 Building multivariate DL models.
 
 The models are multivariate versions from the baseline models: LSTM, Bi-directional LSTM, ED-LSTM, CNN
@@ -277,22 +277,23 @@ for each country, combine train + test data (lags) -> calculate pct_change -> sc
 
 The selected features from the previous feature selection step:
 
-* Key features = `gdp`, `primary_energy_consumption`, `population`
-
-* Selected features = `oil_production`, `nulcear_consumption`, `wind_consumption`, `biofuel_consumption`, `energy_per_gdp`
+* Selected features = `gdp`, `primary_energy_consumption`, `population`, `biofuel_share_energy`, `low_carbon_share_energy`,`methane`, `nitrous_oxide`
 
 ### Code
-* [Step 3-3 Multivariate DL models](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_03_Multivariate_DL_models.ipynb)
+* [Step 3-1 Three Multivariate DL models](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_01_Three_Multi_DLs.ipynb)
 
 ### Results
-The best DL model based on RMSE for:
+* [RMSE and MASE tables](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/Three_multivariate_DL_summary.md)
 
-United States - Encoder-Decoder LSTM (rmse = , mase = )
+* [Individual errors for US](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/individual_errors_United_States.md)
 
-China - LSTM (rmse = , mase = )
+* [Individual errors for China](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/individual_errors_China.md)
 
-India - CNN (rmse = , mase = )
-
-* [RMSE and MASE tables](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_03_results/Multi_DL_summary.md)
+* [Individual errors for India](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/individual_errors_India.md)
 
 ### Plots
+* [Prediction plots for US](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/United_States_multivariate_model_comparison.png)
+
+* [Prediction plots for China](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/China_multivariate_model_comparison.png)
+
+* [Prediction plots for India](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/India_multivariate_model_comparison.png)
