@@ -379,7 +379,7 @@ Same as the step 3-1, but with train data of all countries which are valid above
 ### Results
 * [RMSE and MASE tables for three countries]
 
-The comparison table of average RMSE and average MASE for three countries vs G7 countries (China, India included, EU excluded)
+The comparison table of average RMSE and average MASE for three countries vs all countries (>= 0.8 in data coverage)
 
 * [Avg RMSE and MASE comparison]
 
