@@ -28,7 +28,7 @@ Experiments with the previous project aim are contained at [legacy repo](https:/
 
 Excluded experiments due to any changes are contained at [temporary repo](https://github.com/pinglainstitute/energy-gdp-emissions/tree/main/code/temp)
 
-## Step 0: Data Preparation
+## Step 0 Data Preparation
 Since there are resources from two different repo and files, data were pre-processed to be used for our experiments.
 
 The available energy data was from the year 1965, also with time lag = 4, the start year for the data was changed to 1969. There were two preprocessing techniques:
@@ -45,7 +45,7 @@ There are multiple DataFrames created to serve any possible experiment purposes 
 
 * `lag_df.csv` could not be uploaded due to the size limit of github. However, this can be created by running the code.
 
-## Step 1-1: Data Analysis
+## Step 1-1 Data Analysis
 Last 9 years of data was split for test and only the train data was analysed for the target variable (CO2).
 
 ### Code
@@ -68,7 +68,7 @@ The high correlation coefficient and low variability shows the reliability of th
 
 * [Heatmap for lag correlation on CO2 for 3 countries](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/01_01_results/corr_co2_vs_lagged_features_combined.png)
 
-## Step 1-2: Herfindhal-Hirschmann Index
+## Step 1-2 Herfindhal-Hirschmann Index
 
 When it comes to the energy mix, HHI was considered to train models with its explainability.
 
@@ -122,7 +122,7 @@ After experimenting co2_per_capita and co2_intensity as a target in the notebook
 
 **-> Decision is to drop Herfindahl-Hirschmann Index**
 
-## Step 1-3: Correlation Analysis
+## Step 1-3 Correlation Analysis
 This step is to identify optimal features for CO2 forecasting models through correlation analysis across different groups.
 
 percent change normalised features (its lags) vs target for Country Groups below
@@ -184,7 +184,7 @@ After testing variance_inflation_factor, excluding `coal_consumption` and `energ
 
 Hence, the finalised variables to consider are: `gdp`, `primary_energy_consumption`, `population`, `biofuel_share_energy`, `low_carbon_share_energy`, `methane`, `nitrous_oxide`
 
-## Step 2-1: Baseline ARIMA Model
+## Step 2-1 Baseline ARIMA Model
 For the baseline ARIMA model, raw CO2 emission data were used instead of percent change normalisation due to the violation of normality.
 
 **ARIMA workflow**:
@@ -224,7 +224,7 @@ The Best order for India was (1, 1, 1) Baseline ARIMA
 ### Plots
 * [Forecast on test data](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_01_results/arima_optimal_forecasts.png)
 
-## Step 2-2: Baseline ARIMAX Model
+## Step 2-2 Baseline ARIMAX Model
 For the Baseline ARIMAX, raw CO2 emission data with 7 exogenous varialbes from **Step1-3**
 
 Since only `methane` and `nitrous_oxide` were stationary after differencing for all the countries, only auto ARIMAX was conducted for this step.
@@ -254,7 +254,7 @@ This is possibly due to the non-stationarity of some exogenous variables, howeve
 ### Plots
 * [Plot of auto ARIMAX result for three countries](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/auto_ARIMAX_three_forecast.png)
 
-## Step 3-1: Multivariate DL models for three countries
+## Step 3-1 Multivariate DL models for three countries
 This step implements and evaluates multivariate DL models for CO2 forecasting using 7 selected features from Step 1-3 for the United States, China, and India.
 
 * Models used: LSTM, Bi-directional LSTM, ED-LSTM, CNN
@@ -305,3 +305,40 @@ for each country, combine train + test data (lags) -> calculate pct_change -> sc
 * [Prediction plots for China](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/China_multivariate_model_comparison.png)
 
 * [Prediction plots for India](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/India_multivariate_model_comparison.png)
+
+## Step 3-2 Multivariate DL models for G7 countries
+This step implements and evaluates multivariate DL models for CO2 forecasting using 7 selected features from Step 1-3 for G7 coutnries, China, and India.
+
+### Code
+
+
+### Results
+
+
+### Plots
+
+
+
+## Step 3-2 Multivariate DL models for G20 countries
+This step implements and evaluates multivariate DL models for CO2 forecasting using 7 selected features from Step 1-3 for G20 countries
+
+### Code
+
+
+### Results
+
+
+### Plots
+
+
+
+## Step 3-2 Multivariate DL models for All countries
+This step implements and evaluates multivariate DL models for CO2 forecasting using 7 selected features from Step 1-3 for all valid countries (data coverage >= 0.8).
+
+### Code
+
+
+### Results
+
+
+### Plots
