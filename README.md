@@ -371,9 +371,9 @@ This step implements and evaluates multivariate DL models for CO2 forecasting us
 
 **Method**
 
-Same as the step 3-1, but with train data of all countries which are valid above 0.8 data coverage rate, and exlcuded regions
+Same as the step 3-1, but with train data of all countries which are valid >= 0.8 data coverage rate, and exlcuded regions
 
-regions = 'Africa', 'Asia', 'Asia (excl. China and India)', 'Europe', 'Europe (excl. EU-27)', 'Europe (excl. EU-28)', 'European Union (27)', 'European Union (28)', 'North America', 'North America (excl. USA)', 'South America', 'Oceania', 'World', 'High-income countries', 'Low-income countries', 'Lower-middle-income countries', 'Upper-middle-income countries'
+regions = ['Africa', 'Asia', 'Asia (excl. China and India)', 'Europe', 'Europe (excl. EU-27)', 'Europe (excl. EU-28)', 'European Union (27)', 'European Union (28)', 'North America', 'North America (excl. USA)', 'South America', 'Oceania', 'World', 'High-income countries', 'Low-income countries', 'Lower-middle-income countries', 'Upper-middle-income countries']
 
 ### Code
 * []()
