@@ -311,7 +311,7 @@ This step implements and evaluates multivariate DL models for CO2 forecasting us
 
 **Method**
 
-Same as the step 3-1, but with train data of G7 countries + China, India
+Same as the step 3-1, but with train data of G7 countries + China, India, and excluded 'Europe'
 
 ### Code
 * [Step 3-2 Multivariate G7 Models](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_02_G7_Multi_DLs.ipynb)
@@ -341,7 +341,7 @@ This step implements and evaluates multivariate DL models for CO2 forecasting us
 
 **Method**
 
-Same as the step 3-1, but with train data of G20 countries
+Same as the step 3-1, but with train data of G20 countries, and excluded 'Europe'
 
 ### Code
 * [Step 3-3 Multivariate G20 Models](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_03_G20_Multi_DLs.ipynb)
