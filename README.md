@@ -310,6 +310,7 @@ for each country, combine train + test data (lags) -> calculate pct_change -> sc
 This step implements and evaluates multivariate DL models for CO2 forecasting using 7 selected features from Step 1-3 for G7 coutnries, China, and India.
 
 **Method**
+
 Same as the step 3-1, but with train data of G7 countries + China, India
 
 ### Code
@@ -329,7 +330,6 @@ The comparison table of average RMSE and average MASE for three countries vs G7 
 * [Error breakdown for India](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_02_results/individual_errors_India.md)
 
 ### Plots
-
 * [Prediction plots for US](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_02_results/United_States_multivariate_g7_model_comparison.png)
 
 * [Prediction plots for China](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_02_results/China_multivariate_g7_model_comparison.png)
@@ -339,24 +339,59 @@ The comparison table of average RMSE and average MASE for three countries vs G7 
 ## Step 3-3 Multivariate DL models for G20 countries
 This step implements and evaluates multivariate DL models for CO2 forecasting using 7 selected features from Step 1-3 for G20 countries
 
-### Code
+**Method**
 
+Same as the step 3-1, but with train data of G20 countries
+
+### Code
+* []()
 
 ### Results
+* [RMSE and MASE tables for three countries]
 
+The comparison table of average RMSE and average MASE for three countries vs G20 countries
+
+* [Avg RMSE and MASE comparison]
+
+* [Error breakdown for US]
+
+* [Error breakdown for China]
+
+* [Error breakdown for India]
 
 ### Plots
+* [Prediction plots for US]
 
+* [Prediction plots for China]
 
+* [Prediction plots for India]
 
 ## Step 3-4 Multivariate DL models for All countries
 This step implements and evaluates multivariate DL models for CO2 forecasting using 7 selected features from Step 1-3 for all valid countries (data coverage >= 0.8).
 
-### Code
+**Method**
 
+Same as the step 3-1, but with train data of all countries which are valid above 0.8 data coverage rate
+
+### Code
+* []()
 
 ### Results
+* [RMSE and MASE tables for three countries]
 
+The comparison table of average RMSE and average MASE for three countries vs G7 countries (China, India included, EU excluded)
+
+* [Avg RMSE and MASE comparison]
+
+* [Error breakdown for US]
+
+* [Error breakdown for China]
+
+* [Error breakdown for India]
 
 ### Plots
+* [Prediction plots for US]
 
+* [Prediction plots for China]
+
+* [Prediction plots for India]
