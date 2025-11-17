@@ -319,7 +319,7 @@ This step implements and evaluates multivariate DL models for CO2 forecasting us
 
 
 
-## Step 3-2 Multivariate DL models for G20 countries
+## Step 3-3 Multivariate DL models for G20 countries
 This step implements and evaluates multivariate DL models for CO2 forecasting using 7 selected features from Step 1-3 for G20 countries
 
 ### Code
@@ -332,7 +332,7 @@ This step implements and evaluates multivariate DL models for CO2 forecasting us
 
 
 
-## Step 3-2 Multivariate DL models for All countries
+## Step 3-4 Multivariate DL models for All countries
 This step implements and evaluates multivariate DL models for CO2 forecasting using 7 selected features from Step 1-3 for all valid countries (data coverage >= 0.8).
 
 ### Code
@@ -342,3 +342,4 @@ This step implements and evaluates multivariate DL models for CO2 forecasting us
 
 
 ### Plots
+
