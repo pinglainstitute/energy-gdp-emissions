@@ -344,34 +344,36 @@ This step implements and evaluates multivariate DL models for CO2 forecasting us
 Same as the step 3-1, but with train data of G20 countries
 
 ### Code
-* []()
+* [Step 3-3 Multivariate G20 Models](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_03_G20_Multi_DLs.ipynb)
 
 ### Results
-* [RMSE and MASE tables for three countries]
+* [RMSE and MASE tables for three countries](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_03_results/G20_multivariate_DL_summary.md)
 
 The comparison table of average RMSE and average MASE for three countries vs G20 countries
 
-* [Avg RMSE and MASE comparison]
+* [Avg RMSE and MASE comparison](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_03_results/model_comparison_three_vs_g20.md)
 
-* [Error breakdown for US]
+* [Error breakdown for US](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_03_results/individual_errors_United_States.md)
 
-* [Error breakdown for China]
+* [Error breakdown for China](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_03_results/individual_errors_China.md)
 
-* [Error breakdown for India]
+* [Error breakdown for India](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_03_results/individual_errors_India.md)
 
 ### Plots
-* [Prediction plots for US]
+* [Prediction plots for US](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_03_results/United_States_multivariate_g20_model_comparison.png)
 
-* [Prediction plots for China]
+* [Prediction plots for China](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_03_results/China_multivariate_g20_model_comparison.png)
 
-* [Prediction plots for India]
+* [Prediction plots for India](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_03_results/India_multivariate_g20_model_comparison.png)
 
 ## Step 3-4 Multivariate DL models for All countries
 This step implements and evaluates multivariate DL models for CO2 forecasting using 7 selected features from Step 1-3 for all valid countries (data coverage >= 0.8).
 
 **Method**
 
-Same as the step 3-1, but with train data of all countries which are valid above 0.8 data coverage rate
+Same as the step 3-1, but with train data of all countries which are valid above 0.8 data coverage rate, and exlcuded regions
+
+regions = 'Africa', 'Asia', 'Asia (excl. China and India)', 'Europe', 'Europe (excl. EU-27)', 'Europe (excl. EU-28)', 'European Union (27)', 'European Union (28)', 'North America', 'North America (excl. USA)', 'South America', 'Oceania', 'World', 'High-income countries', 'Low-income countries', 'Lower-middle-income countries', 'Upper-middle-income countries'
 
 ### Code
 * []()
