@@ -293,11 +293,11 @@ for each country, combine train + test data (lags) -> calculate pct_change -> sc
 ### Results
 * [RMSE and MASE tables](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/Three_multivariate_DL_summary.md)
 
-* [Individual errors for US](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/individual_errors_United_States.md)
+* [Error breakdown for US](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/individual_errors_United_States.md)
 
-* [Individual errors for China](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/individual_errors_China.md)
+* [Error breakdown for China](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/individual_errors_China.md)
 
-* [Individual errors for India](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/individual_errors_India.md)
+* [Error breakdown for India](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/individual_errors_India.md)
 
 ### Plots
 * [Prediction plots for US](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_01_results/United_States_multivariate_model_comparison.png)
@@ -309,15 +309,32 @@ for each country, combine train + test data (lags) -> calculate pct_change -> sc
 ## Step 3-2 Multivariate DL models for G7 countries
 This step implements and evaluates multivariate DL models for CO2 forecasting using 7 selected features from Step 1-3 for G7 coutnries, China, and India.
 
-### Code
+**Method**
+Same as the step 3-1, but with train data of G7 countries + China, India
 
+### Code
+* [Step 3-2 Multivariate G7 Models](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_02_G7_Multi_DLs.ipynb)
 
 ### Results
+* [RMSE and MASE tables for three countries](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_02_results/G7_multivariate_DL_summary.md)
 
+The comparison table of average RMSE and average MASE for three countries vs G7 countries (China, India included, EU excluded)
+
+* [Avg RMSE and MASE comparison](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_02_results/model_comparison_three_vs_g7.md)
+
+* [Error breakdown for US](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_02_results/individual_errors_United_States.md)
+
+* [Error breakdown for China](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_02_results/individual_errors_China.md)
+
+* [Error breakdown for India](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_02_results/individual_errors_India.md)
 
 ### Plots
 
+* [Prediction plots for US](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_02_results/United_States_multivariate_g7_model_comparison.png)
 
+* [Prediction plots for China](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_02_results/China_multivariate_g7_model_comparison.png)
+
+* [Prediction plots for India](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_02_results/India_multivariate_g7_model_comparison.png)
 
 ## Step 3-3 Multivariate DL models for G20 countries
 This step implements and evaluates multivariate DL models for CO2 forecasting using 7 selected features from Step 1-3 for G20 countries
