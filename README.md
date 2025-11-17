@@ -311,7 +311,7 @@ This step implements and evaluates multivariate DL models for CO2 forecasting us
 
 **Method**
 
-Same as the step 3-1, but with train data of G7 countries + China, India, and excluded 'Europe'
+Same as the step 3-1, but with train data of G7 countries + China, India, and excluded EU
 
 ### Code
 * [Step 3-2 Multivariate G7 Models](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_02_G7_Multi_DLs.ipynb)
@@ -341,7 +341,7 @@ This step implements and evaluates multivariate DL models for CO2 forecasting us
 
 **Method**
 
-Same as the step 3-1, but with train data of G20 countries, and excluded 'Europe'
+Same as the step 3-1, but with train data of G20 countries, and excluded EU
 
 ### Code
 * [Step 3-3 Multivariate G20 Models](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_03_G20_Multi_DLs.ipynb)
@@ -349,7 +349,7 @@ Same as the step 3-1, but with train data of G20 countries, and excluded 'Europe
 ### Results
 * [RMSE and MASE tables for three countries](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_03_results/G20_multivariate_DL_summary.md)
 
-The comparison table of average RMSE and average MASE for three countries vs G20 countries
+The comparison table of average RMSE and average MASE for three countries vs G20 countries (excl. EU)
 
 * [Avg RMSE and MASE comparison](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_03_results/model_comparison_three_vs_g20.md)
 
