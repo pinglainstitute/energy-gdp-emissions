@@ -397,3 +397,8 @@ The comparison table of average RMSE and average MASE for three countries vs all
 * [Prediction plots for China]
 
 * [Prediction plots for India]
+
+## Summary of Step 3
+Summary to be added
+
+* [Table of all ML model perforamnces]
