@@ -407,4 +407,4 @@ The comparison table of average RMSE and average MASE for three countries vs all
 ## Summary of Step 3
 Summary to be added
 
-* [Table of all ML model perforamnces]
+* [Aggregate ML Model Perforamnce Table](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_result_summary.md)
