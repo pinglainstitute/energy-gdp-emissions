@@ -311,7 +311,9 @@ This step implements and evaluates multivariate DL models for CO2 forecasting us
 
 **Method**
 
-Same as the step 3-1, but with train data of G7 countries + China, India, and excluded EU
+Universal StandardScaler was fitted on combined training data for all selected countries (G7 + China, India)
+
+The rest is same as the step 3-1, but with train data of G7 countries + China, India, and excluded EU
 
 ### Code
 * [Step 3-2 Multivariate G7 Models](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_02_G7_Multi_DLs.ipynb)
@@ -341,7 +343,9 @@ This step implements and evaluates multivariate DL models for CO2 forecasting us
 
 **Method**
 
-Same as the step 3-1, but with train data of G20 countries, and excluded EU
+Universal StandardScaler was fitted on combined training data for all selected countries (G20, excluded EU)
+
+The rest is same as the step 3-1, but with train data of G20 countries, and excluded EU
 
 ### Code
 * [Step 3-3 Multivariate G20 Models](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_03_G20_Multi_DLs.ipynb)
@@ -371,7 +375,9 @@ This step implements and evaluates multivariate DL models for CO2 forecasting us
 
 **Method**
 
-Same as the step 3-1, but with train data of all countries which are valid >= 0.8 data coverage rate, and exlcuded regions
+Universal StandardScaler was fitted on combined training data for all selected countries
+
+The rest is same as the step 3-1, but with train data of all countries which are valid >= 0.8 data coverage rate, and exlcuded regions
 
 regions = ['Africa', 'Asia', 'Asia (excl. China and India)', 'Europe', 'Europe (excl. EU-27)', 'Europe (excl. EU-28)', 'European Union (27)', 'European Union (28)', 'North America', 'North America (excl. USA)', 'South America', 'Oceania', 'World', 'High-income countries', 'Low-income countries', 'Lower-middle-income countries', 'Upper-middle-income countries']
 
