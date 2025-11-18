@@ -382,27 +382,27 @@ The rest is same as the step 3-1, but with train data of all countries which are
 regions = ['Africa', 'Asia', 'Asia (excl. China and India)', 'Europe', 'Europe (excl. EU-27)', 'Europe (excl. EU-28)', 'European Union (27)', 'European Union (28)', 'North America', 'North America (excl. USA)', 'South America', 'Oceania', 'World', 'High-income countries', 'Low-income countries', 'Lower-middle-income countries', 'Upper-middle-income countries']
 
 ### Code
-* []()
+* [Step 3-4 Multivariate All Models](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/03_04_All_Multi_DLs.ipynb)
 
 ### Results
-* [RMSE and MASE tables for three countries]
+* [RMSE and MASE tables for three countries](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_04_results/All_multivariate_DL_summary.md)
 
 The comparison table of average RMSE and average MASE for three countries vs all countries (>= 0.8 in data coverage)
 
-* [Avg RMSE and MASE comparison]
+* [Avg RMSE and MASE comparison](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_04_results/model_comparison_three_vs_all.md)
 
-* [Error breakdown for US]
+* [Error breakdown for US](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_04_results/individual_errors_United_States.md)
 
-* [Error breakdown for China]
+* [Error breakdown for China](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_04_results/individual_errors_China.md)
 
-* [Error breakdown for India]
+* [Error breakdown for India](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_04_results/individual_errors_India.md)
 
 ### Plots
-* [Prediction plots for US]
+* [Prediction plots for US](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_04_results/United_States_multivariate_all_country_model_comparison.png)
 
-* [Prediction plots for China]
+* [Prediction plots for China](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_04_results/China_multivariate_all_country_model_comparison.png)
 
-* [Prediction plots for India]
+* [Prediction plots for India](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_04_results/India_multivariate_all_country_model_comparison.png)
 
 ## Summary of Step 3
 Summary to be added
