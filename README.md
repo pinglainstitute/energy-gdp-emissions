@@ -254,6 +254,11 @@ This is possibly due to the non-stationarity of some exogenous variables, howeve
 ### Plots
 * [Plot of auto ARIMAX result for three countries](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_02_results/auto_ARIMAX_three_forecast.png)
 
+## Summary of Step 2
+
+* [Baseline Model Performace Table](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/02_result_summary.md)
+
+
 ## Step 3-1 Multivariate DL models for three countries
 This step implements and evaluates multivariate DL models for CO2 forecasting using 7 selected features from Step 1-3 for the United States, China, and India.
 
