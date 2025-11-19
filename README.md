@@ -19,7 +19,7 @@ required libraries to install: [requirements.txt](https://github.com/pinglainsti
 
 **Before you run**
 
-If your local machine is using Apple Silicon (arm64 macos). [requirements for macos]
+If your local machine is using Apple Silicon (arm64 macos). [requirements for macos](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/requirements-macos.txt)
 
 # Experiments
 Our experiments are conducted over multiple stages, you can go
