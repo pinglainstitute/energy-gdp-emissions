@@ -4,3 +4,8 @@ tensorflow==2.16.2
 jupyter==1.1.1
 ipykernel==7.1.0
 keras==3.12.0
+matplotlib==3.10.7
+seaborn==0.13.2
+pandas==2.3.3
+scipy==1.15.3
+numpy==1.26.4
