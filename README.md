@@ -17,7 +17,9 @@ python version = 3.10.19
 
 required libraries to install: [requirements.txt](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/requirements.txt)
 
-The requirements.txt is based on arm64 macos, make sure to change the libraries depending on your environment.
+**Before you run**
+
+The requirements.txt is based on Apple Silicon (arm64 macos). If you are running the code on Intel Macos or other OS, please remove tensorflow-macos and tensorflow-metal and replace is with tensorflow==2.16.2
 
 # Experiments
 Our experiments are conducted over multiple stages, you can go
