@@ -1,5 +1,6 @@
 scikit-learn==1.7.2
 pmdarima==2.0.4
-tensorflow==2.16.2
+tensorflow-macos==2.16.2
+tensorflow-metal==1.2.0
 jupyter==1.1.1
 ipykernel==7.1.0
