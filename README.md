@@ -19,7 +19,7 @@ required libraries to install: [requirements.txt](https://github.com/pinglainsti
 
 **Before you run**
 
-The requirements.txt is based on Apple Silicon (arm64 macos). If you are running the code on Intel Macos or other OS, please, replace tensorflow-macos and tensorflow-metal with tensorflow==2.16.2
+If your local machine is using Apple Silicon (arm64 macos). [requirements for macos]
 
 # Experiments
 Our experiments are conducted over multiple stages, you can go
