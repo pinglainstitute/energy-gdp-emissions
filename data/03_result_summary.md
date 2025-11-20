@@ -1,6 +1,6 @@
 # Summary of Multivariate Deep Learning Experiments
 
-This summary shows the performance of four deep learning models (LSTM, Bi-LSTM, ED-LSTM, CNN) trained on different country groups to predict CO2 emissions for three target countries: The United States, China, and India
+This summary shows the performance metrics of four deep learning models (LSTM, Bi-LSTM, ED-LSTM, CNN) trained on different country groups to predict CO2 emissions for three target countries: The United States, China, and India
 
 ### Performance Summary: RMSE
 
@@ -24,3 +24,27 @@ This summary shows the performance of four deep learning models (LSTM, Bi-LSTM, 
 |                   | CNN   |           220.211 |                10.188 |       287.247 |243.797|129.590|
 
 ---
+
+### Performance Summary: MASE
+
+| Training Dataset  | Model | Avg (3 Countries) |   Avg (All in Train)  | United States | China | India | 
+|:------------------|:------|------------------:|----------------------:|--------------:|------:|------:|
+| Three Countries   | LSTM  |             1.051 |                 1.051 |         1.000 | 1.422 | 0.730 |
+|                   |Bi-LSTM|             0.928 |                 0.928 |         1.071 | 1.028 | 0.685 |
+|                   |ED-LSTM|             1.022 |                 1.022 |         0.906 | 1.393 | 0.767 |
+|                   | CNN   |             1.081 |                 1.081 |         1.028 | 1.561 | 0.654 |
+| G7 + China + India| LSTM  |             0.919 |                 1.019 |         1.009 | 1.012 | 0.737 |
+|                   |Bi-LSTM|             0.972 |                 0.996 |         0.862 | 1.359 | 0.695 |
+|                   |ED-LSTM|             0.963 |                 1.043 |         0.971 | 1.149 | 0.770 |
+|                   | CNN   |             0.908 |                 1.050 |         1.054 | 0.886 | 0.783 |
+| G20               | LSTM  |             0.781 |                 0.991 |         0.809 | 0.908 | 0.626 |
+|                   |Bi-LSTM|             0.868 |                 1.033 |         0.955 | 0.962 | 0.686 |
+|                   |ED-LSTM|             0.882 |                 0.994 |         0.941 | 1.026 | 0.679 |
+|                   | CNN   |             0.964 |                 1.110 |         1.172 | 0.994 | 0.725 |
+| All Countries     | LSTM  |             0.914 |                 1.182 |         0.933 | 0.810 | 1.000 |
+|                   |Bi-LSTM|             0.875 |                 1.145 |         0.956 | 0.656 | 1.014 |
+|                   |ED-LSTM|             0.895 |                 1.028 |         1.019 | 0.841 | 0.824 |
+|                   | CNN   |             0.911 |                 1.255 |         1.043 | 0.874 | 0.817 |
+
+---
+
