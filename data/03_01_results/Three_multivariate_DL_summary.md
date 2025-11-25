@@ -4,10 +4,11 @@ RMSE of each DL model trained on all countries combined dataset with selected fe
 
 | Model   |   China |   India |   United States |
 |:--------|--------:|--------:|----------------:|
-| LSTM    | 426.572 | 139.005 |         251.134 |
-| Bi-LSTM | 328.626 | 125.362 |         263.716 |
-| ED-LSTM | 411.619 | 143.287 |         223.622 |
-| CNN     | 466.028 | 157.645 |         243.81  |
+| RNN     | 355.759 | 141.545 |         250.503 |
+| LSTM    | 296.16  | 129.159 |         292.182 |
+| Bi-LSTM | 393.028 | 148.76  |         280.797 |
+| ED-LSTM | 635.924 | 145.308 |         210.396 |
+| CNN     | 313.883 | 135.224 |         272.032 |
 
 ---
 
@@ -15,8 +16,9 @@ MASE of each DL model trained on all countries combined dataset with selected fe
 
 | Model   |   China |   India |   United States |
 |:--------|--------:|--------:|----------------:|
-| LSTM    |  1.4216 |  0.7301 |          1.0003 |
-| Bi-LSTM |  1.0284 |  0.6847 |          1.0706 |
-| ED-LSTM |  1.3926 |  0.7673 |          0.9058 |
-| CNN     |  1.5614 |  0.6543 |          1.0284 |
+| RNN     |  1.1846 |  0.745  |          0.9502 |
+| LSTM    |  0.9848 |  0.6848 |          1.1932 |
+| Bi-LSTM |  1.2718 |  0.8168 |          1.1048 |
+| ED-LSTM |  1.8433 |  0.7579 |          0.9186 |
+| CNN     |  0.9884 |  0.7085 |          1.0323 |
 
