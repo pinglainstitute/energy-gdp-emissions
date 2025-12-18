@@ -1,6 +1,6 @@
 # Summary of Multivariate Deep Learning Experiments
 
-This summary shows the performance metrics of four deep learning models (LSTM, Bi-LSTM, ED-LSTM, CNN) trained on different country groups to predict CO2 emissions for three target countries: The United States, China, and India
+This summary shows the performance metrics of four deep learning models (sRNN, LSTM, Bi-LSTM, ED-LSTM, CNN) trained on different country groups to predict CO2 emissions for three target countries: The United States, China, and India
 
 ### Performance Summary: RMSE
 
