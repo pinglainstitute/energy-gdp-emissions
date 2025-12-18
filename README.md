@@ -415,3 +415,58 @@ The comparison table of average RMSE and average MASE for three countries vs all
 Summary to be added
 
 * [Aggregate ML Model Perforamnce Table](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/03_result_summary.md)
+
+## Step 4-1 G7 with tuning on validation set of three countries
+
+At step 3, the hyperparameter tuning was done on validation set (0.1) of the all available countries.
+
+At step 4, the turning was done on validation set (0.1) of the main target countries (United States, China, India)
+
+### Code
+
+* [Dataset of G7 countries](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/04_01_G7.ipynb)
+
+### Results
+
+* [Summary of the result](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/04_01_results/G7_multivariate_DL_summary.md)
+
+* [Summary comparison 3 vs G7](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/04_01_results/model_comparison_three_vs_g7.md)
+
+## Step 4-2 G20 with tuning on validation set of three countries
+
+At step 3, the hyperparameter tuning was done on validation set (0.1) of the all available countries.
+
+At step 4, the turning was done on validation set (0.1) of the main target countries (United States, China, India)
+
+### Code
+
+* [Dataset of G20 countries](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/04_02_G20.ipynb)
+
+### Results
+
+* [Summary of the result](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/04_02_results/G20_multivariate_DL_summary.md)
+
+* [Summary comparison 3 vs G20](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/04_02_results/model_comparison_three_vs_g20.md)
+
+## Step 4-3 All with tuning on validation set of three countries
+
+At step 3, the hyperparameter tuning was done on validation set (0.1) of the all available countries.
+
+At step 4, the turning was done on validation set (0.1) of the main target countries (United States, China, India)
+
+### Code
+
+* [Dataset of All countries](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/04_03_All.ipynb)
+
+### Results
+
+* [Summary of the result](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/04_03_results/All_multivariate_DL_summary.md)
+
+* [Summary comparison 3 vs All](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/04_03_results/model_comparison_three_vs_all.md)
+
+## Summary of Step 4
+Summary to be added
+
+* ...
+
+
