@@ -29,6 +29,7 @@ Step 4 is the modified version that hyperparameter tuning was done on validation
 ### Performance Summary: MASE
 
 | Training Dataset  | Model | Avg (3 Countries) |   Avg (All in Train)  | United States | China | India |
+|:------------------|:------|------------------:|----------------------:|--------------:|------:|------:|
 | G7 + China + India| sRNN  |             1.115 |                       |               |       |       |
 |                   | LSTM  |             0.950 |                       |         1.009 | 1.012 | 0.737 |
 |                   |Bi-LSTM|             0.949 |                       |         0.862 | 1.359 | 0.695 |
