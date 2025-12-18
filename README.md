@@ -467,6 +467,6 @@ At step 4, the turning was done on validation set (0.1) of the main target count
 ## Summary of Step 4
 Summary to be added
 
-* ...
+* [Aggregate Summary for Step 4](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/04_result_summary.md)
 
 
