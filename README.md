@@ -470,6 +470,12 @@ Summary to be added
 * [Aggregate Summary for Step 4](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/04_result_summary.md)
 
 ## Step 5-1
+Recursive Deep Learning Framework
+
+5 input windows [t-4, t-3, t-2, t-1 ,t] -> forecast 3 output windows [t+1, t+2, t+3]
+
+Method
+
 
 
 
