@@ -469,19 +469,69 @@ Summary to be added
 
 * [Aggregate Summary for Step 4](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/04_result_summary.md)
 
-## Step 5-1
-Recursive Deep Learning Framework
+## Step 5-1 Recursive Deep Learning Framewok
 
-5 input windows [t-4, t-3, t-2, t-1 ,t] -> forecast 3 output windows [t+1, t+2, t+3]
+This step implements a recursive deep learning framework for CO2 forecasting, comparing a direct (1-step) strategy against 
+a recursive (multi-step) strategy over the 9-year test period and extending the best model to produce 10-year future forecast (2023-2032).
 
-Method
+5 input windows [t-4, t-3, t-2, t-1 ,t] &mrarr; forecast 3 output windows [t+1, t+2, t+3]
+
+**Method**
+
+1. Feature Model
+
+ * The best-performing model from Step3-3 (LSTM trained on G20 countries) is loaded as the feature model
+  
+ * A new recursive LSTM is trained on G20 training data (1969-2013) using the same architecture and the same 8-feature inputs (CO2 + 7 exogeneous variables)
+
+ * The recursive LSTM predicts 3 steps ahead targeting only CO2
+
+2. Test Evaluation
+
+ * Two forecasting strategies are compared over the 9-year test window for the `United States`, `China`, and `India`.
+
+  * **Original (Direct)**: At each test year, the model predicts 1 step values using a rolling window by actual feature inputs &mdash; only first predicted value is retained
+
+  * **Recursive (3-step)**: At each call, the model predicts 3 values &mdash; all three are stored and fed back as CO2 inputs for the next prediction window (replacing only the CO2, exogeneous features are from actual data)
+
+ * Evaluation metrics: RMSE and MASE
+
+3. Full Data Retrain
+
+ * A new LSTM is retrained on the complete 1969-2022 dataset (train + test years)
+
+ * A new StandardScaler is fitted on the complete dataset
+
+4. 10-Year Forecast (2023-2032)
+
+ * Both strategies are applied beyond 2022 where no actual data exists
+
+ * Exogeneous features for future years are carried forwad from the last known row (2022) &mdahs; only the CO2 is updated with predictions at each step
+
+ * CO2 predictions are denormalised by chaning &mdash; each step's previous predicted CO2 value is used as the base for the next step's `pct_change` inversion
+
+ * **Direct forecast**: it predict 3 values per call, retains only the first, slide window by 1
+
+ * **Recursive forecast**: it predicts 3 values per call, feeds all 3 back, slide window by 3
 
 ### Code
 
-* [Step 5-1 Recursive DL Framework Application](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/05_01_Recursive.ipynb)
+* [Step 5-1 Recursive Deep Learning Framework](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/code/05_01_Recursive.ipynb)
 
 ### Results
 
+**9-Year Test Evaluation (2014-2022)**
 
+* [US Test Evaluation Table](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/05_01_results/United_States_recursive_comparison.csv)
+
+* [China Test Evaluation Table](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/05_01_results/China_recursive_comparison.csv)
+
+* [India Test Evaluation Table](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/05_01_results/India_recursive_comparison.csv)
+
+The original strategy consistently outperforms the recursive strategy on the 9-year test window, as expected &dahs; the direct strategy benefits from actual feature inputs at each step, while the recursive strategy compounds prediction error across iterations (error propagation).
+
+**10-Year CO2 Forecast Plot (Mt)**
+
+* [10 Year CO2 Forecast Plot](https://github.com/pinglainstitute/energy-gdp-emissions/blob/main/data/05_01_results/plot_10yr_forecast.png)
 
 
